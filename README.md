@@ -1,4 +1,5 @@
-# FrontEnd Application for My Personal Website
+# personal-frontend
+This is the frontend code for my personal website. View it at www.raidenkaneda.com.
 
 ## Libraries used
 | Library | Reason                                                       |
