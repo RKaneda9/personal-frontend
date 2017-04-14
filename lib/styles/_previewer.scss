@@ -1,0 +1,94 @@
+
+.previewer { 
+	@include transition(all 0.8s ease-in-out);
+	@include absolute-square(0);
+	opacity: 1; 
+	z-index: 100; 
+	position: fixed; 
+	z-index: 100; 
+	padding: 10px; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+
+	&:not(.show) {
+		@include opacity(0);
+
+		z-index: -1;
+
+		.previewer-content { @include opacity(0); }
+	}
+}
+
+.previewer-cover { 
+	@include absolute-square(0);
+
+	position:   absolute; 
+	background: rgba(0,0,0,0.6); 
+}
+
+.previewer-content { 
+	@include transition(opacity 0.2s ease-in-out); 
+
+	flex: 0 0 100%; 
+	width: 100%; 
+	position: relative; 
+	opacity: 1; 
+	max-height: 1200px; 
+	max-width: 1600px; 
+	background-color: #dbdbdb; 
+	border-radius: 5px; 
+	overflow: hidden; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+
+	.btn { 
+		position: absolute;
+		z-index: 2;
+	}
+
+	.close-btn { right: 10px; top: 10px; }
+
+	.prev-btn,
+	.next-btn { 
+		top: 50%;
+		padding: 24px 30px;
+		margin-top: -30px;
+
+		.fa { font-size: 2em; }
+	}
+
+	.prev-btn { left:  10px; }
+	.next-btn { right: 10px; }
+
+	.device {
+		@include transition(transform 0.3s ease-in-out, opacity 0.3s ease-in-out);
+
+		position: absolute; 
+
+		&:not(.active):not(.disabled) { cursor: pointer; }
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.previewer-content {
+
+		.prev-btn,
+		.next-btn { padding: 20px 18px; }
+		.next-btn { right: 5px; }
+		.prev-btn { left:  5px; }
+
+		.close-btn { right: 5px; top: 5px; }
+		.btn .text { font-size: 0.8em; }
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.icon-btn { font-size: 64px; padding: 15px 20px; }
+}
+
+@media only screen and (max-height: 600px) {
+	.icon-btn { font-size: 64px; padding: 15px 20px; }
+}

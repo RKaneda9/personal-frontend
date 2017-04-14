@@ -1,0 +1,289 @@
+.device { 
+	position: relative;
+	flex: 0 0 auto;
+
+	* { position: absolute; }
+
+	.display { 
+		overflow: hidden; 
+
+		img {
+			width:   100%;
+			height:  auto;
+			z-index: 0;
+
+			&:not(.manual-drag) { @include transition(transform 2.5s ease-in-out); }
+			&.manual-drag       { @include transition(none); }
+		}
+
+		.image-cover {
+			@include absolute-square(0);
+			z-index: 1; 
+		}
+	}
+
+	&.disabled { 
+		@include opacity(0.25);
+
+		cursor: default;
+		pointer-events: none;
+	}
+
+	.loader { 
+		z-index: -1; 
+	}
+}
+
+.ios {
+	.camera {
+		@include border-radius(100%);
+		width:  9px; 
+		height: 9px; 
+		background: #212528; 
+		box-shadow: inset -1px -1px 3px -1px #7f8182;
+
+		.bulb { 
+			@include border-radius(100%);
+			@include absolute-square(3px);
+			background: #0f1113; 
+		}
+	}
+
+	.home-btn { 
+		@include border-radius(100%);
+		width: 40px; 
+		height: 40px; 
+		background: #171717; 
+		box-shadow: inset -2px 1px 2px -1px #666, inset 4px -5px 1px -5px #666; 
+
+		.inner-btn {
+			@include border-radius(100%);
+			@include absolute-square(2px);
+			background: #000; 
+		}
+	}
+}
+
+.iphone { 
+	width:  268px; 
+	height: 544px; 
+	left:   50%;
+	margin-left: -134px;
+
+	.cover-btn { background: #888; }
+
+	.loader .circular {
+		@include loader-size(60px);
+
+		/* small display width */
+		@include media("(max-width: 767px)") {
+			@include loader-size(100px);
+		}
+	}
+
+	.vol-up,
+	.vol-down { 
+		@include border-radius(4px 0 0 4px); 
+		width:   4px;
+		height: 40px; 
+		left:    0px;
+	}
+
+	.vol-up   { top: 116px; }
+	.vol-down { top: 166px; }
+	.home-btn { top: 483px; left: 109px; }
+	.display  { top: 55px; left: 11px; right: 11px; height: 414px; }
+
+	.ear-speaker { @include border-radius( 2px);        top:  29px; width: 42px; height: 3px;  left: 109px; background: #3e3e3e; }
+	.silent      { @include border-radius(2px 0 0 2px); top:  70px; width:  3px; height: 20px; left:   0px; }
+	.power       { @include border-radius(0 4px 4px 0); top: 115px; width:  4px; height: 40px; right:  0px; }
+	.cover       { @include border-radius(38px);        top:   0px;  left:  2px; bottom: 0px;  right:  2px; background: #9c9e9d; box-shadow: inset 0 0 2px 2px #444; }
+
+	.strip { 
+		@include opacity(0.5);
+		background: #555;  
+		width: 5px; 
+		height: 8px;
+
+		&.top   { top:    40px; }
+		&.bot   { bottom: 46px; }
+		&.left  { left:    0px; }
+		&.right { right:   0px; }
+	}
+
+	.screen { 
+		@include border-radius(35px);
+		@include absolute-square(5px);
+		background: #08080a; 
+
+		.shadow { 
+			@include border-radius(30px);
+			@include absolute-square(5px);
+			border-radius: 30px; 
+			box-shadow: -2px -2px 2px 0px #222; 
+		}
+	}
+
+	.camera { top: 25.5px; left: 83px; }
+}
+
+.ipad {
+	.cover { 
+		@include border-radius(38px);
+		@include absolute-square(0);
+		background: #38393d; 
+		//background: #222;
+		overflow: hidden; 
+
+		&:before {
+			position: absolute;
+			content:  '';
+			left: 200px; 
+			right: 200px; 
+			top: 0px; 
+			bottom: 50px; 
+			background: #222; 
+			box-shadow: 0 0 80px 120px #999;
+		}
+	}
+
+	.loader .circular {
+		@include loader-size(100px);
+
+		/* small display width */
+		@include media("(max-width: 767px)") {
+			@include loader-size(200px);
+		}
+	}
+
+	.screen { 
+		@include border-radius(35px);
+		@include absolute-square(4px);
+		background: #000; 
+	}
+	
+	// display: 780/1040 or 3/4 aspect
+	&.v12_9 {
+		width:   868px; 
+		height: 1200px;
+		left:   50%;
+		margin-left: -434px;
+
+		.camera   { left: 424px; top:    36px; }
+		.home-btn { left: 424px; bottom: 16px; }
+		.display  { left:  39px; right:  39px; top: 76px; bottom: 76px; }
+	}
+
+	&.v9_7 { 
+		width:  660px; 
+		height: 940px; 
+		left:   50%;
+		margin-left: -330px;
+
+		.camera   { left: 320px; top:    30px; }
+		.home-btn { left: 320px; bottom: 16px; }
+		.display  { left:  35px; right:  35px; top: 78px; bottom: 78px; }
+	}
+}
+
+.macbook-pro {
+	width: 1685px; 
+	height: 966px; 
+	left:   50%;
+	margin-left: -842.5px;
+
+	.cover { 
+		@include border-radius(50px);
+		width: 1375px; 
+		height: 962px; 
+		left:   155px; 
+		right:  155px; 
+		background: #c4c3c8; 
+	}
+
+	.screen { 
+		@include border-radius(46px);
+		@include absolute-square(4px);
+		background: #000; 
+	}
+
+	.loader .circular {
+		@include loader-size(200px);
+
+		/* small display width */
+		@include media("(max-width: 767px)") {
+			@include loader-size(400px);
+		}
+	}
+
+	.camera  { left: 679px; top: 31px; }
+	.display { left:  52px; top: 67px; right: 52px; height: 790px; }
+
+	.logo { 
+		@include border-radius(0 0 100px 100px);
+		top:  892px;	
+		left:   0px; 
+		right:  0px; 
+		bottom: 0px;
+		background: #1c1d21; 
+		color: #a3a2a7; 
+		text-align: center; 
+
+		.text { font-size: 24px; line-height: 1.6em; }
+	}
+
+	.bottom { 
+		top:  930px;
+		left:     0; 
+		right:    0;
+		bottom:   0; 
+		overflow: hidden; 
+
+		.front-top { 
+			left: 0; 
+			right: 0; 
+			top: 0; 
+			height: 10px; 
+			background: #cccbd0; 
+			box-shadow: inset 102px 0 47px -40px #fff, -102px 0 47px -40px #fff; 
+
+			&:before { 
+				@include absolute-square(0px);
+				content: ''; 
+				position: absolute;
+				box-shadow: inset 54px 0 29px -34px #000, inset -54px 0 29px -34px #000; 
+			}
+
+			.indention { 
+				left:  700px; 
+				right: 700px; 
+				height: 100%; 
+				top:       0; 
+				background: #c6c5ca; 
+				box-shadow: inset 44px 0 21px -34px #333, inset -44px 0 21px -34px #333; 
+			}
+		}
+
+		.front-bot { 
+			@include border-radius(50% / 100%);
+			@include border-radius-dir(top-left,  0);
+			@include border-radius-dir(top-right, 0);
+			top:       10px; 
+			bottom:   -20px; 
+			left:       0; 
+			right:      0; 
+			overflow:   hidden; 
+			background: #737277; 
+
+			&:before { 
+				@include absolute-square(0px);
+		        @include border-radius(50% / 100%);
+		        @include border-radius-dir(top-left,  0);
+		        @include border-radius-dir(top-right, 0);
+				content: ''; 
+				position: absolute; 
+				box-shadow: inset 0 -63px 38px -32px #111; 
+			}
+		}
+	}
+}

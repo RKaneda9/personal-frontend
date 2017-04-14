@@ -1,0 +1,18 @@
+<svg class="ipad device" width="868" height="1200" viewBox="0 0 868 1200" xmlns="http://www.w3.org/2000/svg">
+
+	<rect width="868" height="1200" x="0" y="0" rx="38" ry="38" fill="#38393d"></rect>
+
+	<rect width="858" height="1190" x="5" y="5" rx="35" ry="35" fill="#000"></rect>
+	<rect width="782" height="1040" x="43" y="80" fill="#aaa"></rect>
+
+	<circle cx="433" cy="44" r="4.5" fill="#242628"></circle>
+	<circle cx="433" cy="44" r="1.5" fill="#000"></circle>
+
+	<circle cx="433" cy="1160" r="20" fill="#444" opacity="0.5"></circle>
+	<circle cx="433" cy="1160" r="18.5" fill="#000"></circle>
+
+	<foreignObject width="782" height="1044" x="41" y="80">
+		<div xmlns="http://www.w3.org/1999/xhtml" class="content">
+		</div>
+    </foreignObject>
+</svg>

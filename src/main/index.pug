@@ -1,0 +1,23 @@
+- var ext = minified ? '.min' : '';
+
+//- document
+doctype html
+html
+
+    head
+        title Raiden Kaneda
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+        link(href=`./css/font-awesome/font-awesome${ext}.css` rel="stylesheet")
+        link(href=`./css/main${ext}.css` rel="stylesheet")
+        script(async type="text/javascript" src=`./js/main-browser-check${ext}.js`)
+        script(async type="text/javascript" src=`./js/main${ext}.js`)
+
+    body
+        div#app
+            span(class="loader")
+                svg(class="circular" viewBox="25 25 50 50" xmlns="http://www.w3.org/2000/svg")
+                    circle(class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10")
+        
+
+

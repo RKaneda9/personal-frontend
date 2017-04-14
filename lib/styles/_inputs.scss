@@ -1,0 +1,82 @@
+.input { 
+	@extend  %no-outline;
+	@include border-radius(4px);
+
+	font-family: inherit; 
+	font-size: inherit; 
+	padding: 11px 10px 9px 10px; 
+	border: 1px solid #ccc; 
+	color: #454545;
+	flex: 1 1 auto;
+
+	&:hover,
+	&:focus,
+	&:active { 
+		border-color: #999;
+		z-index:      1;
+	} 
+
+	&.has-error {
+		border-color: #e21717;
+		z-index: 2;
+
+		&:hover,
+		&:focus,
+		&:active {
+			box-shadow: inset 0 0 1px 0 #e21717; 
+			z-index: 3;
+		}
+	}
+}
+
+textarea.input { 
+	min-height: 150px; 
+	resize: none; 
+}
+
+.link {
+	color: #e67255; 
+	cursor: pointer; 
+	text-decoration: none; 
+
+	&:hover,
+	&:active { 
+
+		color: #ce5130; 
+		text-decoration: none; 
+	}
+
+	.text { text-decoration: underline; }
+}
+
+.input-row { 
+	display: flex; 
+	flex-direction: row; 
+	align-items: stretch; 
+	position: relative; 
+	padding: 8px 0px; 
+	margin: 0 auto; 
+	max-width: 800px; 
+
+	.input-col { 
+		flex: 1 1 auto; 
+		position: relative;
+		display: flex; 
+		flex-direction: column; 
+		align-items: stretch; 
+
+		&:not(:first-child) .input { @include border-radius-dir-x(left,  0px); }
+		&:not(:last-child)  .input { @include border-radius-dir-x(right, 0px); margin-right: -1px; position: relative; }
+	}
+
+	&:last-child { 
+
+		justify-content: center; 
+
+		.btn     { padding-left: 48px; padding-right: 48px; }
+		.popover { left: auto; }
+	}
+}
+
+
+

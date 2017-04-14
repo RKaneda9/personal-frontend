@@ -1,0 +1,86 @@
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} { @content; }
+       @-moz-keyframes #{$animation-name} { @content; }  
+        @-ms-keyframes #{$animation-name} { @content; }
+         @-o-keyframes #{$animation-name} { @content; }  
+            @keyframes #{$animation-name} { @content; }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+     -moz-animation: #{$str};
+      -ms-animation: #{$str};
+       -o-animation: #{$str};
+          animation: #{$str};      
+}
+
+@mixin transform ($str) {
+    -webkit-transform: #{$str};
+       -moz-transform: #{$str};
+        -ms-transform: #{$str};
+         -o-transform: #{$str};
+            transform: #{$str};
+}
+
+@mixin transform-from ($origin, $transform) {
+    @include transform($transform);
+
+    -webkit-transform-origin: $origin; 
+       -moz-transform-origin: $origin;
+        -ms-transform-origin: $origin; 
+         -o-transform-origin: $origin;
+            transform-origin: $origin;
+}
+
+@mixin border-radius($args...) {
+  -webkit-border-radius: $args;
+     -moz-border-radius: $args;
+      -ms-border-radius: $args;
+          border-radius: $args;
+}
+
+@mixin border-radius-dir($dir, $radius) {
+    -webkit-border-#{$dir}-radius: $radius;
+       -moz-border-#{$dir}-radius: $radius;
+        -ms-border-#{$dir}-radius: $radius;
+            border-#{$dir}-radius: $radius;
+}
+
+@mixin border-radius-dir-x($dir, $radius) {
+    @include border-radius-dir(   top-#{$dir}, $radius);
+    @include border-radius-dir(bottom-#{$dir}, $radius);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+      -ms-transition: $args;
+       -o-transition: $args;
+          transition: $args;
+}
+
+@mixin absolute-square($pos) {
+    top:    $pos; 
+    left:   $pos; 
+    right:  $pos; 
+    bottom: $pos;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin loader-size($size) {
+    width:  $size;
+    height: $size;
+    margin-left: -1 * ($size / 2);
+    margin-top:  -1 * ($size / 2);
+}
+
+@mixin media($queryString) {
+    @media #{$queryString} {
+        @content;
+    }
+}

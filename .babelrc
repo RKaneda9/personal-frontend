@@ -1,0 +1,8 @@
+{   
+    "presets": [ "es2015", 'stage-2' ],
+    "plugins": [
+        "babel-plugin-syntax-jsx",
+        "babel-plugin-inferno",
+        "babel-plugin-transform-react-jsx-img-import"
+    ]
+}

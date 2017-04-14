@@ -1,0 +1,13 @@
+%no-outline {
+	&:focus,
+	&:hover,
+	&:active { outline: none; }
+}
+
+$color-facebook:   #3b5998;
+$color-twitter:    #00aced;
+$color-linkedin:   #007fb1;
+$color-instagram:  #5c3d2e;
+$color-github:     #4183c4;
+$color-codepen:    #000;
+$color-googleplus: #d34836;

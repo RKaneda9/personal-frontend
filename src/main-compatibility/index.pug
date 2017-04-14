@@ -1,0 +1,188 @@
+//- mixins
+mixin quote(q)
+    p "#{q.text}"
+    p - #{q.author}
+
+mixin page-header(params)
+    header(class="page-header")
+        div(class="title")= params.title
+
+        if params.subtitle
+            div(class="subtitle")= params.subtitle
+
+        else if params.quote
+            div(class="subtitle")
+                +quote(params.quote)
+
+mixin content-header(params)
+    header(class="content-header")
+        div(class="title")= params.title
+
+- var ext = minified ? '.min' : '';
+
+//- document
+doctype html
+html
+
+    head
+        title Raiden Kaneda
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+        link(href=`./css/font-awesome/font-awesome${ext}.css` rel="stylesheet")
+        link(href=`./css/main-compatibility${ext}.css` rel="stylesheet")
+        script(async type="text/javascript" src=`./js/main-compatibility${ext}.js`)
+
+    body
+        div#app
+            div(class="app")
+
+                //- home section
+                div(class="page home")
+                    div(class="title")= home.title
+                    div(class="sutitle")= home.subtitle
+
+                //- about section
+                div(class="page about")
+                    +page-header(about)
+
+                    div(class="content")
+                        div(class="about-image col")
+                            img(src=about.image)
+
+                        div(class="about-details col")
+                            each detail in about.details
+                                div(class="detail")
+                                    p(class="detail-label")= detail.label
+                                    p(class="detail-value")= detail.value
+
+                        div(class="about-desc col")= about.description
+
+                //- experiences section
+                div(class="page experiences")
+                    +page-header(experiences)
+
+                    each section in experiences.sections
+                        div(class="content")
+                            +content-header(section)
+
+                            ul(class="experience-list")
+                                each item in section.items
+                                    li(class="experience-item")
+
+                                        div(class="item-info")
+                                            p(class="item-company")= item.company
+                                            p(class="item-timespan") #{item.start} - #{item.end}
+
+                                        div(class="item-details")
+                                            p(class="item-title")= item.title
+                                            p(class="item.description")= item.description
+
+                                            if item.location || item.site
+                                                ul(class="item-links")
+
+                                                    if item.location
+                                                        li(class="item-location")
+                                                            a(class="link" target="google-maps" href=`http://maps.google.com/maps?q=${item.location.address}`)
+                                                                span(class="fa fa-map-marker")
+                                                                span(class="text")= item.location.address
+
+                                                    if item.site
+                                                        li(class="item-site")
+                                                            a(class="link" target="site" href=`${item.site.protocol}${item.site.domain}`)
+                                                                span(class="fa fa-external-link")
+                                                                span(class="text")= item.site.domain
+
+                //- skills section
+                div(class="page skills")
+                    +page-header(skills)
+
+                    each section in skills.sections
+                        div(class="content")
+                            +content-header(section)
+
+                            ul(class="skills-list")
+
+                                each item in section.items
+                                    li(class="skills-item")
+                                        div(class="item-title")= item.title
+                                        div(class="item-bar" fill=item.proficiency)
+
+                //- portfolio section
+                div(class="page portfolio")
+                    +page-header(portfolio)
+
+                    div(class="content")
+                        ul(class="portfolio-list")
+
+                            each item in portfolio.items
+                                li(id=`portfolio-item-${item.name}` class="portfolio-item")
+                                    a(class="anim")
+                                        img(class="item-image" src=item.background)
+                                        div(class="item-cover")
+                                            div(class="cover-title")= item.title
+                                            div(class="cover-description")= item.description
+                                        button(class="btn preview-btn")
+                                            span(class="fa fa-search-plus")
+
+                    //- previewer
+                    div#previewer(class="previewer")
+                        div(class="previewer-cover")
+                        div(class="previewer-content")
+                            div(class="previewer-display-section")
+                                div(class="previewer-title")
+                                    span#previewer-image-index
+                                    | / 
+                                    span#previewer-image-count
+
+                                div(class="previewer-display-content")
+                                    img#previewer-display(class="previewer-display-image")
+
+                            div(class="previewer-selector-section")
+                                button#previewer-mobile-btn(class="fa fa-mobile-phone icon-btn")
+                                button#previewer-tablet-btn(class="fa fa-tablet icon-btn")
+                                button#previewer-desktop-btn(class="fa fa-desktop icon-btn")
+
+                            button#previewer-close-btn(class="btn close-btn")
+                                span(class="icon -close")
+
+                            button#previewer-next-btn(class="btn next-btn")
+                                span(class="fa fa-angle-right")
+
+                            button#previewer-prev-btn(class="btn prev-btn")
+                                span(class="fa fa-angle-left")
+
+                //- contact section
+                div(class="page contact")
+                    +page-header(contact)
+
+                    div(class="content")
+                        div(class="input-row")
+                            div(class="input-col")
+                                input#firstname-input(type="text" class="input" placeholder="First Name" maxlength="100")
+
+                            div(class="input-col")
+                                input#lastname-input(type="text" class="input" placeholder="Last Name" maxlength="100")
+
+                        div(class="input-row")
+                            div(class="input-col")
+                                input#email-input(type="text" class="input" placeholder="Email Address" maxlength="200")
+
+                        div(class="input-row")
+                            div(class="input-col")
+                                textarea#message-input(class="input" placeholder="Type Your Message Here..." maxlength="5000")
+
+                        div(class="input-row btn-row")
+                            button#form-send-btn(class="btn send-btn")
+                                span(class="text") Send
+
+                            div#form-send-loader(class="loader")
+                                span(class="fa fa-spinner fa-spin")
+
+                    div(class="content")
+                        div(class="social")
+                            each link in contact.sociallinks
+                                a(class=`social-link ${link.type}` target="social" href=link.href)
+                                    span(class=`fa fa-${link.icon}`)
+
+
+

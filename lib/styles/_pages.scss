@@ -1,0 +1,189 @@
+.home {
+    flex: 1 0 100%; 
+    padding: 0px; 
+    position: relative; 
+    //max-height: 800px; 
+    background: none; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff; 
+    text-shadow: 1px 0 0 #ccc;
+
+    &:before {
+        @include absolute-square(0);
+        content: '';
+        z-index: -2;
+        position: fixed; 
+        background-image:    url(../images/seattle-grayscale.jpg);
+        background-position: center center;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+        -webkit-filter:      grayscale(100%);
+        filter:              grayscale(100%); 
+    }
+
+    &:after { 
+        @include absolute-square(0);
+        @include opacity(0.4);
+        content: '';
+        z-index: -1;
+        background: #e67255; 
+        position: fixed; 
+    }
+
+    .title { 
+        font-size: 4em; 
+        line-height: 1.34em;
+        position: relative;
+        z-index: 1;
+    }
+
+    .sub-title { 
+        font-size: 1.34em; 
+        line-height: 1.34em; 
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.page.skills,
+.page.about,
+.page.contact { background: #f9f9f9; border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7; }
+
+.experience-item { margin: 10px 0; display: flex; flex-direction: row; }
+.experience-item .item-info { flex: 0 0 220px; }
+.experience-item .item-company { font-weight: bold; font-size: 1.1em; padding: 5px 0px; }
+.experience-item .item-timespan { line-height: 1.34em; }
+.experience-item .item-description { line-height: 1.34em; }
+.experience-item .item-details { flex: 2 1 auto; padding: 0 20px; }
+.experience-item .item-title { font-weight: bold; font-size: 1.1em; padding: 5px 0; }
+.experience-item .item-links { padding: 5px 0px; margin: 0 -5px; display: flex; flex-direction: row; flex-wrap: wrap; }
+.experience-item .item-links li { flex: 0 0 auto; }
+.experience-item .item-links .link { margin: 0 10px; }
+.experience-item .item-links .link .fa { margin-right: 4px; }
+.experience-item .item-links .item-site .fa { content: '\f08e'; position: relative; top: 1px; }
+
+.skills-item { display: flex; flex-direction: row; align-items: stretch; margin: 10px 0; }
+.skills-item .item-title { font-family: Arial, sans-serif; flex: 0 0 230px; border-radius: 4px 0 0 4px; font-size: 0.9em; background: #121212; color: #f9f9f9; display: flex; flex-direction: row; align-items: center; padding: 5px 15px; }
+.skills-item .item-bar { flex: 1 1 auto; position: relative; min-height: 50px; margin-right: 20px; }
+.skills-item .item-bar:before { content: ''; border-radius: 0 4px 4px 0; background: #e67255; color: #fff; padding-right: 20px; position: absolute; top: 0; left: 0; bottom: 0; display: flex; flex-direction: row; align-items: center; justify-content: flex-end; }
+.skills-item .item-bar[fill= "1"]:before { width:  10%; content:  '1/10'; }
+.skills-item .item-bar[fill= "2"]:before { width:  20%; content:  '2/10'; }
+.skills-item .item-bar[fill= "3"]:before { width:  30%; content:  '3/10'; }
+.skills-item .item-bar[fill= "4"]:before { width:  40%; content:  '4/10'; }
+.skills-item .item-bar[fill= "5"]:before { width:  50%; content:  '5/10'; }
+.skills-item .item-bar[fill= "6"]:before { width:  60%; content:  '6/10'; }
+.skills-item .item-bar[fill= "7"]:before { width:  70%; content:  '7/10'; }
+.skills-item .item-bar[fill= "8"]:before { width:  80%; content:  '8/10'; }
+.skills-item .item-bar[fill= "9"]:before { width:  90%; content:  '9/10'; }
+.skills-item .item-bar[fill="10"]:before { width: 100%; content: '10/10'; }
+.skills-item:nth-child(even) .item-title { background: #454545; }
+.skills-item:nth-child(even) .item-bar:before { background: #ff9c82; }
+
+.about .content { display: flex; flex-direction: row; align-items: flex-start; font-size: 1.2em; line-height: 1.3em; }
+.about .content .col { margin: 10px 20px; }
+.about .about-desc { flex: 0 1 50%; }
+.about .about-details { flex: 0 0 auto; }
+.about .about-image { flex: 0 1 50%; min-width: 200px; padding: 10px; background: #ff9c82; border-radius: 4px; }
+.about .about-image img { max-width: 100%; position: relative; z-index: 2; border-radius: 4px; display: block; }
+
+.detail { padding: 5px 0; }
+.detail-label { font-weight: bold; }
+.detail-value { padding: 2px 0; }
+
+.page.portfolio { padding: 20px; }
+.portfolio-list { display: flex; flex-direction: row; justify-content: center; align-items: stretch; flex-wrap: wrap; margin: 0 auto; }
+
+.portfolio-item { 
+    flex: 1 1 40%; 
+    margin: 15px; 
+    position: relative; 
+    cursor: pointer; 
+    
+    .item-cover { 
+        @include border-radius(4px);
+        @include absolute-square(0);
+        @include opacity(1);
+        @include transition(all 0.3s ease-in-out);
+        position: absolute; 
+        display: flex; 
+        flex-direction: column; 
+        padding: 10%; 
+        background: rgba(230,114,85,0.7); 
+        color: #fff; 
+    }
+
+    .item-image { 
+        @include border-radius(4px); 
+        max-width: 100%; 
+        display: block; 
+    }
+
+    .cover-title   { padding: 10px; font-size:   2em; font-weight: bold;  }
+    .cover-details { padding: 10px; font-size: 1.2em; line-height: 1.3em; }
+    
+    .preview-btn { 
+        position: absolute; 
+        right:    5px; 
+        top:      5px; 
+        z-index:  2; 
+        padding-left:  18px; 
+        padding-right: 18px; 
+
+        .fa { font-size: 1.4em; }
+
+        &:hover { background: #e67255; }
+    }
+
+    .anim:not(:hover) .item-cover,
+    .anim.no-hover    .item-cover { @include opacity(0); }
+}
+
+.contact .content .input-row:first-child .input-col { width: 50%; }
+
+@media only screen and (max-width: 800px) {
+	.page:not(.home) { padding: 20px; }
+
+    .about .content { flex-wrap: wrap; }
+    .about .about-desc { flex: 1 1 100%; }
+
+	.skills-item .item-title { padding-left: 10px; padding-right: 10px; flex-basis: 140px; }
+	.skills-item .item-bar { margin-right: 10px; }
+	.skills-item .item-bar:before { padding-right: 10px; }
+
+    .portfolio-item .item-cover { padding: 10px; }
+
+    .portfolio-item .item-cover .cover-title { 
+        padding: 10px 60px 10px 5px; 
+        font-size: 1.3em; 
+        font-weight: bold; 
+    }
+
+    .portfolio-item .item-cover .cover-details { 
+        padding: 5px; 
+        font-size: 1em; 
+        line-height: 1.3em; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio-item { flex: 1 1 100%; }
+}
+
+@media only screen and (max-width: 550px) {
+    .page.home .title { font-size: 3em; }
+
+    .about .about-image { flex: 1 1 100%; }
+    .about .about-details { flex: 1 1 100%; }
+
+    .experience-item { flex-wrap: wrap; }
+    .experience-item .item-details { padding: 5px 0 30px 0; }
+
+    .skills-item .item-title { flex-basis: 120px; font-size: 0.8em; }
+
+    .portfolio-item { margin: 10px; }
+
+    .input-row:last-child .popover { left: 0%; right: 0%; }
+}
