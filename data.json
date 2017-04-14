@@ -405,10 +405,6 @@
                   "proficiency":9
                },
                {  
-                  "title":"SCSS",
-                  "proficiency":8
-               },
-               {  
                   "title":"Arduino",
                   "proficiency":7
                },
@@ -504,6 +500,23 @@
                }
             ]
          },
+         {
+            "title":"Other Front End Preprocessor Languages",
+            "items":[
+               {
+                  "title":"SCSS",
+                  "proficiency":9
+               },
+               {
+                  "title":"Pug",
+                  "proficiency":5
+               },
+               {
+                  "title":"Haml",
+                  "proficiency":5
+               }
+            ]
+         },
          {  
             "title":"C# Frameworks",
             "items":[  
@@ -548,7 +561,7 @@
          },
          {  
             "title":"Other Frameworks",
-            "items":[  
+            "items":[
                {  
                   "title":"Docker",
                   "proficiency":4
