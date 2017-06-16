@@ -11,7 +11,7 @@ var parser = {
             hash      : false,
             version   : false,
             test      : false,
-            port      : 5000
+            port      : 5200
         };
 
         argv.forEach(function (val, index) { console.log(val);

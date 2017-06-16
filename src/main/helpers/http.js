@@ -36,7 +36,7 @@ const http = {
 
 	get: (url, data) => {
 
-		if (data) { url = url + Http.objToQueryString(data); }
+		if (data) { url = url + http.objToQueryString(data); }
 
 		return http.request(url, "GET", null, 'application/json;charset=UTF-8');
 	},

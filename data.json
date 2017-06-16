@@ -147,10 +147,17 @@
          "author":"Bruce Lee",
          "text":"Obey the principles without being bound by them."
       },
-      "items":[  
+      "items":[
          {  
             "name": "ninjafit",
-            "title":"NinjaFit Gym",
+            "title":"NinjaFit Gym 2.0",
+            "description":"Version 2.0 of NinjaFit Gym's Landing Webiste. An Obstacle Course Gym in Orlando, Florida",
+            "background":"images/websites/ninjafitgym2/logo.jpg",
+            "href":"http://raidenkaneda.com/mocks/nfg/"
+         },
+         {  
+            "name": "ninjafit",
+            "title":"NinjaFit Gym 1.0",
             "description":"An Obstacle Course Gym in Orlando, Florida",
             "background":"images/websites/ninjafitgym/logo.jpg",
             "images":[  

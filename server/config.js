@@ -12,36 +12,40 @@ module.exports = {
         "main-browser-check": "./src/main/browser-check.js",
         "main-compatibility": './src/main-compatibility/main.js',
     },
-    babel: {
-        presets: ['es2015', 'stage-2']
-    },
     module: {
-        loaders: [
-            {
-                test: /\.json$/,
-                loader: 'json-loader'
-            },
+        rules: [
             {
                 test: /\.js$/,
-                exclude: [
-                    path.resolve('node_modules/')
-                ],
+                exclude: /node_modules/,
                 loader: 'babel-loader'
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    //'file?hash=sha512&digest=hex&name=[name]-[hash].[ext]', // use this one if there are files that have the same name.
-                    'file?name=resources/images/[name].[ext]',
-                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: "resources/images/[name].[ext]"
+                        }
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            query: {
+                                mozjpeg:  { progressive:    true },
+                                gifsicle: { interlaced:     true },
+                                optipng:  { optimizationLevel: 7 }
+                            }
+                        }
+                    }
                 ]
             }
         ]
     },
     resolve: {
-        extensions: ['', '.js', '.jsx', '.json'],
+        extensions: ['.js', '.jsx'],
         alias: { 
-            data: path.resolve(__dirname, '../data')
+            data: path.resolve(__dirname, '../data.json')
         }
     },
     output: {

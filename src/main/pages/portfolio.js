@@ -30,8 +30,6 @@ export default class PortfolioPage extends Component {
 
 	render () {
 
-		let preview = this.showPreview;
-
 		return (
 			<Page name="portfolio">
 				<Header>
@@ -43,7 +41,7 @@ export default class PortfolioPage extends Component {
 					<List>
 						{this.props.items.map(props => (
 							<Item 
-								onClick={() => (preview(props))}
+								onPreview={() => this.showPreview(props)}
 								{...props} />
 						))}
 					</List>
