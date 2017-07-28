@@ -22,21 +22,21 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 var parseIntIgnoresLeadingZeros = (function () {
-	return parseInt('010', 10) === 10;
+    return parseInt('010', 10) === 10;
 }());
 
 var strictMode = (function () {
-	return !this;
+    return !this;
 }());
 
 var DateISOString = (function () {
-	return !!(Date && Date.prototype && Date.prototype.toISOString);
+    return !!(Date && Date.prototype && Date.prototype.toISOString);
 }());
 
 var isES5 = !!(
-	parseIntIgnoresLeadingZeros &&
-	strictMode &&
-	DateISOString
+    parseIntIgnoresLeadingZeros &&
+    strictMode &&
+    DateISOString
 );
 
 if (!isES5 || isIE) { window.location = '/index-old.html'; }

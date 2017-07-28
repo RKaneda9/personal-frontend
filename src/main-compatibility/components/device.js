@@ -1,46 +1,46 @@
 var helper = require('../support/element'),
-	utils  = require('../support/utils');
+    utils  = require('../support/utils');
 
 
 function Device (props) {
 
-	/* ====================================== **
-	** Region: internal variable declaration  **
-	** ====================================== */
+    /* ====================================== **
+    ** Region: internal variable declaration  **
+    ** ====================================== */
 
-	var els, name, id;
+    var els, name, id;
 
-	/* ====================================== **
-	** Region: internal functions 			  **
-	** ====================================== */
+    /* ====================================== **
+    ** Region: internal functions               **
+    ** ====================================== */
 
-	function onInit() {
+    function onInit() {
 
-		var deviceBounds = helper.getBounds(els.device),
-		    parentBounds = helper.getBounds(els.device.parentElement);
-	}
+        var deviceBounds = helper.getBounds(els.device),
+            parentBounds = helper.getBounds(els.device.parentElement);
+    }
 
-	function onClick() {
+    function onClick() {
 
-	}
+    }
 
-	/* ====================================== **
-	** Region: external functions 			  **
-	** ====================================== */
+    /* ====================================== **
+    ** Region: external functions               **
+    ** ====================================== */
 
 
-	/* ====================================== **
-	** Region: internal setup 			      **
-	** ====================================== */
+    /* ====================================== **
+    ** Region: internal setup                   **
+    ** ====================================== */
 
-	id   = props.id;
-	name = utils.removeDashes(id);
-	els  = {
-		device: helper.getElement(id + '-device'),
-		image : helper.getElement(id + '-device-image')
-	};
+    id   = props.id;
+    name = utils.removeDashes(id);
+    els  = {
+        device: helper.getElement(id + '-device'),
+        image : helper.getElement(id + '-device-image')
+    };
 
-	helper.addListener(els.device, 'click', onClick);
+    helper.addListener(els.device, 'click', onClick);
 
 
 }

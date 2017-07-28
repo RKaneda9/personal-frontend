@@ -7,20 +7,20 @@ var Pages = {
 
 (function (callback) {
 
-	// browser event has already occurred.
-	if (document.readyState === "complete") {
-		return setTimeout(callback);
-	}
+    // browser event has already occurred.
+    if (document.readyState === "complete") {
+        return setTimeout(callback);
+    }
 
-	// Mozilla, Opera and webkit style
-	if (window.addEventListener) {
-		return window.addEventListener("load", callback, false);
-	}
+    // Mozilla, Opera and webkit style
+    if (window.addEventListener) {
+        return window.addEventListener("load", callback, false);
+    }
 
-	// If IE event model is used
-	if (window.attachEvent) {
-		return window.attachEvent("onload", callback);
-	}
+    // If IE event model is used
+    if (window.attachEvent) {
+        return window.attachEvent("onload", callback);
+    }
 
 }(function () {
 

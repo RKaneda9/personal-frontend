@@ -1,5 +1,5 @@
 String.isNullOrEmpty = function (val) {
-	return typeof val !== 'string' || !val.trim().length;
+    return typeof val !== 'string' || !val.trim().length;
 };
 
 String.isValidEmailAddress = function (val) {

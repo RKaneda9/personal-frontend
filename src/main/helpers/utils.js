@@ -1,5 +1,5 @@
 const utils = {
-	foreach: (array, callback) => {
+    foreach: (array, callback) => {
 
         if (typeof array != 'object') { return; }
 
@@ -29,11 +29,11 @@ const utils = {
 
     map: (array, func) => {
 
-    	if (typeof array != 'object') { return []; }
+        if (typeof array != 'object') { return []; }
 
-    	var mapped, keys, val;
+        var mapped, keys, val;
 
-    	mapped = [];
+        mapped = [];
         keys   = Object.keys(array);
 
         for (var i = 0; i < keys.length; i++) {

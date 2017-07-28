@@ -1,6 +1,6 @@
 module.exports = {
-	debug: console.log,
-	info : console.log,
-	warn : console.log,
-	error: console.error
+    debug: console.log,
+    info : console.log,
+    warn : console.log,
+    error: console.error
 };

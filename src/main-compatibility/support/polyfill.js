@@ -1,15 +1,15 @@
 if (!String.prototype.trim) {
-	String.prototype.trim = function() {
+    String.prototype.trim = function() {
         return this.replace(/^\s+|\s+$/g, "");
     };
 }
 
 String.isNullOrEmpty = function (val) {
-	return typeof val !== 'string' || !val.trim().length;
+    return typeof val !== 'string' || !val.trim().length;
 };
 
 String.isNotNullOrEmpty = function (val) {
-	return !String.isNullOrEmpty(val);
+    return !String.isNullOrEmpty(val);
 };
 
 String.isValidEmailAddress = function (val) {
