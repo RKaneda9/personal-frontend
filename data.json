@@ -100,9 +100,23 @@
             "title":"Work Experience",
             "items":[
                {  
+                  "company":"iFit",
+                  "start":"August 2017",
+                  "end":"Present",
+                  "title":"Full-time - Software Developer (Remote)",
+                  "description":"",
+                  "location": {
+                     "address": "Logan, UT" 
+                  },
+                  "site": {
+                     "domain": "www.ifit.com",
+                     "protocol": "https://"
+                  }
+               },
+               {  
                   "company":"ActivEngage",
                   "start":"July 2014",
-                  "end":"Present",
+                  "end":"August 2017",
                   "title":"Full-time - Software Developer",
                   "description":"Shortly before my last semester at UCF, I started working with ActivEngage. ActivEngage builds chatting software for automotive companies, real estate, and the Orlando Magic. They provide the chatting options displayed on client pages, as well as the services to handle incoming chats for those clients. For ActivEngage, I built the administrative website, I improved the chatting console, redesigned the analytics viewer, created a new security platform, redesigned the framework that is displayed on client websites, integrated client chat with Facebook messanger, and more.",
                   "location": {

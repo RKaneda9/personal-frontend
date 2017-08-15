@@ -93,7 +93,7 @@ module.exports.default = module.exports;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Quote = exports.SubTitle = exports.Title = exports.Header = exports.Page = undefined;
 
@@ -105,32 +105,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var Page = exports.Page = function Page(_ref) {
-	var name = _ref.name,
-	    children = _ref.children;
-	return createVNode(2, "div", "page " + name, children);
+    var name = _ref.name,
+        children = _ref.children;
+    return createVNode(2, "div", "page " + name, children);
 };
 
 var Header = exports.Header = function Header(_ref2) {
-	var children = _ref2.children;
-	return createVNode(2, "div", "page-header", children);
+    var children = _ref2.children;
+    return createVNode(2, "div", "page-header", children);
 };
 
 var Title = exports.Title = function Title(_ref3) {
-	var children = _ref3.children;
-	return createVNode(2, "div", "title", children);
+    var children = _ref3.children;
+    return createVNode(2, "div", "title", children);
 };
 
 var SubTitle = exports.SubTitle = function SubTitle(_ref4) {
-	var children = _ref4.children;
-	return createVNode(2, "div", "sub-title", children);
+    var children = _ref4.children;
+    return createVNode(2, "div", "sub-title", children);
 };
 
 var Quote = exports.Quote = function Quote(_ref5) {
-	var author = _ref5.author,
-	    text = _ref5.text;
-	return createVNode(16, SubTitle, null, null, {
-		children: [createVNode(2, "p", null, ["\"", text, "\""]), createVNode(2, "p", null, ["- ", author])]
-	});
+    var author = _ref5.author,
+        text = _ref5.text;
+    return createVNode(16, SubTitle, null, null, {
+        children: [createVNode(2, "p", null, ["\"", text, "\""]), createVNode(2, "p", null, ["- ", author])]
+    });
 };
 
 /***/ }),
@@ -141,7 +141,7 @@ var Quote = exports.Quote = function Quote(_ref5) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Header = exports.Content = undefined;
 
@@ -153,13 +153,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var Content = exports.Content = function Content(_ref) {
-	var children = _ref.children;
-	return createVNode(2, "div", "content", children);
+    var children = _ref.children;
+    return createVNode(2, "div", "content", children);
 };
 
 var Header = exports.Header = function Header(_ref2) {
-	var children = _ref2.children;
-	return createVNode(2, "div", "content-header", children);
+    var children = _ref2.children;
+    return createVNode(2, "div", "content-header", children);
 };
 
 /***/ }),
@@ -170,33 +170,33 @@ var Header = exports.Header = function Header(_ref2) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 var constants = {
-	previewer: {
-		resizeTimeout: 200,
-		scrollTimeout: 5000
-	},
-	devices: {
-		iphone: {
-			width: 268,
-			height: 544,
-			displayWidth: 232,
-			displayHeight: 414
-		},
-		ipad: {
-			width: 660,
-			height: 940,
-			displayWidth: 582,
-			displayHeight: 776
-		},
-		macbookPro: {
-			width: 1685,
-			height: 966,
-			displayWidth: 1263,
-			displayHeight: 790
-		}
-	}
+    previewer: {
+        resizeTimeout: 200,
+        scrollTimeout: 5000
+    },
+    devices: {
+        iphone: {
+            width: 268,
+            height: 544,
+            displayWidth: 232,
+            displayHeight: 414
+        },
+        ipad: {
+            width: 660,
+            height: 940,
+            displayWidth: 582,
+            displayHeight: 776
+        },
+        macbookPro: {
+            width: 1685,
+            height: 966,
+            displayWidth: 1263,
+            displayHeight: 790
+        }
+    }
 };
 
 exports.default = constants;
@@ -205,696 +205,7 @@ exports.default = constants;
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"about": {
-		"image": "images/me/image1-512-512.jpg",
-		"title": "About Me",
-		"quote": {
-			"author": "Bruce Lee",
-			"text": "Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it."
-		},
-		"description": "I’m a well rounded Software Developer that enjoys seeing his work come to life. I consider myself proficient in all pieces of web development, from creating and manipulation database structures, to backend application structures and frameworks, to designing and programming client side pages. I enjoy spending time learning new skills, design patterns and architecture approaches. With my heavy mathematics and physics background, I also enjoy getting down and dirty into physics engines for games and other.",
-		"details": [
-			{
-				"label": "Name",
-				"value": "Raiden Kaneda"
-			},
-			{
-				"label": "Age",
-				"value": "26"
-			},
-			{
-				"label": "Location",
-				"value": "Orlando, FL"
-			}
-		]
-	},
-	"contact": {
-		"title": "Contact",
-		"quote": {
-			"author": "Bruce Lee",
-			"text": "If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them."
-		},
-		"sociallinks": [
-			{
-				"type": "facebook",
-				"text": "Facebook",
-				"icon": "facebook",
-				"href": "https://www.facebook.com/raiden.kaneda"
-			},
-			{
-				"type": "linkedin",
-				"text": "LinkedIn",
-				"icon": "linkedin",
-				"href": "https://www.linkedin.com/in/raiden-kaneda-2141a790"
-			},
-			{
-				"type": "google-plus",
-				"text": "Google+",
-				"icon": "google-plus",
-				"href": "https://plus.google.com/113051978520654565642"
-			},
-			{
-				"type": "codepen",
-				"text": "Codepen",
-				"icon": "codepen",
-				"href": "http://codepen.io/Kaneda9/"
-			},
-			{
-				"type": "github",
-				"text": "Github",
-				"icon": "github",
-				"href": "https://github.com/RKaneda9"
-			},
-			{
-				"type": "instagram",
-				"text": "Instagram",
-				"icon": "instagram",
-				"href": "https://www.instagram.com/kaneda9"
-			}
-		],
-		"urls": {
-			"sendMessage": "http://www.raidenkaneda.com/contact/me"
-		}
-	},
-	"experiences": {
-		"title": "Experiences",
-		"quote": {
-			"author": "Bruce Lee",
-			"text": "Knowledge will give you power, but character respect."
-		},
-		"sections": [
-			{
-				"title": "Education",
-				"items": [
-					{
-						"company": "University of Central Florida",
-						"start": "Fall 2009",
-						"end": "Winter 2014",
-						"title": "Bachelors Degree in Computer Engineering",
-						"description": "The degree was a combination of Computer Science and Electrical Engineering. There was a strong focus on Microprocessors and Computer Architecture. I chose my electives to grow in game development and further my understanding in electronics from an Electrical Engineering perspective. My senior design project was the base of a smart watch that could connect to common systems like your security system, smoke detectors, ovens, microwaves, etc.",
-						"location": {
-							"address": "Orlando, FL"
-						},
-						"site": {
-							"domain": "www.ucf.edu",
-							"protocol": "http://"
-						}
-					}
-				]
-			},
-			{
-				"title": "Work Experience",
-				"items": [
-					{
-						"company": "ActivEngage",
-						"start": "July 2014",
-						"end": "Present",
-						"title": "Full-time - Software Developer",
-						"description": "Shortly before my last semester at UCF, I started working with ActivEngage. ActivEngage builds chatting software for automotive companies, real estate, and the Orlando Magic. They provide the chatting options displayed on client pages, as well as the services to handle incoming chats for those clients. For ActivEngage, I built the administrative website, I improved the chatting console, redesigned the analytics viewer, created a new security platform, redesigned the framework that is displayed on client websites, integrated client chat with Facebook messanger, and more.",
-						"location": {
-							"address": "Maitland, FL"
-						},
-						"site": {
-							"domain": "www.activengage.com",
-							"protocol": "http://"
-						}
-					},
-					{
-						"company": "Via Response",
-						"start": "March 2012",
-						"end": "July 2014",
-						"title": "Full-time - Software Developer",
-						"description": "I was offered a full time position at Via Response after my internship ended. Over the next 2+ years, I continued to expand my skills and learned everything I could. I found that I enjoyed working on both sides of a project, client and server side work. During my time there, our team redesigned and rebuilt the entire product from end to end. With Via Response being a relatively small company, I enjoyed getting a close look at the full process of a customer idea turned into a piece of software.",
-						"location": {
-							"address": "Orlando, FL"
-						}
-					},
-					{
-						"company": "Via Response",
-						"start": "September 2011",
-						"end": "March 2012",
-						"title": "Internship - Software Developer",
-						"description": "I started my first internship with Via Response when I was 20. Via Response's mission was to create online services for students and teachers. Their main audience was college professors, where they could build course work, submit and schedule tests, view analytics, take polls, etc. The students could then view the course work, take tests, homeworks, mark themselves present, and more. During my internship, I dove into the web world by learning ASP.NET webforms through C#, HTML, CSS. I was also introduced to JavaScript, SQL Server and Entity Framework.",
-						"location": {
-							"address": "Orlando, FL"
-						}
-					}
-				]
-			}
-		]
-	},
-	"home": {
-		"title": "Raiden Kaneda",
-		"subtitle": "Full Stack Software Developer"
-	},
-	"portfolio": {
-		"title": "My Work",
-		"quote": {
-			"author": "Bruce Lee",
-			"text": "Obey the principles without being bound by them."
-		},
-		"items": [
-			{
-				"name": "ninjafit",
-				"title": "NinjaFit Gym 2.0",
-				"description": "Version 2.0 of NinjaFit Gym's Landing Webiste. An Obstacle Course Gym in Orlando, Florida",
-				"background": "images/websites/ninjafitgym2/logo.jpg",
-				"href": "http://raidenkaneda.com/mocks/nfg/"
-			},
-			{
-				"name": "ninjafit",
-				"title": "NinjaFit Gym 1.0",
-				"description": "An Obstacle Course Gym in Orlando, Florida",
-				"background": "images/websites/ninjafitgym/logo.jpg",
-				"images": [
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-home.png",
-						"iphone": "images/websites/ninjafitgym/iphone-home.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-home.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-home2.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-home2.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-home3.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-home3.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-wod.png",
-						"iphone": "images/websites/ninjafitgym/iphone-wod.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-wod.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-news.png",
-						"iphone": "images/websites/ninjafitgym/iphone-news.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-news.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-pricing.png",
-						"iphone": "images/websites/ninjafitgym/iphone-pricing.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-pricing.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-our-gym.png",
-						"iphone": "images/websites/ninjafitgym/iphone-our-gym.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-our-gym.png"
-					},
-					{
-						"ipad": "images/websites/ninjafitgym/ipad-login.png",
-						"iphone": "images/websites/ninjafitgym/iphone-login.png",
-						"macbookPro": "images/websites/ninjafitgym/macbook-login.png"
-					},
-					{
-						"iphone": "images/websites/ninjafitgym/iphone-menu.png"
-					}
-				]
-			},
-			{
-				"name": "activengage-admin",
-				"title": "ActivEngage Admin",
-				"description": "A administrative website for ActivEngage, where they can manage their users, teams, applications, advertisements, etc.",
-				"background": "images/websites/activengage-admin/logo.jpg",
-				"images": [
-					{
-						"ipad": "images/websites/activengage-admin/ipad-login.png",
-						"iphone": "images/websites/activengage-admin/iphone-login.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-login.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-users.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-users.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-user.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-user.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-applications.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-applications.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-application-web.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-application-web.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-application-api.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-application-api.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-teams.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-teams.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-team.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-team.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-advertisements.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-advertisements.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-advertisement.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-advertisement.png"
-					},
-					{
-						"ipad": "images/websites/activengage-admin/ipad-logout.png",
-						"iphone": "images/websites/activengage-admin/iphone-logout.png",
-						"macbookPro": "images/websites/activengage-admin/macbook-logout.png"
-					}
-				]
-			},
-			{
-				"name": "activengage-pageview",
-				"title": "ActivEngage PageView",
-				"description": "A module that will be displayed on client websites for chatting services. Each client was created a custom brand setup to fit their needs.",
-				"background": "images/websites/activengage-pageview/logo.png",
-				"images": [
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-pageview1.png",
-						"iphone": "images/websites/activengage-pageview/iphone-pageview1.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-pageview1.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-expanded.png",
-						"iphone": "images/websites/activengage-pageview/iphone-expanded.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-expanded.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc2.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc2.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc2.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc3.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc3.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc3.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc4.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc4.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc4.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc5.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc5.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc5.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc6.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc6.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc6.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc7.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc7.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc7.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc8.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc8.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc8.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ipc9.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ipc9.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ipc9.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ips1.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ips1.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ips1.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-ips2.png",
-						"iphone": "images/websites/activengage-pageview/iphone-ips2.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-ips2.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer1.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer2.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer3.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer4.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer5.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer6.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer7.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer8.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer9.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer10.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer11.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer12.png"
-					},
-					{
-						"macbookPro": "images/websites/activengage-pageview/macbook-designer13.png"
-					},
-					{
-						"ipad": "images/websites/activengage-pageview/ipad-live1.png",
-						"iphone": "images/websites/activengage-pageview/iphone-live1.png",
-						"macbookPro": "images/websites/activengage-pageview/macbook-live1.png"
-					}
-				]
-			},
-			{
-				"name": "activengage-console",
-				"title": "ActivEngage Console",
-				"description": "A chatting website for ActivEngage, where members can chat with automotive website visitors.",
-				"background": "images/websites/activengage-console/logo.jpg",
-				"images": [
-					{
-						"ipad": "images/websites/activengage-console/ipad-login.png",
-						"iphone": "images/websites/activengage-console/iphone-login.png",
-						"macbookPro": "images/websites/activengage-console/macbook-login.png"
-					},
-					{
-						"ipad": "images/websites/activengage-console/ipad-reporting-filters.png",
-						"macbookPro": "images/websites/activengage-console/macbook-reporting-filters.png"
-					},
-					{
-						"ipad": "images/websites/activengage-console/ipad-reporting-site-performance.png",
-						"macbookPro": "images/websites/activengage-console/macbook-reporting-site-performance.png"
-					},
-					{
-						"ipad": "images/websites/activengage-console/ipad-reporting-user-performance.png",
-						"macbookPro": "images/websites/activengage-console/macbook-reporting-user-performance.png"
-					},
-					{
-						"ipad": "images/websites/activengage-console/ipad-reporting-chat-details.png",
-						"macbookPro": "images/websites/activengage-console/macbook-reporting-chat-details.png"
-					},
-					{
-						"ipad": "images/websites/activengage-console/ipad-logout.png",
-						"iphone": "images/websites/activengage-console/iphone-logout.png",
-						"macbookPro": "images/websites/activengage-console/macbook-logout.png"
-					}
-				]
-			}
-		]
-	},
-	"skills": {
-		"title": "Skills",
-		"quote": {
-			"author": "Bruce Lee",
-			"text": "Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with the wind."
-		},
-		"sections": [
-			{
-				"title": "Programming Languages",
-				"items": [
-					{
-						"title": "JavaScript",
-						"proficiency": 10
-					},
-					{
-						"title": "CSS (3)",
-						"proficiency": 10
-					},
-					{
-						"title": "HTML (5)",
-						"proficiency": 10
-					},
-					{
-						"title": "C#",
-						"proficiency": 9
-					},
-					{
-						"title": "Arduino",
-						"proficiency": 7
-					},
-					{
-						"title": "SVG",
-						"proficiency": 6
-					},
-					{
-						"title": "Java",
-						"proficiency": 6
-					},
-					{
-						"title": "C++",
-						"proficiency": 5
-					},
-					{
-						"title": "C",
-						"proficiency": 4
-					},
-					{
-						"title": "PHP",
-						"proficiency": 4
-					}
-				]
-			},
-			{
-				"title": "JavaScript Front End Frameworks and Formats",
-				"items": [
-					{
-						"title": "AngularJS 1.x",
-						"proficiency": 10
-					},
-					{
-						"title": "ES7 (ECMAScript 2016)",
-						"proficiency": 10
-					},
-					{
-						"title": "React JS",
-						"proficiency": 9
-					},
-					{
-						"title": "Inferno JS",
-						"proficiency": 9
-					},
-					{
-						"title": "jQuery",
-						"proficiency": 8
-					},
-					{
-						"title": "Bootstrap",
-						"proficiency": 8
-					},
-					{
-						"title": "Typescript",
-						"proficiency": 8
-					},
-					{
-						"title": "Canvas",
-						"proficiency": 7
-					},
-					{
-						"title": "Aurelia JS",
-						"proficiency": 4
-					},
-					{
-						"title": "CoffeeScript",
-						"proficiency": 4
-					},
-					{
-						"title": "Angular 2.x",
-						"proficiency": 2
-					}
-				]
-			},
-			{
-				"title": "JavaScript Back End Frameworks",
-				"items": [
-					{
-						"title": "Node.js",
-						"proficiency": 9
-					},
-					{
-						"title": "Webpack",
-						"proficiency": 8
-					},
-					{
-						"title": "Express JS",
-						"proficiency": 7
-					},
-					{
-						"title": "Local Web Server",
-						"proficiency": 7
-					}
-				]
-			},
-			{
-				"title": "Other Front End Preprocessor Languages",
-				"items": [
-					{
-						"title": "SCSS",
-						"proficiency": 9
-					},
-					{
-						"title": "Pug",
-						"proficiency": 5
-					},
-					{
-						"title": "Haml",
-						"proficiency": 5
-					}
-				]
-			},
-			{
-				"title": "C# Frameworks",
-				"items": [
-					{
-						"title": "MVC (5)",
-						"proficiency": 9
-					},
-					{
-						"title": "ASP.NET Web Api 2",
-						"proficiency": 9
-					},
-					{
-						"title": "Owin",
-						"proficiency": 8
-					},
-					{
-						"title": "Nuget",
-						"proficiency": 8
-					},
-					{
-						"title": "Entity Framework",
-						"proficiency": 8
-					},
-					{
-						"title": "Thinktecture Identity Server 3",
-						"proficiency": 7
-					},
-					{
-						"title": "EasyNetQ",
-						"proficiency": 7
-					}
-				]
-			},
-			{
-				"title": "Java Frameworks",
-				"items": [
-					{
-						"title": "Android",
-						"proficiency": 5
-					}
-				]
-			},
-			{
-				"title": "Other Frameworks",
-				"items": [
-					{
-						"title": "Docker",
-						"proficiency": 4
-					}
-				]
-			},
-			{
-				"title": "Relational Databases",
-				"items": [
-					{
-						"title": "SQL Server",
-						"proficiency": 8
-					},
-					{
-						"title": "MySql",
-						"proficiency": 4
-					},
-					{
-						"title": "PostgresSQL",
-						"proficiency": 3
-					}
-				]
-			},
-			{
-				"title": "Non-Relational Databases",
-				"items": [
-					{
-						"title": "RavenDB",
-						"proficiency": 8
-					},
-					{
-						"title": "Amazon DynamoDB",
-						"proficiency": 6
-					}
-				]
-			},
-			{
-				"title": "Tools",
-				"items": [
-					{
-						"title": "Sublime Text 3",
-						"proficiency": 10
-					},
-					{
-						"title": "Visual Studio",
-						"proficiency": 10
-					},
-					{
-						"title": "Git",
-						"proficiency": 9
-					},
-					{
-						"title": "Bitbucket",
-						"proficiency": 9
-					},
-					{
-						"title": "SQL Server Management Studio",
-						"proficiency": 8
-					},
-					{
-						"title": "Command Prompt / Terminal",
-						"proficiency": 7
-					},
-					{
-						"title": "Visual Studio Code",
-						"proficiency": 5
-					},
-					{
-						"title": "Web Storm",
-						"proficiency": 5
-					},
-					{
-						"title": "Blender",
-						"proficiency": 3
-					}
-				]
-			},
-			{
-				"title": "Operating Systems",
-				"items": [
-					{
-						"title": "Windows",
-						"proficiency": 9
-					},
-					{
-						"title": "Mac OSX",
-						"proficiency": 8
-					}
-				]
-			}
-		]
-	}
-};
+module.exports = {"about":{"image":"images/me/image1-512-512.jpg","title":"About Me","quote":{"author":"Bruce Lee","text":"Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it."},"description":"I’m a well rounded Software Developer that enjoys seeing his work come to life. I consider myself proficient in all pieces of web development, from creating and manipulation database structures, to backend application structures and frameworks, to designing and programming client side pages. I enjoy spending time learning new skills, design patterns and architecture approaches. With my heavy mathematics and physics background, I also enjoy getting down and dirty into physics engines for games and other.","details":[{"label":"Name","value":"Raiden Kaneda"},{"label":"Age","value":"26"},{"label":"Location","value":"Orlando, FL"}]},"contact":{"title":"Contact","quote":{"author":"Bruce Lee","text":"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them."},"sociallinks":[{"type":"facebook","text":"Facebook","icon":"facebook","href":"https://www.facebook.com/raiden.kaneda"},{"type":"linkedin","text":"LinkedIn","icon":"linkedin","href":"https://www.linkedin.com/in/raiden-kaneda-2141a790"},{"type":"google-plus","text":"Google+","icon":"google-plus","href":"https://plus.google.com/113051978520654565642"},{"type":"codepen","text":"Codepen","icon":"codepen","href":"http://codepen.io/Kaneda9/"},{"type":"github","text":"Github","icon":"github","href":"https://github.com/RKaneda9"},{"type":"instagram","text":"Instagram","icon":"instagram","href":"https://www.instagram.com/kaneda9"}],"urls":{"sendMessage":"http://www.raidenkaneda.com/contact/me"}},"experiences":{"title":"Experiences","quote":{"author":"Bruce Lee","text":"Knowledge will give you power, but character respect."},"sections":[{"title":"Education","items":[{"company":"University of Central Florida","start":"Fall 2009","end":"Winter 2014","title":"Bachelors Degree in Computer Engineering","description":"The degree was a combination of Computer Science and Electrical Engineering. There was a strong focus on Microprocessors and Computer Architecture. I chose my electives to grow in game development and further my understanding in electronics from an Electrical Engineering perspective. My senior design project was the base of a smart watch that could connect to common systems like your security system, smoke detectors, ovens, microwaves, etc.","location":{"address":"Orlando, FL"},"site":{"domain":"www.ucf.edu","protocol":"http://"}}]},{"title":"Work Experience","items":[{"company":"iFit","start":"August 2017","end":"Present","title":"Full-time - Software Developer (Remote)","description":"","location":{"address":"Logan, UT"},"site":{"domain":"www.ifit.com","protocol":"https://"}},{"company":"ActivEngage","start":"July 2014","end":"August 2017","title":"Full-time - Software Developer","description":"Shortly before my last semester at UCF, I started working with ActivEngage. ActivEngage builds chatting software for automotive companies, real estate, and the Orlando Magic. They provide the chatting options displayed on client pages, as well as the services to handle incoming chats for those clients. For ActivEngage, I built the administrative website, I improved the chatting console, redesigned the analytics viewer, created a new security platform, redesigned the framework that is displayed on client websites, integrated client chat with Facebook messanger, and more.","location":{"address":"Maitland, FL"},"site":{"domain":"www.activengage.com","protocol":"http://"}},{"company":"Via Response","start":"March 2012","end":"July 2014","title":"Full-time - Software Developer","description":"I was offered a full time position at Via Response after my internship ended. Over the next 2+ years, I continued to expand my skills and learned everything I could. I found that I enjoyed working on both sides of a project, client and server side work. During my time there, our team redesigned and rebuilt the entire product from end to end. With Via Response being a relatively small company, I enjoyed getting a close look at the full process of a customer idea turned into a piece of software.","location":{"address":"Orlando, FL"}},{"company":"Via Response","start":"September 2011","end":"March 2012","title":"Internship - Software Developer","description":"I started my first internship with Via Response when I was 20. Via Response's mission was to create online services for students and teachers. Their main audience was college professors, where they could build course work, submit and schedule tests, view analytics, take polls, etc. The students could then view the course work, take tests, homeworks, mark themselves present, and more. During my internship, I dove into the web world by learning ASP.NET webforms through C#, HTML, CSS. I was also introduced to JavaScript, SQL Server and Entity Framework.","location":{"address":"Orlando, FL"}}]}]},"home":{"title":"Raiden Kaneda","subtitle":"Full Stack Software Developer"},"portfolio":{"title":"My Work","quote":{"author":"Bruce Lee","text":"Obey the principles without being bound by them."},"items":[{"name":"ninjafit","title":"NinjaFit Gym 2.0","description":"Version 2.0 of NinjaFit Gym's Landing Webiste. An Obstacle Course Gym in Orlando, Florida","background":"images/websites/ninjafitgym2/logo.jpg","href":"http://raidenkaneda.com/mocks/nfg/"},{"name":"ninjafit","title":"NinjaFit Gym 1.0","description":"An Obstacle Course Gym in Orlando, Florida","background":"images/websites/ninjafitgym/logo.jpg","images":[{"ipad":"images/websites/ninjafitgym/ipad-home.png","iphone":"images/websites/ninjafitgym/iphone-home.png","macbookPro":"images/websites/ninjafitgym/macbook-home.png"},{"ipad":"images/websites/ninjafitgym/ipad-home2.png","macbookPro":"images/websites/ninjafitgym/macbook-home2.png"},{"ipad":"images/websites/ninjafitgym/ipad-home3.png","macbookPro":"images/websites/ninjafitgym/macbook-home3.png"},{"ipad":"images/websites/ninjafitgym/ipad-wod.png","iphone":"images/websites/ninjafitgym/iphone-wod.png","macbookPro":"images/websites/ninjafitgym/macbook-wod.png"},{"ipad":"images/websites/ninjafitgym/ipad-news.png","iphone":"images/websites/ninjafitgym/iphone-news.png","macbookPro":"images/websites/ninjafitgym/macbook-news.png"},{"ipad":"images/websites/ninjafitgym/ipad-pricing.png","iphone":"images/websites/ninjafitgym/iphone-pricing.png","macbookPro":"images/websites/ninjafitgym/macbook-pricing.png"},{"ipad":"images/websites/ninjafitgym/ipad-our-gym.png","iphone":"images/websites/ninjafitgym/iphone-our-gym.png","macbookPro":"images/websites/ninjafitgym/macbook-our-gym.png"},{"ipad":"images/websites/ninjafitgym/ipad-login.png","iphone":"images/websites/ninjafitgym/iphone-login.png","macbookPro":"images/websites/ninjafitgym/macbook-login.png"},{"iphone":"images/websites/ninjafitgym/iphone-menu.png"}]},{"name":"activengage-admin","title":"ActivEngage Admin","description":"A administrative website for ActivEngage, where they can manage their users, teams, applications, advertisements, etc.","background":"images/websites/activengage-admin/logo.jpg","images":[{"ipad":"images/websites/activengage-admin/ipad-login.png","iphone":"images/websites/activengage-admin/iphone-login.png","macbookPro":"images/websites/activengage-admin/macbook-login.png"},{"ipad":"images/websites/activengage-admin/ipad-users.png","macbookPro":"images/websites/activengage-admin/macbook-users.png"},{"ipad":"images/websites/activengage-admin/ipad-user.png","macbookPro":"images/websites/activengage-admin/macbook-user.png"},{"ipad":"images/websites/activengage-admin/ipad-applications.png","macbookPro":"images/websites/activengage-admin/macbook-applications.png"},{"ipad":"images/websites/activengage-admin/ipad-application-web.png","macbookPro":"images/websites/activengage-admin/macbook-application-web.png"},{"ipad":"images/websites/activengage-admin/ipad-application-api.png","macbookPro":"images/websites/activengage-admin/macbook-application-api.png"},{"ipad":"images/websites/activengage-admin/ipad-teams.png","macbookPro":"images/websites/activengage-admin/macbook-teams.png"},{"ipad":"images/websites/activengage-admin/ipad-team.png","macbookPro":"images/websites/activengage-admin/macbook-team.png"},{"ipad":"images/websites/activengage-admin/ipad-advertisements.png","macbookPro":"images/websites/activengage-admin/macbook-advertisements.png"},{"ipad":"images/websites/activengage-admin/ipad-advertisement.png","macbookPro":"images/websites/activengage-admin/macbook-advertisement.png"},{"ipad":"images/websites/activengage-admin/ipad-logout.png","iphone":"images/websites/activengage-admin/iphone-logout.png","macbookPro":"images/websites/activengage-admin/macbook-logout.png"}]},{"name":"activengage-pageview","title":"ActivEngage PageView","description":"A module that will be displayed on client websites for chatting services. Each client was created a custom brand setup to fit their needs.","background":"images/websites/activengage-pageview/logo.png","images":[{"ipad":"images/websites/activengage-pageview/ipad-pageview1.png","iphone":"images/websites/activengage-pageview/iphone-pageview1.png","macbookPro":"images/websites/activengage-pageview/macbook-pageview1.png"},{"ipad":"images/websites/activengage-pageview/ipad-expanded.png","iphone":"images/websites/activengage-pageview/iphone-expanded.png","macbookPro":"images/websites/activengage-pageview/macbook-expanded.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc.png","iphone":"images/websites/activengage-pageview/iphone-ipc.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc2.png","iphone":"images/websites/activengage-pageview/iphone-ipc2.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc2.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc3.png","iphone":"images/websites/activengage-pageview/iphone-ipc3.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc3.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc4.png","iphone":"images/websites/activengage-pageview/iphone-ipc4.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc4.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc5.png","iphone":"images/websites/activengage-pageview/iphone-ipc5.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc5.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc6.png","iphone":"images/websites/activengage-pageview/iphone-ipc6.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc6.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc7.png","iphone":"images/websites/activengage-pageview/iphone-ipc7.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc7.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc8.png","iphone":"images/websites/activengage-pageview/iphone-ipc8.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc8.png"},{"ipad":"images/websites/activengage-pageview/ipad-ipc9.png","iphone":"images/websites/activengage-pageview/iphone-ipc9.png","macbookPro":"images/websites/activengage-pageview/macbook-ipc9.png"},{"ipad":"images/websites/activengage-pageview/ipad-ips1.png","iphone":"images/websites/activengage-pageview/iphone-ips1.png","macbookPro":"images/websites/activengage-pageview/macbook-ips1.png"},{"ipad":"images/websites/activengage-pageview/ipad-ips2.png","iphone":"images/websites/activengage-pageview/iphone-ips2.png","macbookPro":"images/websites/activengage-pageview/macbook-ips2.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer1.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer2.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer3.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer4.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer5.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer6.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer7.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer8.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer9.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer10.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer11.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer12.png"},{"macbookPro":"images/websites/activengage-pageview/macbook-designer13.png"},{"ipad":"images/websites/activengage-pageview/ipad-live1.png","iphone":"images/websites/activengage-pageview/iphone-live1.png","macbookPro":"images/websites/activengage-pageview/macbook-live1.png"}]},{"name":"activengage-console","title":"ActivEngage Console","description":"A chatting website for ActivEngage, where members can chat with automotive website visitors.","background":"images/websites/activengage-console/logo.jpg","images":[{"ipad":"images/websites/activengage-console/ipad-login.png","iphone":"images/websites/activengage-console/iphone-login.png","macbookPro":"images/websites/activengage-console/macbook-login.png"},{"ipad":"images/websites/activengage-console/ipad-reporting-filters.png","macbookPro":"images/websites/activengage-console/macbook-reporting-filters.png"},{"ipad":"images/websites/activengage-console/ipad-reporting-site-performance.png","macbookPro":"images/websites/activengage-console/macbook-reporting-site-performance.png"},{"ipad":"images/websites/activengage-console/ipad-reporting-user-performance.png","macbookPro":"images/websites/activengage-console/macbook-reporting-user-performance.png"},{"ipad":"images/websites/activengage-console/ipad-reporting-chat-details.png","macbookPro":"images/websites/activengage-console/macbook-reporting-chat-details.png"},{"ipad":"images/websites/activengage-console/ipad-logout.png","iphone":"images/websites/activengage-console/iphone-logout.png","macbookPro":"images/websites/activengage-console/macbook-logout.png"}]}]},"skills":{"title":"Skills","quote":{"author":"Bruce Lee","text":"Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with the wind."},"sections":[{"title":"Programming Languages","items":[{"title":"JavaScript","proficiency":10},{"title":"CSS (3)","proficiency":10},{"title":"HTML (5)","proficiency":10},{"title":"C#","proficiency":9},{"title":"Arduino","proficiency":7},{"title":"SVG","proficiency":6},{"title":"Java","proficiency":6},{"title":"C++","proficiency":5},{"title":"C","proficiency":4},{"title":"PHP","proficiency":4}]},{"title":"JavaScript Front End Frameworks and Formats","items":[{"title":"AngularJS 1.x","proficiency":10},{"title":"ES7 (ECMAScript 2016)","proficiency":10},{"title":"React JS","proficiency":9},{"title":"Inferno JS","proficiency":9},{"title":"jQuery","proficiency":8},{"title":"Bootstrap","proficiency":8},{"title":"Typescript","proficiency":8},{"title":"Canvas","proficiency":7},{"title":"Aurelia JS","proficiency":4},{"title":"CoffeeScript","proficiency":4},{"title":"Angular 2.x","proficiency":2}]},{"title":"JavaScript Back End Frameworks","items":[{"title":"Node.js","proficiency":9},{"title":"Webpack","proficiency":8},{"title":"Express JS","proficiency":7},{"title":"Local Web Server","proficiency":7}]},{"title":"Other Front End Preprocessor Languages","items":[{"title":"SCSS","proficiency":9},{"title":"Pug","proficiency":5},{"title":"Haml","proficiency":5}]},{"title":"C# Frameworks","items":[{"title":"MVC (5)","proficiency":9},{"title":"ASP.NET Web Api 2","proficiency":9},{"title":"Owin","proficiency":8},{"title":"Nuget","proficiency":8},{"title":"Entity Framework","proficiency":8},{"title":"Thinktecture Identity Server 3","proficiency":7},{"title":"EasyNetQ","proficiency":7}]},{"title":"Java Frameworks","items":[{"title":"Android","proficiency":5}]},{"title":"Other Frameworks","items":[{"title":"Docker","proficiency":4}]},{"title":"Relational Databases","items":[{"title":"SQL Server","proficiency":8},{"title":"MySql","proficiency":4},{"title":"PostgresSQL","proficiency":3}]},{"title":"Non-Relational Databases","items":[{"title":"RavenDB","proficiency":8},{"title":"Amazon DynamoDB","proficiency":6}]},{"title":"Tools","items":[{"title":"Sublime Text 3","proficiency":10},{"title":"Visual Studio","proficiency":10},{"title":"Git","proficiency":9},{"title":"Bitbucket","proficiency":9},{"title":"SQL Server Management Studio","proficiency":8},{"title":"Command Prompt / Terminal","proficiency":7},{"title":"Visual Studio Code","proficiency":5},{"title":"Web Storm","proficiency":5},{"title":"Blender","proficiency":3}]},{"title":"Operating Systems","items":[{"title":"Windows","proficiency":9},{"title":"Mac OSX","proficiency":8}]}]}}
 
 /***/ }),
 /* 7 */,
@@ -905,7 +216,7 @@ module.exports = {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Popover = exports.Loader = exports.Button = exports.Col = exports.Row = undefined;
 
@@ -921,111 +232,111 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var Row = exports.Row = function Row(_ref) {
-	var children = _ref.children;
-	return createVNode(2, 'div', 'input-row', children);
+    var children = _ref.children;
+    return createVNode(2, 'div', 'input-row', children);
 };
 
 var Col = exports.Col = function Col(_ref2) {
-	var children = _ref2.children;
-	return createVNode(2, 'div', 'input-col', children);
+    var children = _ref2.children;
+    return createVNode(2, 'div', 'input-col', children);
 };
 
 var Cover = function Cover(_ref3) {
-	var type = _ref3.type;
+    var type = _ref3.type;
 
-	switch (type) {
-		case _enums2.default.level.success:
-			return createVNode(2, 'div', 'cover success', createVNode(2, 'span', 'fa fa-check'));
-		case _enums2.default.level.error:
-			return createVNode(2, 'div', 'cover error', createVNode(2, 'span', 'fa fa-times'));
-	}
+    switch (type) {
+        case _enums2.default.level.success:
+            return createVNode(2, 'div', 'cover success', createVNode(2, 'span', 'fa fa-check'));
+        case _enums2.default.level.error:
+            return createVNode(2, 'div', 'cover error', createVNode(2, 'span', 'fa fa-times'));
+    }
 
-	return null;
+    return null;
 };
 
 var Button = exports.Button = function Button(_ref4) {
-	var name = _ref4.name,
-	    anim = _ref4.anim,
-	    text = _ref4.text,
-	    icon = _ref4.icon,
-	    onClick = _ref4.onClick,
-	    loading = _ref4.loading,
-	    cover = _ref4.cover;
+    var name = _ref4.name,
+        anim = _ref4.anim,
+        text = _ref4.text,
+        icon = _ref4.icon,
+        onClick = _ref4.onClick,
+        loading = _ref4.loading,
+        cover = _ref4.cover;
 
-	var className = 'btn';
-	var coverItem = null;
-	var el = null;
-	var onLoad = function onLoad(_el) {
-		el = _el;
-	};
-	var onTouchEnd = function onTouchEnd() {
-		if (el) {
-			el.classList.add('no-hover');
-		}
-	};
+    var className = 'btn';
+    var coverItem = null;
+    var el = null;
+    var onLoad = function onLoad(_el) {
+        el = _el;
+    };
+    var onTouchEnd = function onTouchEnd() {
+        if (el) {
+            el.classList.add('no-hover');
+        }
+    };
 
-	if (name) {
-		className += ' ' + name + '-btn';
-	}
-	if (anim) {
-		className += ' anim';
-	}
-	if (loading) {
-		className += ' loading';
-	}
+    if (name) {
+        className += ' ' + name + '-btn';
+    }
+    if (anim) {
+        className += ' anim';
+    }
+    if (loading) {
+        className += ' loading';
+    }
 
-	if (cover) {
-		coverItem = createVNode(16, Cover, null, null, {
-			'type': cover
-		});
-	}
+    if (cover) {
+        coverItem = createVNode(16, Cover, null, null, {
+            'type': cover
+        });
+    }
 
-	return createVNode(2, 'button', className, [createVNode(2, 'span', 'text anim-out', text), createVNode(2, 'span', 'fa fa-' + icon + ' anim-in'), coverItem], {
-		'onTouchEnd': onTouchEnd,
-		'onClick': onClick
-	}, null, onLoad);
+    return createVNode(2, 'button', className, [createVNode(2, 'span', 'text anim-out', text), createVNode(2, 'span', 'fa fa-' + icon + ' anim-in'), coverItem], {
+        'onTouchEnd': onTouchEnd,
+        'onClick': onClick
+    }, null, onLoad);
 };
 
 var Loader = exports.Loader = function Loader(_ref5) {
-	var onRef = _ref5.onRef,
-	    active = _ref5.active;
+    var onRef = _ref5.onRef,
+        active = _ref5.active;
 
 
-	if (!active) {
-		return null;
-	}
+    if (!active) {
+        return null;
+    }
 
-	return createVNode(2, 'div', 'loader', createVNode(128, 'svg', 'circular', createVNode(2, 'circle', 'path', null, {
-		'cx': '50',
-		'cy': '50',
-		'r': '20',
-		'fill': 'none',
-		'stroke-width': '2',
-		'stroke-miterlimit': '10'
-	}), {
-		'viewBox': '25 25 50 50'
-	}), null, null, onRef);
+    return createVNode(2, 'div', 'loader', createVNode(128, 'svg', 'circular', createVNode(2, 'circle', 'path', null, {
+        'cx': '50',
+        'cy': '50',
+        'r': '20',
+        'fill': 'none',
+        'stroke-width': '2',
+        'stroke-miterlimit': '10'
+    }), {
+        'viewBox': '25 25 50 50'
+    }), null, null, onRef);
 };
 
 var Popover = exports.Popover = function Popover(_ref6) {
-	var display = _ref6.display,
-	    message = _ref6.message,
-	    level = _ref6.level,
-	    direction = _ref6.direction,
-	    arrow = _ref6.arrow;
+    var display = _ref6.display,
+        message = _ref6.message,
+        level = _ref6.level,
+        direction = _ref6.direction,
+        arrow = _ref6.arrow;
 
 
-	if (!display || !message) {
-		return null;
-	}
+    if (!display || !message) {
+        return null;
+    }
 
-	var className = 'popover has-' + (level || "error") + ' ' + (direction || "top");
+    var className = 'popover has-' + (level || "error") + ' ' + (direction || "top");
 
-	if (arrow) {
-		className += " arrow";
-	}
+    if (arrow) {
+        className += " arrow";
+    }
 
-	return createVNode(2, 'div', className, message);
+    return createVNode(2, 'div', className, message);
 };
 
 /***/ }),
@@ -1036,13 +347,13 @@ var Popover = exports.Popover = function Popover(_ref6) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 var enums = {
-	level: {
-		error: 'error',
-		success: 'success'
-	}
+    level: {
+        error: 'error',
+        success: 'success'
+    }
 };
 
 exports.default = enums;
@@ -1055,15 +366,15 @@ exports.default = enums;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 /* TODO */
 var logger = {
-	info: function info() {},
-	log: function log() {},
-	warn: function warn() {},
-	error: function error() {},
-	debug: function debug() {}
+    info: function info() {},
+    log: function log() {},
+    warn: function warn() {},
+    error: function error() {},
+    debug: function debug() {}
 };
 
 exports.default = logger;
@@ -1183,7 +494,7 @@ exports.default = utils;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -1239,24 +550,24 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var App = function (_Component) {
-	_inherits(App, _Component);
+    _inherits(App, _Component);
 
-	function App(props) {
-		_classCallCheck(this, App);
+    function App(props) {
+        _classCallCheck(this, App);
 
-		return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-	}
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+    }
 
-	_createClass(App, [{
-		key: 'render',
-		value: function render() {
-			return createVNode(16, _app2.default, null, null, {
-				children: [createVNode(16, _home2.default, null, null, _extends({}, this.props.home)), createVNode(16, _about2.default, null, null, _extends({}, this.props.about)), createVNode(16, _experiences2.default, null, null, _extends({}, this.props.experiences)), createVNode(16, _skills2.default, null, null, _extends({}, this.props.skills)), createVNode(16, _portfolio2.default, null, null, _extends({}, this.props.portfolio)), createVNode(16, _contact2.default, null, null, _extends({}, this.props.contact))]
-			});
-		}
-	}]);
+    _createClass(App, [{
+        key: 'render',
+        value: function render() {
+            return createVNode(16, _app2.default, null, null, {
+                children: [createVNode(16, _home2.default, null, null, _extends({}, this.props.home)), createVNode(16, _about2.default, null, null, _extends({}, this.props.about)), createVNode(16, _experiences2.default, null, null, _extends({}, this.props.experiences)), createVNode(16, _skills2.default, null, null, _extends({}, this.props.skills)), createVNode(16, _portfolio2.default, null, null, _extends({}, this.props.portfolio)), createVNode(16, _contact2.default, null, null, _extends({}, this.props.contact))]
+            });
+        }
+    }]);
 
-	return App;
+    return App;
 }(_infernoComponent2.default);
 
 exports.default = App;
@@ -1277,7 +588,7 @@ exports.default = App;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Description = exports.Detail = exports.Details = exports.Image = undefined;
 
@@ -1289,26 +600,26 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var Image = exports.Image = function Image(_ref) {
-	var src = _ref.src;
-	return createVNode(2, "div", "about-image col", createVNode(2, "img", null, null, {
-		"src": src
-	}));
+    var src = _ref.src;
+    return createVNode(2, "div", "about-image col", createVNode(2, "img", null, null, {
+        "src": src
+    }));
 };
 
 var Details = exports.Details = function Details(_ref2) {
-	var children = _ref2.children;
-	return createVNode(2, "div", "about-details col", children);
+    var children = _ref2.children;
+    return createVNode(2, "div", "about-details col", children);
 };
 
 var Detail = exports.Detail = function Detail(_ref3) {
-	var label = _ref3.label,
-	    value = _ref3.value;
-	return createVNode(2, "div", "detail", [createVNode(2, "p", "detail-label", [label, ":"]), createVNode(2, "p", "detail-value", value)]);
+    var label = _ref3.label,
+        value = _ref3.value;
+    return createVNode(2, "div", "detail", [createVNode(2, "p", "detail-label", [label, ":"]), createVNode(2, "p", "detail-value", value)]);
 };
 
 var Description = exports.Description = function Description(_ref4) {
-	var children = _ref4.children;
-	return createVNode(2, "div", "about-desc col", children);
+    var children = _ref4.children;
+    return createVNode(2, "div", "about-desc col", children);
 };
 
 /***/ }),
@@ -1319,7 +630,7 @@ var Description = exports.Description = function Description(_ref4) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _inferno = __webpack_require__(0);
@@ -1332,8 +643,8 @@ var createVNode = _inferno2.default.createVNode;
 
 
 var App = function App(_ref) {
-	var children = _ref.children;
-	return createVNode(2, "div", "app", children);
+    var children = _ref.children;
+    return createVNode(2, "div", "app", children);
 };
 
 exports.default = App;
@@ -1346,7 +657,7 @@ exports.default = App;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.MacbookPro = exports.IPad = exports.IPhone = exports.Display = exports.ImageCover = exports.Image = undefined;
 
@@ -1362,96 +673,96 @@ var createVNode = _inferno2.default.createVNode;
 
 
 var Device = function Device(_ref) {
-	var name = _ref.name,
-	    x = _ref.x,
-	    y = _ref.y,
-	    scale = _ref.scale,
-	    active = _ref.active,
-	    disabled = _ref.disabled,
-	    onClick = _ref.onClick,
-	    children = _ref.children;
+    var name = _ref.name,
+        x = _ref.x,
+        y = _ref.y,
+        scale = _ref.scale,
+        active = _ref.active,
+        disabled = _ref.disabled,
+        onClick = _ref.onClick,
+        children = _ref.children;
 
 
-	var styles = { transform: "translate(" + x + "px, " + y + "px) scale(" + scale + ")" };
-	var className = "device ios " + name;
+    var styles = { transform: "translate(" + x + "px, " + y + "px) scale(" + scale + ")" };
+    var className = "device ios " + name;
 
-	if (active) {
-		className += " active";
-	}
-	if (disabled) {
-		className += " disabled";
-	}
+    if (active) {
+        className += " active";
+    }
+    if (disabled) {
+        className += " disabled";
+    }
 
-	return createVNode(2, "div", className, children, {
-		"onClick": onClick,
-		"style": styles
-	});
+    return createVNode(2, "div", className, children, {
+        "onClick": onClick,
+        "style": styles
+    });
 };
 
 var Image = exports.Image = function Image(_ref2) {
-	var onRef = _ref2.onRef,
-	    onError = _ref2.onError,
-	    url = _ref2.url,
-	    y = _ref2.y,
-	    manualDrag = _ref2.manualDrag;
+    var onRef = _ref2.onRef,
+        onError = _ref2.onError,
+        url = _ref2.url,
+        y = _ref2.y,
+        manualDrag = _ref2.manualDrag;
 
 
-	var className = "";
-	var styles = {};
+    var className = "";
+    var styles = {};
 
-	if (y) {
-		styles.transform = "translateY(-" + y + "px)";
-	}
-	if (manualDrag) {
-		className += 'manual-drag';
-	}
+    if (y) {
+        styles.transform = "translateY(-" + y + "px)";
+    }
+    if (manualDrag) {
+        className += 'manual-drag';
+    }
 
-	return createVNode(2, "img", className, null, {
-		"style": styles,
-		"onError": onError,
-		"src": url
-	}, null, onRef);
+    return createVNode(2, "img", className, null, {
+        "style": styles,
+        "onError": onError,
+        "src": url
+    }, null, onRef);
 };
 
 var ImageCover = exports.ImageCover = function ImageCover(_ref3) {
-	var onDrag = _ref3.onDrag,
-	    onDragStart = _ref3.onDragStart,
-	    onDragEnd = _ref3.onDragEnd;
-	return createVNode(2, "div", "image-cover", null, {
-		"draggable": "true",
-		"onDrag": onDrag,
-		"onDragStart": onDragStart,
-		"onDragEnd": onDragEnd
-	});
+    var onDrag = _ref3.onDrag,
+        onDragStart = _ref3.onDragStart,
+        onDragEnd = _ref3.onDragEnd;
+    return createVNode(2, "div", "image-cover", null, {
+        "draggable": "true",
+        "onDrag": onDrag,
+        "onDragStart": onDragStart,
+        "onDragEnd": onDragEnd
+    });
 };
 
 var Display = exports.Display = function Display(_ref4) {
-	var children = _ref4.children;
-	return createVNode(2, "div", "display", children);
+    var children = _ref4.children;
+    return createVNode(2, "div", "display", children);
 };
 
 var IPhone = exports.IPhone = function IPhone(props) {
-	return createVNode(16, Device, null, null, _extends({
-		"name": "iphone"
-	}, props, {
-		children: [createVNode(2, "div", "silent cover-btn"), createVNode(2, "div", "vol-up cover-btn"), createVNode(2, "div", "vol-down cover-btn"), createVNode(2, "div", "power cover-btn"), createVNode(2, "div", "cover", [createVNode(2, "div", "strip top left"), createVNode(2, "div", "strip top right"), createVNode(2, "div", "strip bot left"), createVNode(2, "div", "strip bot right"), createVNode(2, "div", "screen", [createVNode(2, "div", "shadow"), createVNode(2, "div", "camera", createVNode(2, "div", "bulb")), createVNode(2, "div", "ear-speaker"), createVNode(2, "div", "home-btn", createVNode(2, "div", "inner-btn")), props.children])])]
-	}));
+    return createVNode(16, Device, null, null, _extends({
+        "name": "iphone"
+    }, props, {
+        children: [createVNode(2, "div", "silent cover-btn"), createVNode(2, "div", "vol-up cover-btn"), createVNode(2, "div", "vol-down cover-btn"), createVNode(2, "div", "power cover-btn"), createVNode(2, "div", "cover", [createVNode(2, "div", "strip top left"), createVNode(2, "div", "strip top right"), createVNode(2, "div", "strip bot left"), createVNode(2, "div", "strip bot right"), createVNode(2, "div", "screen", [createVNode(2, "div", "shadow"), createVNode(2, "div", "camera", createVNode(2, "div", "bulb")), createVNode(2, "div", "ear-speaker"), createVNode(2, "div", "home-btn", createVNode(2, "div", "inner-btn")), props.children])])]
+    }));
 };
 
 var IPad = exports.IPad = function IPad(props) {
-	return createVNode(16, Device, null, null, _extends({
-		"name": "ipad v9_7"
-	}, props, {
-		children: createVNode(2, "div", "cover", createVNode(2, "div", "screen", [createVNode(2, "div", "camera", createVNode(2, "div", "bulb")), createVNode(2, "div", "home-btn", createVNode(2, "div", "inner-btn")), props.children]))
-	}));
+    return createVNode(16, Device, null, null, _extends({
+        "name": "ipad v9_7"
+    }, props, {
+        children: createVNode(2, "div", "cover", createVNode(2, "div", "screen", [createVNode(2, "div", "camera", createVNode(2, "div", "bulb")), createVNode(2, "div", "home-btn", createVNode(2, "div", "inner-btn")), props.children]))
+    }));
 };
 
 var MacbookPro = exports.MacbookPro = function MacbookPro(props) {
-	return createVNode(16, Device, null, null, _extends({
-		"name": "macbook-pro"
-	}, props, {
-		children: [createVNode(2, "div", "cover", createVNode(2, "div", "screen", [createVNode(2, "div", "camera", createVNode(2, "div", "bulb")), props.children, createVNode(2, "div", "logo", createVNode(2, "span", "text fa fa-apple"))])), createVNode(2, "div", "bottom", [createVNode(2, "div", "front-top", createVNode(2, "div", "indention")), createVNode(2, "div", "front-bot")])]
-	}));
+    return createVNode(16, Device, null, null, _extends({
+        "name": "macbook-pro"
+    }, props, {
+        children: [createVNode(2, "div", "cover", createVNode(2, "div", "screen", [createVNode(2, "div", "camera", createVNode(2, "div", "bulb")), props.children, createVNode(2, "div", "logo", createVNode(2, "span", "text fa fa-apple"))])), createVNode(2, "div", "bottom", [createVNode(2, "div", "front-top", createVNode(2, "div", "indention")), createVNode(2, "div", "front-bot")])]
+    }));
 };
 
 /***/ }),
@@ -1462,7 +773,7 @@ var MacbookPro = exports.MacbookPro = function MacbookPro(props) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Item = exports.Site = exports.Location = exports.Link = exports.List = undefined;
 
@@ -1476,54 +787,54 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var List = exports.List = function List(_ref) {
-	var children = _ref.children;
-	return createVNode(2, "ul", "experience-list", children);
+    var children = _ref.children;
+    return createVNode(2, "ul", "experience-list", children);
 };
 
 var Link = exports.Link = function Link(_ref2) {
-	var type = _ref2.type,
-	    target = _ref2.target,
-	    href = _ref2.href,
-	    icon = _ref2.icon,
-	    text = _ref2.text;
-	return createVNode(2, "li", "item-" + type, createVNode(2, "a", "link", [createVNode(2, "span", "fa fa-" + icon), createVNode(2, "span", "text", text)], {
-		"target": target,
-		"href": href
-	}));
+    var type = _ref2.type,
+        target = _ref2.target,
+        href = _ref2.href,
+        icon = _ref2.icon,
+        text = _ref2.text;
+    return createVNode(2, "li", "item-" + type, createVNode(2, "a", "link", [createVNode(2, "span", "fa fa-" + icon), createVNode(2, "span", "text", text)], {
+        "target": target,
+        "href": href
+    }));
 };
 
 var Location = exports.Location = function Location(_ref3) {
-	var address = _ref3.address;
-	return createVNode(16, Link, null, null, {
-		"type": "location",
-		"target": "google-maps",
-		"href": "http://maps.google.com/maps?q=" + address,
-		"icon": "map-marker",
-		"text": address
-	});
+    var address = _ref3.address;
+    return createVNode(16, Link, null, null, {
+        "type": "location",
+        "target": "google-maps",
+        "href": "http://maps.google.com/maps?q=" + address,
+        "icon": "map-marker",
+        "text": address
+    });
 };
 
 var Site = exports.Site = function Site(_ref4) {
-	var domain = _ref4.domain,
-	    protocol = _ref4.protocol;
-	return createVNode(16, Link, null, null, {
-		"type": "site",
-		"target": "site",
-		"href": "" + (protocol || "http://") + domain,
-		"icon": "external-link",
-		"text": domain
-	});
+    var domain = _ref4.domain,
+        protocol = _ref4.protocol;
+    return createVNode(16, Link, null, null, {
+        "type": "site",
+        "target": "site",
+        "href": "" + (protocol || "http://") + domain,
+        "icon": "external-link",
+        "text": domain
+    });
 };
 
 var Item = exports.Item = function Item(_ref5) {
-	var company = _ref5.company,
-	    start = _ref5.start,
-	    end = _ref5.end,
-	    title = _ref5.title,
-	    description = _ref5.description,
-	    location = _ref5.location,
-	    site = _ref5.site;
-	return createVNode(2, "li", "experience-item", [createVNode(2, "div", "item-info", [createVNode(2, "div", "item-company", company), createVNode(2, "div", "item-timespan", start + " - " + end)]), createVNode(2, "div", "item-details", [createVNode(2, "p", "item-title", title), createVNode(2, "p", "item-description", description), createVNode(2, "ul", "item-links", [location ? createVNode(16, Location, null, null, _extends({}, location)) : null, site ? createVNode(16, Site, null, null, _extends({}, site)) : null])])]);
+    var company = _ref5.company,
+        start = _ref5.start,
+        end = _ref5.end,
+        title = _ref5.title,
+        description = _ref5.description,
+        location = _ref5.location,
+        site = _ref5.site;
+    return createVNode(2, "li", "experience-item", [createVNode(2, "div", "item-info", [createVNode(2, "div", "item-company", company), createVNode(2, "div", "item-timespan", start + " - " + end)]), createVNode(2, "div", "item-details", [createVNode(2, "p", "item-title", title), createVNode(2, "p", "item-description", description), createVNode(2, "ul", "item-links", [location ? createVNode(16, Location, null, null, _extends({}, location)) : null, site ? createVNode(16, Site, null, null, _extends({}, site)) : null])])]);
 };
 
 /***/ }),
@@ -1534,7 +845,7 @@ var Item = exports.Item = function Item(_ref5) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Item = exports.List = undefined;
 
@@ -1546,36 +857,36 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var List = exports.List = function List(_ref) {
-	var children = _ref.children;
-	return createVNode(2, 'ul', 'portfolio-list', children);
+    var children = _ref.children;
+    return createVNode(2, 'ul', 'portfolio-list', children);
 };
 
 var Item = exports.Item = function Item(_ref2) {
-	var title = _ref2.title,
-	    description = _ref2.description,
-	    background = _ref2.background,
-	    onPreview = _ref2.onPreview,
-	    href = _ref2.href;
+    var title = _ref2.title,
+        description = _ref2.description,
+        background = _ref2.background,
+        onPreview = _ref2.onPreview,
+        href = _ref2.href;
 
 
-	var el = null;
-	var onLoad = function onLoad(_el) {
-		el = _el;
-	};
-	var onTouchEnd = function onTouchEnd() {
-		if (el) {
-			el.classList.add('no-hover');
-		}
-	};
+    var el = null;
+    var onLoad = function onLoad(_el) {
+        el = _el;
+    };
+    var onTouchEnd = function onTouchEnd() {
+        if (el) {
+            el.classList.add('no-hover');
+        }
+    };
 
-	return createVNode(2, 'li', 'portfolio-item', createVNode(2, 'a', 'anim', [createVNode(2, 'img', 'item-image', null, {
-		'src': background
-	}), createVNode(2, 'div', 'item-cover', [createVNode(2, 'div', 'cover-title', title), createVNode(2, 'div', 'cover-details', description)]), createVNode(2, 'button', 'btn preview-btn', [createVNode(2, 'span', 'fa fa-search-plus anim-out'), createVNode(2, 'span', 'text anim-in', 'Preview')])], {
-		'onTouchEnd': onTouchEnd,
-		'href': href,
-		'target': 'mock',
-		'onClick': onPreview
-	}, null, onLoad));
+    return createVNode(2, 'li', 'portfolio-item', createVNode(2, 'a', 'anim', [createVNode(2, 'img', 'item-image', null, {
+        'src': background
+    }), createVNode(2, 'div', 'item-cover', [createVNode(2, 'div', 'cover-title', title), createVNode(2, 'div', 'cover-details', description)]), createVNode(2, 'button', 'btn preview-btn', [createVNode(2, 'span', 'fa fa-search-plus anim-out'), createVNode(2, 'span', 'text anim-in', 'Preview')])], {
+        'onTouchEnd': onTouchEnd,
+        'href': href,
+        'target': 'mock',
+        'onClick': onPreview
+    }, null, onLoad));
 };
 
 /***/ }),
@@ -1586,7 +897,7 @@ var Item = exports.Item = function Item(_ref2) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Button = exports.Popup = undefined;
 
@@ -1598,54 +909,54 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var Popup = exports.Popup = function Popup(_ref) {
-	var onLoad = _ref.onLoad,
-	    children = _ref.children;
-	return createVNode(2, "div", "previewer show", [createVNode(2, "div", "previewer-cover"), createVNode(2, "div", "previewer-content", children, null, null, onLoad)]);
+    var onLoad = _ref.onLoad,
+        children = _ref.children;
+    return createVNode(2, "div", "previewer show", [createVNode(2, "div", "previewer-cover"), createVNode(2, "div", "previewer-content", children, null, null, onLoad)]);
 };
 
 var Button = exports.Button = function Button(_ref2) {
-	var name = _ref2.name,
-	    anim = _ref2.anim,
-	    text = _ref2.text,
-	    icon = _ref2.icon,
-	    onClick = _ref2.onClick;
+    var name = _ref2.name,
+        anim = _ref2.anim,
+        text = _ref2.text,
+        icon = _ref2.icon,
+        onClick = _ref2.onClick;
 
 
-	var className = void 0,
-	    iconName = void 0,
-	    el = void 0,
-	    onLoad = void 0,
-	    onTouchEnd = void 0;
+    var className = void 0,
+        iconName = void 0,
+        el = void 0,
+        onLoad = void 0,
+        onTouchEnd = void 0;
 
-	className = 'btn';
-	iconName = 'anim-out';
-	el = null;
-	onLoad = function onLoad(_el) {
-		el = _el;
-	};
-	onTouchEnd = function onTouchEnd() {
-		if (el) {
-			el.classList.add('no-hover');
-		}
-	};
+    className = 'btn';
+    iconName = 'anim-out';
+    el = null;
+    onLoad = function onLoad(_el) {
+        el = _el;
+    };
+    onTouchEnd = function onTouchEnd() {
+        if (el) {
+            el.classList.add('no-hover');
+        }
+    };
 
-	if (name) {
-		className += " " + name + "-btn";
-	}
-	if (anim) {
-		className += " anim";
-	}
+    if (name) {
+        className += " " + name + "-btn";
+    }
+    if (anim) {
+        className += " anim";
+    }
 
-	if (name.includes('close')) {
-		iconName += " icon -close";
-	} else {
-		iconName += " fa fa-" + icon;
-	}
+    if (name.includes('close')) {
+        iconName += " icon -close";
+    } else {
+        iconName += " fa fa-" + icon;
+    }
 
-	return createVNode(2, "button", className, [createVNode(2, "span", iconName), createVNode(2, "span", "text anim-in", text)], {
-		"onTouchEnd": onTouchEnd,
-		"onClick": onClick
-	}, null, onLoad);
+    return createVNode(2, "button", className, [createVNode(2, "span", iconName), createVNode(2, "span", "text anim-in", text)], {
+        "onTouchEnd": onTouchEnd,
+        "onClick": onClick
+    }, null, onLoad);
 };
 
 /***/ }),
@@ -1656,7 +967,7 @@ var Button = exports.Button = function Button(_ref2) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Item = exports.List = undefined;
 
@@ -1668,16 +979,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var List = exports.List = function List(_ref) {
-	var children = _ref.children;
-	return createVNode(2, "ul", "skills-list", children);
+    var children = _ref.children;
+    return createVNode(2, "ul", "skills-list", children);
 };
 
 var Item = exports.Item = function Item(_ref2) {
-	var title = _ref2.title,
-	    proficiency = _ref2.proficiency;
-	return createVNode(2, "li", "skills-item", [createVNode(2, "div", "item-title", title), createVNode(2, "div", "item-bar", null, {
-		"fill": proficiency
-	})]);
+    var title = _ref2.title,
+        proficiency = _ref2.proficiency;
+    return createVNode(2, "li", "skills-item", [createVNode(2, "div", "item-title", title), createVNode(2, "div", "item-bar", null, {
+        "fill": proficiency
+    })]);
 };
 
 /***/ }),
@@ -1688,7 +999,7 @@ var Item = exports.Item = function Item(_ref2) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.SocialLink = exports.SocialList = undefined;
 
@@ -1700,32 +1011,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var createVNode = _inferno2.default.createVNode;
 var SocialList = exports.SocialList = function SocialList(_ref) {
-	var children = _ref.children;
-	return createVNode(2, 'div', 'social', children);
+    var children = _ref.children;
+    return createVNode(2, 'div', 'social', children);
 };
 
 var SocialLink = exports.SocialLink = function SocialLink(_ref2) {
-	var type = _ref2.type,
-	    href = _ref2.href,
-	    text = _ref2.text,
-	    icon = _ref2.icon;
+    var type = _ref2.type,
+        href = _ref2.href,
+        text = _ref2.text,
+        icon = _ref2.icon;
 
 
-	var el = null;
-	var onLoad = function onLoad(_el) {
-		el = _el;
-	};
-	var onTouchEnd = function onTouchEnd() {
-		if (el) {
-			el.classList.add('no-hover');
-		}
-	};
+    var el = null;
+    var onLoad = function onLoad(_el) {
+        el = _el;
+    };
+    var onTouchEnd = function onTouchEnd() {
+        if (el) {
+            el.classList.add('no-hover');
+        }
+    };
 
-	return createVNode(2, 'a', 'social-link ' + type + ' anim', [createVNode(2, 'span', 'fa fa-' + icon + ' anim-out'), createVNode(2, 'span', 'text anim-in', text)], {
-		'onTouchEnd': onTouchEnd,
-		'target': 'social',
-		'href': href
-	}, null, onLoad);
+    return createVNode(2, 'a', 'social-link ' + type + ' anim', [createVNode(2, 'span', 'fa fa-' + icon + ' anim-out'), createVNode(2, 'span', 'text anim-in', text)], {
+        'onTouchEnd': onTouchEnd,
+        'target': 'social',
+        'href': href
+    }, null, onLoad);
 };
 
 /***/ }),
@@ -1736,7 +1047,7 @@ var SocialLink = exports.SocialLink = function SocialLink(_ref2) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.MacbookPro = exports.IPad = exports.IPhone = undefined;
 
@@ -1771,366 +1082,366 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var Device = function (_Component) {
-	_inherits(Device, _Component);
+    _inherits(Device, _Component);
 
-	function Device(props, naturalState) {
-		_classCallCheck(this, Device);
+    function Device(props, naturalState) {
+        _classCallCheck(this, Device);
 
-		var _this = _possibleConstructorReturn(this, (Device.__proto__ || Object.getPrototypeOf(Device)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Device.__proto__ || Object.getPrototypeOf(Device)).call(this, props));
 
-		_this.scroll = _this.scroll.bind(_this);
-		_this.onClick = _this.onClick.bind(_this);
-		_this.onLoaderRef = _this.onLoaderRef.bind(_this);
-		_this.onImageRef = _this.onImageRef.bind(_this);
-		_this.onImageError = _this.onImageError.bind(_this);
-		_this.onDrag = _this.onDrag.bind(_this);
-		_this.onDragStart = _this.onDragStart.bind(_this);
-		_this.onDragEnd = _this.onDragEnd.bind(_this);
+        _this.scroll = _this.scroll.bind(_this);
+        _this.onClick = _this.onClick.bind(_this);
+        _this.onLoaderRef = _this.onLoaderRef.bind(_this);
+        _this.onImageRef = _this.onImageRef.bind(_this);
+        _this.onImageError = _this.onImageError.bind(_this);
+        _this.onDrag = _this.onDrag.bind(_this);
+        _this.onDragStart = _this.onDragStart.bind(_this);
+        _this.onDragEnd = _this.onDragEnd.bind(_this);
 
-		_this.states = { natural: naturalState };
-		_this.dx = 2 * _this.props.index + 1 - _this.props.deviceCount;
-		_this.dxp = _this.dx / (2 * _this.props.deviceCount);
-		_this.imgBounds = {};
+        _this.states = { natural: naturalState };
+        _this.dx = 2 * _this.props.index + 1 - _this.props.deviceCount;
+        _this.dxp = _this.dx / (2 * _this.props.deviceCount);
+        _this.imgBounds = {};
 
-		_this.state = {
-			ready: false,
-			x: 0,
-			y: 0,
-			scale: 0,
-			offsetY: 0,
-			disabled: false,
-			manualDrag: false
-		};
-		return _this;
-	}
+        _this.state = {
+            ready: false,
+            x: 0,
+            y: 0,
+            scale: 0,
+            offsetY: 0,
+            disabled: false,
+            manualDrag: false
+        };
+        return _this;
+    }
 
-	_createClass(Device, [{
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
+    _createClass(Device, [{
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
 
-			this.setActiveProps(nextProps.activeProps);
-			this.setInactiveProps(nextProps.inactiveProps);
+            this.setActiveProps(nextProps.activeProps);
+            this.setInactiveProps(nextProps.inactiveProps);
 
-			var state = this.getTransformProps(nextProps);
+            var state = this.getTransformProps(nextProps);
 
-			if (state) {
-				if (nextProps.image != this.props.image) {
-					if (this.imageEl && this.loaderEl) {
-						this.loaderEl.style.zIndex = 3;
-						this.imageEl.style.zIndex = -1;
-					}
-				}
+            if (state) {
+                if (nextProps.image != this.props.image) {
+                    if (this.imageEl && this.loaderEl) {
+                        this.loaderEl.style.zIndex = 3;
+                        this.imageEl.style.zIndex = -1;
+                    }
+                }
 
-				if (this.state.disabled && nextProps.image != this.props.image) {
-					state.disabled = false;
-				}
+                if (this.state.disabled && nextProps.image != this.props.image) {
+                    state.disabled = false;
+                }
 
-				this.clearScrollTimeout();
+                this.clearScrollTimeout();
 
-				if (nextProps.active) {
-					this.scrollTimeout = setTimeout(this.scroll, _constants2.default.previewer.scrollTimeout);
-				}
+                if (nextProps.active) {
+                    this.scrollTimeout = setTimeout(this.scroll, _constants2.default.previewer.scrollTimeout);
+                }
 
-				this.setState(state);
-			}
-		}
-	}, {
-		key: 'clearScrollTimeout',
-		value: function clearScrollTimeout() {
-			if (this.scrollTimeout) {
-				clearTimeout(this.scrollTimeout);
-			}
-			this.scrollTimeout = null;
-		}
-	}, {
-		key: 'onLoaderRef',
-		value: function onLoaderRef(el) {
-			if (el) {
-				this.loaderEl = el;
-			}
-		}
-	}, {
-		key: 'onImageRef',
-		value: function onImageRef(el) {
-			var _this2 = this;
+                this.setState(state);
+            }
+        }
+    }, {
+        key: 'clearScrollTimeout',
+        value: function clearScrollTimeout() {
+            if (this.scrollTimeout) {
+                clearTimeout(this.scrollTimeout);
+            }
+            this.scrollTimeout = null;
+        }
+    }, {
+        key: 'onLoaderRef',
+        value: function onLoaderRef(el) {
+            if (el) {
+                this.loaderEl = el;
+            }
+        }
+    }, {
+        key: 'onImageRef',
+        value: function onImageRef(el) {
+            var _this2 = this;
 
-			if (el) {
+            if (el) {
 
-				this.imageEl = el;
+                this.imageEl = el;
 
-				el.addEventListener('load', function () {
+                el.addEventListener('load', function () {
 
-					el.style.zIndex = 0;
+                    el.style.zIndex = 0;
 
-					if (_this2.loaderEl) {
-						_this2.loaderEl.style.zIndex = -1;
-					}
+                    if (_this2.loaderEl) {
+                        _this2.loaderEl.style.zIndex = -1;
+                    }
 
-					_this2.imgBounds = {
-						width: el.naturalWidth,
-						height: el.naturalHeight
-					};
+                    _this2.imgBounds = {
+                        width: el.naturalWidth,
+                        height: el.naturalHeight
+                    };
 
-					if (_this2.imgBounds.width === 0 && _this2.imgBounds.height === 0) {
-						debugger;
-					}
-				});
-			} else {
-				this.imgBounds = {};
-			}
-		}
-	}, {
-		key: 'onImageError',
-		value: function onImageError() {
-			this.imgBounds = {};
+                    if (_this2.imgBounds.width === 0 && _this2.imgBounds.height === 0) {
+                        debugger;
+                    }
+                });
+            } else {
+                this.imgBounds = {};
+            }
+        }
+    }, {
+        key: 'onImageError',
+        value: function onImageError() {
+            this.imgBounds = {};
 
-			this.setState({ disabled: true });
-		}
-	}, {
-		key: 'getTransformProps',
-		value: function getTransformProps(props) {
+            this.setState({ disabled: true });
+        }
+    }, {
+        key: 'getTransformProps',
+        value: function getTransformProps(props) {
 
-			var state = props.active ? this.states.active : this.states.inactive;
+            var state = props.active ? this.states.active : this.states.inactive;
 
-			if (!state) {
-				return null;
-			}
+            if (!state) {
+                return null;
+            }
 
-			if (state.x !== this.state.x || state.y !== this.state.y || state.scale !== this.state.scale || !this.state.ready) {
+            if (state.x !== this.state.x || state.y !== this.state.y || state.scale !== this.state.scale || !this.state.ready) {
 
-				return {
-					ready: true,
-					x: state.x.toFixed(2),
-					y: state.y.toFixed(2),
-					scale: state.scale.toFixed(2),
-					offsetY: 0
-				};
-			}
+                return {
+                    ready: true,
+                    x: state.x.toFixed(2),
+                    y: state.y.toFixed(2),
+                    scale: state.scale.toFixed(2),
+                    offsetY: 0
+                };
+            }
 
-			return null;
-		}
-	}, {
-		key: 'setActiveProps',
-		value: function setActiveProps(props) {
+            return null;
+        }
+    }, {
+        key: 'setActiveProps',
+        value: function setActiveProps(props) {
 
-			if (props.stage === this.props.activeProps.stage) {
-				return;
-			}
+            if (props.stage === this.props.activeProps.stage) {
+                return;
+            }
 
-			var state = {};
+            var state = {};
 
-			state.scale = Math.min(props.maxWidth / this.states.natural.width, props.maxHeight / this.states.natural.height);
+            state.scale = Math.min(props.maxWidth / this.states.natural.width, props.maxHeight / this.states.natural.height);
 
-			state.x = 0;
-			state.y = props.top + (props.maxHeight - this.states.natural.height) / 2;
+            state.x = 0;
+            state.y = props.top + (props.maxHeight - this.states.natural.height) / 2;
 
-			this.states.active = state;
-		}
-	}, {
-		key: 'setInactiveProps',
-		value: function setInactiveProps(props) {
+            this.states.active = state;
+        }
+    }, {
+        key: 'setInactiveProps',
+        value: function setInactiveProps(props) {
 
-			if (props.stage === this.props.inactiveProps.stage) {
-				return;
-			}
+            if (props.stage === this.props.inactiveProps.stage) {
+                return;
+            }
 
-			var state = {};
+            var state = {};
 
-			state.scale = Math.min(props.maxWidth / this.states.natural.width, props.maxHeight / this.states.natural.height);
+            state.scale = Math.min(props.maxWidth / this.states.natural.width, props.maxHeight / this.states.natural.height);
 
-			state.x = props.fullWidth * this.dxp;
-			state.y = props.bottom + 0.5 * (this.states.natural.height - this.states.natural.height * state.scale) - this.states.natural.height;
+            state.x = props.fullWidth * this.dxp;
+            state.y = props.bottom + 0.5 * (this.states.natural.height - this.states.natural.height * state.scale) - this.states.natural.height;
 
-			this.states.inactive = state;
-		}
-	}, {
-		key: 'scroll',
-		value: function scroll() {
-			var offset = void 0,
-			    imgHeight = void 0,
-			    display = void 0;
+            this.states.inactive = state;
+        }
+    }, {
+        key: 'scroll',
+        value: function scroll() {
+            var offset = void 0,
+                imgHeight = void 0,
+                display = void 0;
 
-			imgHeight = this.imgBounds.height * this.states.natural.displayWidth / this.imgBounds.width;
-			display = this.states.natural.displayHeight;
-			offset = this.state.offsetY + display;
+            imgHeight = this.imgBounds.height * this.states.natural.displayWidth / this.imgBounds.width;
+            display = this.states.natural.displayHeight;
+            offset = this.state.offsetY + display;
 
-			// should scroll
-			if (imgHeight && imgHeight > offset) {
+            // should scroll
+            if (imgHeight && imgHeight > offset) {
 
-				// check maximum scroll height
-				if (offset < imgHeight - display) {
+                // check maximum scroll height
+                if (offset < imgHeight - display) {
 
-					// we can still scroll
-					this.scrollTimeout = setTimeout(this.scroll, _constants2.default.previewer.scrollTimeout);
-				} else {
+                    // we can still scroll
+                    this.scrollTimeout = setTimeout(this.scroll, _constants2.default.previewer.scrollTimeout);
+                } else {
 
-					// ensure we don't passed the image.
-					offset = imgHeight - display;
-				}
+                    // ensure we don't passed the image.
+                    offset = imgHeight - display;
+                }
 
-				this.setState({ offsetY: offset, manualDrag: false });
-			}
-		}
-	}, {
-		key: 'onClick',
-		value: function onClick(e) {
-			if (!this.props.active && !String.isNullOrEmpty(this.props.image) && typeof this.props.onActivate === 'function') {
+                this.setState({ offsetY: offset, manualDrag: false });
+            }
+        }
+    }, {
+        key: 'onClick',
+        value: function onClick(e) {
+            if (!this.props.active && !String.isNullOrEmpty(this.props.image) && typeof this.props.onActivate === 'function') {
 
-				this.props.onActivate();
-			}
-		}
-	}, {
-		key: 'onDrag',
-		value: function onDrag(e) {
-			if (e.x && e.y && this.props.active && this.dragEvent && this.state.scale > 0) {
+                this.props.onActivate();
+            }
+        }
+    }, {
+        key: 'onDrag',
+        value: function onDrag(e) {
+            if (e.x && e.y && this.props.active && this.dragEvent && this.state.scale > 0) {
 
-				var dy = (this.dragEvent.y - e.y) * 2 / this.state.scale;
-				var offset = this.state.offsetY + dy;
+                var dy = (this.dragEvent.y - e.y) * 2 / this.state.scale;
+                var offset = this.state.offsetY + dy;
 
-				if (offset !== this.state.offsetY && offset >= 0 && offset <= this.dragEvent.maxOffset) {
+                if (offset !== this.state.offsetY && offset >= 0 && offset <= this.dragEvent.maxOffset) {
 
-					this.setState({ offsetY: offset, manualDrag: true });
-				}
+                    this.setState({ offsetY: offset, manualDrag: true });
+                }
 
-				this.dragEvent.x = e.x;
-				this.dragEvent.y = e.y;
-			}
-		}
-	}, {
-		key: 'onDragStart',
-		value: function onDragStart(e) {
-			if (this.props.active && this.imgBounds.width && this.imgBounds.height) {
+                this.dragEvent.x = e.x;
+                this.dragEvent.y = e.y;
+            }
+        }
+    }, {
+        key: 'onDragStart',
+        value: function onDragStart(e) {
+            if (this.props.active && this.imgBounds.width && this.imgBounds.height) {
 
-				this.dragEvent = {
-					maxOffset: this.imgBounds.height * this.states.natural.displayWidth / this.imgBounds.width - this.states.natural.displayHeight,
-					x: e.x,
-					y: e.y
-				};
+                this.dragEvent = {
+                    maxOffset: this.imgBounds.height * this.states.natural.displayWidth / this.imgBounds.width - this.states.natural.displayHeight,
+                    x: e.x,
+                    y: e.y
+                };
 
-				this.clearScrollTimeout();
-			}
-		}
-	}, {
-		key: 'onDragEnd',
-		value: function onDragEnd(e) {
+                this.clearScrollTimeout();
+            }
+        }
+    }, {
+        key: 'onDragEnd',
+        value: function onDragEnd(e) {
 
-			this.dragEvent = null;
-			this.scrollTimeout = setTimeout(this.scroll, _constants2.default.previewer.scrollTimeout);
-		}
-	}, {
-		key: 'getDeviceElProps',
-		value: function getDeviceElProps() {
-			return {
-				onClick: this.onClick,
-				disabled: this.state.disabled || String.isNullOrEmpty(this.props.image),
-				active: this.props.active,
-				scale: this.state.scale,
-				x: this.state.x,
-				y: this.state.y
-			};
-		}
-	}, {
-		key: 'getElChildren',
-		value: function getElChildren() {
-			return createVNode(16, _devices.Display, null, null, {
-				children: [createVNode(16, _devices.Image, null, null, {
-					'manualDrag': this.state.manualDrag,
-					'onError': this.onImageError,
-					'onRef': this.onImageRef,
-					'url': this.props.image,
-					'y': this.state.offsetY.toFixed(2)
-				}), createVNode(16, _devices.ImageCover, null, null, {
-					'onDrag': this.onDrag,
-					'onDragStart': this.onDragStart,
-					'onDragEnd': this.onDragEnd
-				}), createVNode(16, _form.Loader, null, null, {
-					'onRef': this.onLoaderRef,
-					'active': 'true'
-				})]
-			});
-		}
-	}]);
+            this.dragEvent = null;
+            this.scrollTimeout = setTimeout(this.scroll, _constants2.default.previewer.scrollTimeout);
+        }
+    }, {
+        key: 'getDeviceElProps',
+        value: function getDeviceElProps() {
+            return {
+                onClick: this.onClick,
+                disabled: this.state.disabled || String.isNullOrEmpty(this.props.image),
+                active: this.props.active,
+                scale: this.state.scale,
+                x: this.state.x,
+                y: this.state.y
+            };
+        }
+    }, {
+        key: 'getElChildren',
+        value: function getElChildren() {
+            return createVNode(16, _devices.Display, null, null, {
+                children: [createVNode(16, _devices.Image, null, null, {
+                    'manualDrag': this.state.manualDrag,
+                    'onError': this.onImageError,
+                    'onRef': this.onImageRef,
+                    'url': this.props.image,
+                    'y': this.state.offsetY.toFixed(2)
+                }), createVNode(16, _devices.ImageCover, null, null, {
+                    'onDrag': this.onDrag,
+                    'onDragStart': this.onDragStart,
+                    'onDragEnd': this.onDragEnd
+                }), createVNode(16, _form.Loader, null, null, {
+                    'onRef': this.onLoaderRef,
+                    'active': 'true'
+                })]
+            });
+        }
+    }]);
 
-	return Device;
+    return Device;
 }(_infernoComponent2.default);
 
 var IPhone = exports.IPhone = function (_Device) {
-	_inherits(IPhone, _Device);
+    _inherits(IPhone, _Device);
 
-	function IPhone(props) {
-		_classCallCheck(this, IPhone);
+    function IPhone(props) {
+        _classCallCheck(this, IPhone);
 
-		return _possibleConstructorReturn(this, (IPhone.__proto__ || Object.getPrototypeOf(IPhone)).call(this, props, _constants2.default.devices.iphone));
-	}
+        return _possibleConstructorReturn(this, (IPhone.__proto__ || Object.getPrototypeOf(IPhone)).call(this, props, _constants2.default.devices.iphone));
+    }
 
-	_createClass(IPhone, [{
-		key: 'render',
-		value: function render() {
-			if (!this.state.ready) {
-				return null;
-			}
+    _createClass(IPhone, [{
+        key: 'render',
+        value: function render() {
+            if (!this.state.ready) {
+                return null;
+            }
 
-			return createVNode(16, _devices.IPhone, null, null, _extends({}, this.getDeviceElProps(), {
-				children: this.getElChildren()
-			}));
-		}
-	}]);
+            return createVNode(16, _devices.IPhone, null, null, _extends({}, this.getDeviceElProps(), {
+                children: this.getElChildren()
+            }));
+        }
+    }]);
 
-	return IPhone;
+    return IPhone;
 }(Device);
 
 IPhone.type = "iphone";
 
 var IPad = exports.IPad = function (_Device2) {
-	_inherits(IPad, _Device2);
+    _inherits(IPad, _Device2);
 
-	function IPad(props) {
-		_classCallCheck(this, IPad);
+    function IPad(props) {
+        _classCallCheck(this, IPad);
 
-		return _possibleConstructorReturn(this, (IPad.__proto__ || Object.getPrototypeOf(IPad)).call(this, props, _constants2.default.devices.ipad));
-	}
+        return _possibleConstructorReturn(this, (IPad.__proto__ || Object.getPrototypeOf(IPad)).call(this, props, _constants2.default.devices.ipad));
+    }
 
-	_createClass(IPad, [{
-		key: 'render',
-		value: function render() {
-			if (!this.state.ready) {
-				return null;
-			}
+    _createClass(IPad, [{
+        key: 'render',
+        value: function render() {
+            if (!this.state.ready) {
+                return null;
+            }
 
-			return createVNode(16, _devices.IPad, null, null, _extends({}, this.getDeviceElProps(), {
-				children: this.getElChildren()
-			}));
-		}
-	}]);
+            return createVNode(16, _devices.IPad, null, null, _extends({}, this.getDeviceElProps(), {
+                children: this.getElChildren()
+            }));
+        }
+    }]);
 
-	return IPad;
+    return IPad;
 }(Device);
 
 IPad.type = "ipad";
 
 var MacbookPro = exports.MacbookPro = function (_Device3) {
-	_inherits(MacbookPro, _Device3);
+    _inherits(MacbookPro, _Device3);
 
-	function MacbookPro(props) {
-		_classCallCheck(this, MacbookPro);
+    function MacbookPro(props) {
+        _classCallCheck(this, MacbookPro);
 
-		return _possibleConstructorReturn(this, (MacbookPro.__proto__ || Object.getPrototypeOf(MacbookPro)).call(this, props, _constants2.default.devices.macbookPro));
-	}
+        return _possibleConstructorReturn(this, (MacbookPro.__proto__ || Object.getPrototypeOf(MacbookPro)).call(this, props, _constants2.default.devices.macbookPro));
+    }
 
-	_createClass(MacbookPro, [{
-		key: 'render',
-		value: function render() {
-			if (!this.state.ready) {
-				return null;
-			}
+    _createClass(MacbookPro, [{
+        key: 'render',
+        value: function render() {
+            if (!this.state.ready) {
+                return null;
+            }
 
-			return createVNode(16, _devices.MacbookPro, null, null, _extends({}, this.getDeviceElProps(), {
-				children: this.getElChildren()
-			}));
-		}
-	}]);
+            return createVNode(16, _devices.MacbookPro, null, null, _extends({}, this.getDeviceElProps(), {
+                children: this.getElChildren()
+            }));
+        }
+    }]);
 
-	return MacbookPro;
+    return MacbookPro;
 }(Device);
 
 MacbookPro.type = "macbookPro";
@@ -2143,7 +1454,7 @@ MacbookPro.type = "macbookPro";
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports.Textarea = exports.Input = undefined;
 
@@ -2168,127 +1479,127 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var Input = exports.Input = function (_Component) {
-	_inherits(Input, _Component);
+    _inherits(Input, _Component);
 
-	function Input(props) {
-		_classCallCheck(this, Input);
+    function Input(props) {
+        _classCallCheck(this, Input);
 
-		var _this = _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).call(this, props));
 
-		_this.keyPress = _this.keyPress.bind(_this);
-		_this.blur = _this.blur.bind(_this);
-		return _this;
-	}
+        _this.keyPress = _this.keyPress.bind(_this);
+        _this.blur = _this.blur.bind(_this);
+        return _this;
+    }
 
-	_createClass(Input, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
+    _createClass(Input, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
 
-			if (this.props.autofocus) {
-				this.focus();
-			}
-		}
-	}, {
-		key: 'componentDidUpdate',
-		value: function componentDidUpdate() {
+            if (this.props.autofocus) {
+                this.focus();
+            }
+        }
+    }, {
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate() {
 
-			if (this.props.autofocus && this.props.focusAfterClear && !this.props.value) {
+            if (this.props.autofocus && this.props.focusAfterClear && !this.props.value) {
 
-				this.focus();
-			}
-		}
-	}, {
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
+                this.focus();
+            }
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
 
-			if (this.input) {
-				this.input.value = nextProps.value;
-			}
-		}
-	}, {
-		key: 'focus',
-		value: function focus() {
-			var _this2 = this;
+            if (this.input) {
+                this.input.value = nextProps.value;
+            }
+        }
+    }, {
+        key: 'focus',
+        value: function focus() {
+            var _this2 = this;
 
-			if (this.input) {
+            if (this.input) {
 
-				// the timeout is here isnce the component may not be rendered yet
-				// like in the case of componentDidMount
-				setTimeout(function () {
-					return _this2.input.focus();
-				});
-			}
-		}
-	}, {
-		key: 'blur',
-		value: function blur(e) {
+                // the timeout is here isnce the component may not be rendered yet
+                // like in the case of componentDidMount
+                setTimeout(function () {
+                    return _this2.input.focus();
+                });
+            }
+        }
+    }, {
+        key: 'blur',
+        value: function blur(e) {
 
-			if (e.target.value != this.props.value && typeof this.props.onChange === 'function') {
+            if (e.target.value != this.props.value && typeof this.props.onChange === 'function') {
 
-				this.props.onChange(e.target.value);
-			}
-		}
-	}, {
-		key: 'keyPress',
-		value: function keyPress(e) {
+                this.props.onChange(e.target.value);
+            }
+        }
+    }, {
+        key: 'keyPress',
+        value: function keyPress(e) {
 
-			if (e.which == 13 && typeof this.props.onEnter === 'function') {
+            if (e.which == 13 && typeof this.props.onEnter === 'function') {
 
-				this.blur(e);
-				this.props.onEnter(e.target.value);
-			} else if (e.target.value != this.props.value && typeof this.props.onKeyPress === 'function') {
+                this.blur(e);
+                this.props.onEnter(e.target.value);
+            } else if (e.target.value != this.props.value && typeof this.props.onKeyPress === 'function') {
 
-				this.props.onKeyPress(e.target.value);
-			}
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			var _this3 = this;
+                this.props.onKeyPress(e.target.value);
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
 
-			return createVNode(512, 'input', 'input' + (this.props.hasError ? " has-error" : ""), null, {
-				'type': 'text',
-				'tabindex': Number.isInteger(this.props.index) ? this.props.index : 0,
-				'placeholder': this.props.placeholder,
-				'maxlength': this.props.maxlength || 999,
-				'onBlur': this.blur,
-				'onKeyUp': this.keyPress
-			}, null, function (input) {
-				_this3.input = input;
-			});
-		}
-	}]);
+            return createVNode(512, 'input', 'input' + (this.props.hasError ? " has-error" : ""), null, {
+                'type': 'text',
+                'tabindex': Number.isInteger(this.props.index) ? this.props.index : 0,
+                'placeholder': this.props.placeholder,
+                'maxlength': this.props.maxlength || 999,
+                'onBlur': this.blur,
+                'onKeyUp': this.keyPress
+            }, null, function (input) {
+                _this3.input = input;
+            });
+        }
+    }]);
 
-	return Input;
+    return Input;
 }(_infernoComponent2.default);
 
 var Textarea = exports.Textarea = function (_Input) {
-	_inherits(Textarea, _Input);
+    _inherits(Textarea, _Input);
 
-	function Textarea() {
-		_classCallCheck(this, Textarea);
+    function Textarea() {
+        _classCallCheck(this, Textarea);
 
-		return _possibleConstructorReturn(this, (Textarea.__proto__ || Object.getPrototypeOf(Textarea)).apply(this, arguments));
-	}
+        return _possibleConstructorReturn(this, (Textarea.__proto__ || Object.getPrototypeOf(Textarea)).apply(this, arguments));
+    }
 
-	_createClass(Textarea, [{
-		key: 'render',
-		value: function render() {
-			var _this5 = this;
+    _createClass(Textarea, [{
+        key: 'render',
+        value: function render() {
+            var _this5 = this;
 
-			return createVNode(1024, 'textarea', 'input' + (this.props.hasError ? " has-error" : ""), null, {
-				'tabindex': Number.isInteger(this.props.index) ? this.props.index : 0,
-				'placeholder': this.props.placeholder,
-				'maxlength': this.props.maxlength || 999,
-				'onBlur': this.blur,
-				'onKeyUp': this.keyPress
-			}, null, function (input) {
-				_this5.input = input;
-			});
-		}
-	}]);
+            return createVNode(1024, 'textarea', 'input' + (this.props.hasError ? " has-error" : ""), null, {
+                'tabindex': Number.isInteger(this.props.index) ? this.props.index : 0,
+                'placeholder': this.props.placeholder,
+                'maxlength': this.props.maxlength || 999,
+                'onBlur': this.blur,
+                'onKeyUp': this.keyPress
+            }, null, function (input) {
+                _this5.input = input;
+            });
+        }
+    }]);
 
-	return Textarea;
+    return Textarea;
 }(Input);
 
 /***/ }),
@@ -2299,7 +1610,7 @@ var Textarea = exports.Textarea = function (_Input) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -2335,200 +1646,200 @@ var devices = Object.keys(_constants2.default.devices);
 var createVNode = _inferno2.default.createVNode;
 
 var Previewer = function (_Component) {
-	_inherits(Previewer, _Component);
+    _inherits(Previewer, _Component);
 
-	function Previewer(props) {
-		_classCallCheck(this, Previewer);
+    function Previewer(props) {
+        _classCallCheck(this, Previewer);
 
-		var _this = _possibleConstructorReturn(this, (Previewer.__proto__ || Object.getPrototypeOf(Previewer)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Previewer.__proto__ || Object.getPrototypeOf(Previewer)).call(this, props));
 
-		_this.onPrev = _this.onPrev.bind(_this);
-		_this.onNext = _this.onNext.bind(_this);
-		_this.onResize = _this.onResize.bind(_this);
-		_this.checkResize = _this.checkResize.bind(_this);
-		_this.setElement = _this.setElement.bind(_this);
-		_this.setActiveDevice = _this.setActiveDevice.bind(_this);
-		_this.getDevice = _this.getDevice.bind(_this);
+        _this.onPrev = _this.onPrev.bind(_this);
+        _this.onNext = _this.onNext.bind(_this);
+        _this.onResize = _this.onResize.bind(_this);
+        _this.checkResize = _this.checkResize.bind(_this);
+        _this.setElement = _this.setElement.bind(_this);
+        _this.setActiveDevice = _this.setActiveDevice.bind(_this);
+        _this.getDevice = _this.getDevice.bind(_this);
 
-		var index = 0;
-		var activeImageSet = props.imageSets[index];
-		var activeDevice = Object.keys(activeImageSet)[0];
+        var index = 0;
+        var activeImageSet = props.imageSets[index];
+        var activeDevice = Object.keys(activeImageSet)[0];
 
-		_this.state = {
-			index: index,
-			imageSet: activeImageSet,
-			activeDevice: activeDevice,
-			activeProps: { stage: 0 },
-			inactiveProps: { stage: 0 }
-		};
-		return _this;
-	}
+        _this.state = {
+            index: index,
+            imageSet: activeImageSet,
+            activeDevice: activeDevice,
+            activeProps: { stage: 0 },
+            inactiveProps: { stage: 0 }
+        };
+        return _this;
+    }
 
-	_createClass(Previewer, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
+    _createClass(Previewer, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
 
-			this.onResize();
+            this.onResize();
 
-			window.addEventListener('resize', this.checkResize);
-		}
-	}, {
-		key: 'componentWillUnmount',
-		value: function componentWillUnmount() {
-			window.removeEventListener('resize', this.checkResize);
-		}
-	}, {
-		key: 'onChange',
-		value: function onChange(index) {
-			var set = this.props.imageSets[index];
-			var device = this.state.activeDevice;
+            window.addEventListener('resize', this.checkResize);
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            window.removeEventListener('resize', this.checkResize);
+        }
+    }, {
+        key: 'onChange',
+        value: function onChange(index) {
+            var set = this.props.imageSets[index];
+            var device = this.state.activeDevice;
 
-			if (!set[device]) {
-				device = Object.keys(set)[0];
-			}
+            if (!set[device]) {
+                device = Object.keys(set)[0];
+            }
 
-			this.setState({
+            this.setState({
 
-				index: index,
-				imageSet: set,
-				activeDevice: device
-			});
-		}
-	}, {
-		key: 'onPrev',
-		value: function onPrev() {
-			this.onChange((this.state.index || this.props.imageSets.length) - 1);
-		}
-	}, {
-		key: 'onNext',
-		value: function onNext() {
-			this.onChange((this.state.index + 1) % this.props.imageSets.length);
-		}
-	}, {
-		key: 'checkResize',
-		value: function checkResize() {
-			if (this.resizeTimeout) {
-				clearTimeout(this.resizeTimeout);
-			}
-			this.resizeTimeout = setTimeout(this.onResize, _constants2.default.previewer.resizeTimeout);
-		}
-	}, {
-		key: 'onResize',
-		value: function onResize() {
+                index: index,
+                imageSet: set,
+                activeDevice: device
+            });
+        }
+    }, {
+        key: 'onPrev',
+        value: function onPrev() {
+            this.onChange((this.state.index || this.props.imageSets.length) - 1);
+        }
+    }, {
+        key: 'onNext',
+        value: function onNext() {
+            this.onChange((this.state.index + 1) % this.props.imageSets.length);
+        }
+    }, {
+        key: 'checkResize',
+        value: function checkResize() {
+            if (this.resizeTimeout) {
+                clearTimeout(this.resizeTimeout);
+            }
+            this.resizeTimeout = setTimeout(this.onResize, _constants2.default.previewer.resizeTimeout);
+        }
+    }, {
+        key: 'onResize',
+        value: function onResize() {
 
-			// TODO: log error
-			if (!this.element) {
-				return;
-			}
+            // TODO: log error
+            if (!this.element) {
+                return;
+            }
 
-			var width = void 0,
-			    height = void 0,
-			    activeProps = void 0,
-			    inactiveProps = void 0,
-			    hPad = void 0,
-			    vPad = void 0;
+            var width = void 0,
+                height = void 0,
+                activeProps = void 0,
+                inactiveProps = void 0,
+                hPad = void 0,
+                vPad = void 0;
 
-			hPad = 50;
-			vPad = 25;
-			width = this.element.clientWidth - hPad - hPad;
-			height = this.element.clientHeight - vPad - vPad;
+            hPad = 50;
+            vPad = 25;
+            width = this.element.clientWidth - hPad - hPad;
+            height = this.element.clientHeight - vPad - vPad;
 
-			inactiveProps = {
-				fullWidth: width,
-				maxWidth: width / Object.keys(this.state.imageSet).length,
-				maxHeight: height * 0.25,
-				bottom: height + vPad,
-				stage: ++this.state.inactiveProps.stage
-			};
+            inactiveProps = {
+                fullWidth: width,
+                maxWidth: width / Object.keys(this.state.imageSet).length,
+                maxHeight: height * 0.25,
+                bottom: height + vPad,
+                stage: ++this.state.inactiveProps.stage
+            };
 
-			activeProps = {
-				maxWidth: width,
-				maxHeight: height * 0.75 - vPad,
-				top: vPad,
-				stage: ++this.state.inactiveProps.stage
-			};
+            activeProps = {
+                maxWidth: width,
+                maxHeight: height * 0.75 - vPad,
+                top: vPad,
+                stage: ++this.state.inactiveProps.stage
+            };
 
-			this.setState({
-				activeProps: activeProps,
-				inactiveProps: inactiveProps
-			});
-		}
-	}, {
-		key: 'setActiveDevice',
-		value: function setActiveDevice(name) {
-			this.setState({ activeDevice: name });
-		}
-	}, {
-		key: 'getDevice',
-		value: function getDevice(name, index, nameArray) {
-			var _this2 = this;
+            this.setState({
+                activeProps: activeProps,
+                inactiveProps: inactiveProps
+            });
+        }
+    }, {
+        key: 'setActiveDevice',
+        value: function setActiveDevice(name) {
+            this.setState({ activeDevice: name });
+        }
+    }, {
+        key: 'getDevice',
+        value: function getDevice(name, index, nameArray) {
+            var _this2 = this;
 
-			var props = {
+            var props = {
 
-				index: index,
-				deviceCount: nameArray.length,
-				image: this.state.imageSet[name],
-				active: this.state.activeDevice === name,
-				activeProps: this.state.activeProps,
-				inactiveProps: this.state.inactiveProps,
-				onActivate: function onActivate() {
-					_this2.setActiveDevice(name);
-				}
-			};
+                index: index,
+                deviceCount: nameArray.length,
+                image: this.state.imageSet[name],
+                active: this.state.activeDevice === name,
+                activeProps: this.state.activeProps,
+                inactiveProps: this.state.inactiveProps,
+                onActivate: function onActivate() {
+                    _this2.setActiveDevice(name);
+                }
+            };
 
-			switch (name.toLowerCase()) {
-				case _devices.IPhone.type.toLowerCase():
-					return createVNode(16, _devices.IPhone, null, null, _extends({}, props));
-				case _devices.IPad.type.toLowerCase():
-					return createVNode(16, _devices.IPad, null, null, _extends({}, props));
-				case _devices.MacbookPro.type.toLowerCase():
-					return createVNode(16, _devices.MacbookPro, null, null, _extends({}, props));
-			}
+            switch (name.toLowerCase()) {
+                case _devices.IPhone.type.toLowerCase():
+                    return createVNode(16, _devices.IPhone, null, null, _extends({}, props));
+                case _devices.IPad.type.toLowerCase():
+                    return createVNode(16, _devices.IPad, null, null, _extends({}, props));
+                case _devices.MacbookPro.type.toLowerCase():
+                    return createVNode(16, _devices.MacbookPro, null, null, _extends({}, props));
+            }
 
-			return null;
-		}
-	}, {
-		key: 'setElement',
-		value: function setElement(el) {
-			this.element = el;
-		}
-	}, {
-		key: 'render',
-		value: function render() {
+            return null;
+        }
+    }, {
+        key: 'setElement',
+        value: function setElement(el) {
+            this.element = el;
+        }
+    }, {
+        key: 'render',
+        value: function render() {
 
-			var buttons = [];
+            var buttons = [];
 
-			if (this.props.imageSets.length > 1) {
+            if (this.props.imageSets.length > 1) {
 
-				buttons.push(createVNode(16, _previewer.Button, null, null, {
-					'anim': true,
-					'name': 'next',
-					'icon': 'angle-right',
-					'text': 'Next',
-					'onClick': this.onNext
-				}), createVNode(16, _previewer.Button, null, null, {
-					'anim': true,
-					'name': 'prev',
-					'icon': 'angle-left',
-					'text': 'Previous',
-					'onClick': this.onPrev
-				}));
-			}
+                buttons.push(createVNode(16, _previewer.Button, null, null, {
+                    'anim': true,
+                    'name': 'next',
+                    'icon': 'angle-right',
+                    'text': 'Next',
+                    'onClick': this.onNext
+                }), createVNode(16, _previewer.Button, null, null, {
+                    'anim': true,
+                    'name': 'prev',
+                    'icon': 'angle-left',
+                    'text': 'Previous',
+                    'onClick': this.onPrev
+                }));
+            }
 
-			return createVNode(16, _previewer.Popup, null, null, {
-				'onLoad': this.setElement,
-				children: [devices.map(this.getDevice), createVNode(16, _previewer.Button, null, null, {
-					'anim': true,
-					'name': 'close',
-					'icon': 'close',
-					'text': 'Close',
-					'onClick': this.props.onClose
-				}), buttons]
-			});
-		}
-	}]);
+            return createVNode(16, _previewer.Popup, null, null, {
+                'onLoad': this.setElement,
+                children: [devices.map(this.getDevice), createVNode(16, _previewer.Button, null, null, {
+                    'anim': true,
+                    'name': 'close',
+                    'icon': 'close',
+                    'text': 'Close',
+                    'onClick': this.props.onClose
+                }), buttons]
+            });
+        }
+    }]);
 
-	return Previewer;
+    return Previewer;
 }(_infernoComponent2.default);
 
 exports.default = Previewer;
@@ -2541,7 +1852,7 @@ exports.default = Previewer;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2561,173 +1872,173 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var deferredState = {
-	pending: 'pending',
-	resolved: 'resolved',
-	rejected: 'rejected'
+    pending: 'pending',
+    resolved: 'resolved',
+    rejected: 'rejected'
 };
 
 var handlerTypes = {
-	fail: 0,
-	done: 1,
-	then: 2
+    fail: 0,
+    done: 1,
+    then: 2
 };
 
 var helper = {
-	executeHandlers: function executeHandlers(handlers, state, args) {
+    executeHandlers: function executeHandlers(handlers, state, args) {
 
-		if (state === deferredState.pending) {
-			return;
-		}
+        if (state === deferredState.pending) {
+            return;
+        }
 
-		var params = void 0;
+        var params = void 0;
 
-		try {
-			_utils2.default.foreach(handlers, function (handler) {
+        try {
+            _utils2.default.foreach(handlers, function (handler) {
 
-				if (state === deferredState.resolved) {
-					switch (handler.type) {
+                if (state === deferredState.resolved) {
+                    switch (handler.type) {
 
-						case handlerTypes.done:
-							handler.cb.execute(args);
-							break;
+                        case handlerTypes.done:
+                            handler.cb.execute(args);
+                            break;
 
-						case handlerTypes.then:
-							params = handler.cb.execute(args);
-							handler.child.resolve.call(null, params);
-							break;
-					}
-				} else if (state === deferredState.rejected) {
+                        case handlerTypes.then:
+                            params = handler.cb.execute(args);
+                            handler.child.resolve.call(null, params);
+                            break;
+                    }
+                } else if (state === deferredState.rejected) {
 
-					switch (handler.type) {
+                    switch (handler.type) {
 
-						case handlerTypes.fail:
-							handler.cb.execute(args);
-							break;
+                        case handlerTypes.fail:
+                            handler.cb.execute(args);
+                            break;
 
-						case handlerTypes.then:
-							handler.child.reject.apply(null, args);
-							break;
-					}
-				}
-			});
-		} catch (ex) {
-			_log2.default.error(ex, args);
-		}
-	},
+                        case handlerTypes.then:
+                            handler.child.reject.apply(null, args);
+                            break;
+                    }
+                }
+            });
+        } catch (ex) {
+            _log2.default.error(ex, args);
+        }
+    },
 
-	addHandler: function addHandler(target, type, args, chainedDeferred) {
+    addHandler: function addHandler(target, type, args, chainedDeferred) {
 
-		if (typeof args[0] !== 'function') {
-			return;
-		}
+        if (typeof args[0] !== 'function') {
+            return;
+        }
 
-		var callback = new Callback(args[0], _typeof(args[1]) === 'object' ? args[1] : null);
+        var callback = new Callback(args[0], _typeof(args[1]) === 'object' ? args[1] : null);
 
-		target.push(new Handler(type, callback, chainedDeferred));
-	}
+        target.push(new Handler(type, callback, chainedDeferred));
+    }
 };
 
 var Handler = function Handler(type, callback, child) {
-	_classCallCheck(this, Handler);
+    _classCallCheck(this, Handler);
 
-	this.type = type;
-	this.cb = callback;
-	this.child = child;
+    this.type = type;
+    this.cb = callback;
+    this.child = child;
 };
 
 var Callback = function () {
-	function Callback(func, ctx) {
-		_classCallCheck(this, Callback);
+    function Callback(func, ctx) {
+        _classCallCheck(this, Callback);
 
-		this.func = func;
-		this.ctx = (typeof ctx === 'undefined' ? 'undefined' : _typeof(ctx)) === 'object' ? ctx : null;
-	}
+        this.func = func;
+        this.ctx = (typeof ctx === 'undefined' ? 'undefined' : _typeof(ctx)) === 'object' ? ctx : null;
+    }
 
-	_createClass(Callback, [{
-		key: 'execute',
-		value: function execute(args) {
-			return this.func.apply(this.ctx, args);
-		}
-	}]);
+    _createClass(Callback, [{
+        key: 'execute',
+        value: function execute(args) {
+            return this.func.apply(this.ctx, args);
+        }
+    }]);
 
-	return Callback;
+    return Callback;
 }();
 
 function Deferred() {
 
-	var _state = void 0,
-	    promise = void 0,
-	    handlers = void 0,
-	    resolve = void 0,
-	    reject = void 0,
-	    args = void 0;
+    var _state = void 0,
+        promise = void 0,
+        handlers = void 0,
+        resolve = void 0,
+        reject = void 0,
+        args = void 0;
 
-	_state = deferredState.pending;
-	handlers = [];
-	promise = {
-		state: function state() {
-			return _state;
-		},
+    _state = deferredState.pending;
+    handlers = [];
+    promise = {
+        state: function state() {
+            return _state;
+        },
 
-		done: function done() {
-			helper.addHandler(handlers, handlerTypes.done, arguments);
+        done: function done() {
+            helper.addHandler(handlers, handlerTypes.done, arguments);
 
-			if (_state === deferredState.resolved) {
-				resolve();
-			}
+            if (_state === deferredState.resolved) {
+                resolve();
+            }
 
-			return promise;
-		},
+            return promise;
+        },
 
-		fail: function fail() {
-			helper.addHandler(handlers, handlerTypes.fail, arguments);
+        fail: function fail() {
+            helper.addHandler(handlers, handlerTypes.fail, arguments);
 
-			if (_state === deferredState.rejected) {
-				reject();
-			}
+            if (_state === deferredState.rejected) {
+                reject();
+            }
 
-			return promise;
-		},
+            return promise;
+        },
 
-		then: function then() {
-			var child = new Deferred();
+        then: function then() {
+            var child = new Deferred();
 
-			helper.addHandler(handlers, handlerTypes.then, arguments);
+            helper.addHandler(handlers, handlerTypes.then, arguments);
 
-			return child.promise;
-		},
+            return child.promise;
+        },
 
-		always: function always() {
-			promise.done.apply(null, arguments).fail.apply(null, arguments);
-			return promise;
-		}
-	};
+        always: function always() {
+            promise.done.apply(null, arguments).fail.apply(null, arguments);
+            return promise;
+        }
+    };
 
-	resolve = function resolve() {
-		_state = deferredState.resolved;
-		args = arguments.length ? arguments : args;
+    resolve = function resolve() {
+        _state = deferredState.resolved;
+        args = arguments.length ? arguments : args;
 
-		var handlersCopy = handlers.splice(0, handlers.length);
+        var handlersCopy = handlers.splice(0, handlers.length);
 
-		helper.executeHandlers(handlersCopy, _state, args);
+        helper.executeHandlers(handlersCopy, _state, args);
 
-		return promise;
-	};
+        return promise;
+    };
 
-	reject = function reject() {
-		_state = deferredState.rejected;
-		args = arguments.length ? arguments : args;
+    reject = function reject() {
+        _state = deferredState.rejected;
+        args = arguments.length ? arguments : args;
 
-		var handlersCopy = handlers.splice(0, handlers.length);
+        var handlersCopy = handlers.splice(0, handlers.length);
 
-		helper.executeHandlers(handlersCopy, _state, args);
+        helper.executeHandlers(handlersCopy, _state, args);
 
-		return promise;
-	};
+        return promise;
+    };
 
-	this.promise = promise;
-	this.resolve = resolve;
-	this.reject = reject;
+    this.promise = promise;
+    this.resolve = resolve;
+    this.reject = reject;
 };
 
 exports.default = Deferred;
@@ -2740,7 +2051,7 @@ exports.default = Deferred;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _deferred = __webpack_require__(35);
@@ -2758,61 +2069,61 @@ var _utils2 = _interopRequireDefault(_utils);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var http = {
-	request: function request(url, method, data, type) {
-		_log2.default.debug("Sending http request: ", url, method, data, type);
+    request: function request(url, method, data, type) {
+        _log2.default.debug("Sending http request: ", url, method, data, type);
 
-		var d = new _deferred2.default();
-		var xhr = new XMLHttpRequest();
-		xhr.open(method.toUpperCase(), url, true);
-		xhr.setRequestHeader("Accept", "*/*");
+        var d = new _deferred2.default();
+        var xhr = new XMLHttpRequest();
+        xhr.open(method.toUpperCase(), url, true);
+        xhr.setRequestHeader("Accept", "*/*");
 
-		if (type) {
-			xhr.setRequestHeader("Content-Type", type);
-		}
+        if (type) {
+            xhr.setRequestHeader("Content-Type", type);
+        }
 
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4) {
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
 
-				if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 304) {
+                if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 304) {
 
-					var response = _utils2.default.safeJsonParse(xhr.response || xhr.responseText);
+                    var response = _utils2.default.safeJsonParse(xhr.response || xhr.responseText);
 
-					d.resolve(response);
-				} else {
+                    d.resolve(response);
+                } else {
 
-					d.reject(xhr.statusText || xhr.responseText);
-				}
-			}
-		};
+                    d.reject(xhr.statusText || xhr.responseText);
+                }
+            }
+        };
 
-		xhr.send(data);
+        xhr.send(data);
 
-		return d.promise;
-	},
+        return d.promise;
+    },
 
-	get: function get(url, data) {
+    get: function get(url, data) {
 
-		if (data) {
-			url = url + http.objToQueryString(data);
-		}
+        if (data) {
+            url = url + http.objToQueryString(data);
+        }
 
-		return http.request(url, "GET", null, 'application/json;charset=UTF-8');
-	},
+        return http.request(url, "GET", null, 'application/json;charset=UTF-8');
+    },
 
-	post: function post(url, data) {
+    post: function post(url, data) {
 
-		return http.request(url, 'POST', JSON.stringify(data), 'application/json;charset=UTF-8');
-	},
+        return http.request(url, 'POST', JSON.stringify(data), 'application/json;charset=UTF-8');
+    },
 
-	objToQueryString: function objToQueryString(obj) {
-		if (!obj) {
-			return '';
-		}
+    objToQueryString: function objToQueryString(obj) {
+        if (!obj) {
+            return '';
+        }
 
-		return '?' + Object.keys(obj).map(function (key) {
-			return key + '=' + (obj[key] == null ? "" : obj[key]);
-		}).join('&');
-	}
+        return '?' + Object.keys(obj).map(function (key) {
+            return key + '=' + (obj[key] == null ? "" : obj[key]);
+        }).join('&');
+    }
 };
 
 exports.default = http;
@@ -2876,7 +2187,7 @@ _inferno2.default.render(createVNode(16, _app2.default, null, null, _extends({},
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -2912,39 +2223,39 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var AboutPage = function (_Component) {
-	_inherits(AboutPage, _Component);
+    _inherits(AboutPage, _Component);
 
-	function AboutPage(props) {
-		_classCallCheck(this, AboutPage);
+    function AboutPage(props) {
+        _classCallCheck(this, AboutPage);
 
-		return _possibleConstructorReturn(this, (AboutPage.__proto__ || Object.getPrototypeOf(AboutPage)).call(this, props));
-	}
+        return _possibleConstructorReturn(this, (AboutPage.__proto__ || Object.getPrototypeOf(AboutPage)).call(this, props));
+    }
 
-	_createClass(AboutPage, [{
-		key: 'render',
-		value: function render() {
-			return createVNode(16, _page.Page, null, null, {
-				'name': 'about',
-				children: [createVNode(16, _page.Header, null, null, {
-					children: [createVNode(16, _page.Title, null, null, {
-						children: this.props.title
-					}), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
-				}), createVNode(16, _content.Content, null, null, {
-					children: [createVNode(16, _about.Image, null, null, {
-						'src': this.props.image
-					}), createVNode(16, _about.Details, null, null, {
-						children: this.props.details.map(function (props) {
-							return createVNode(16, _about.Detail, null, null, _extends({}, props));
-						})
-					}), createVNode(16, _about.Description, null, null, {
-						children: this.props.description
-					})]
-				})]
-			});
-		}
-	}]);
+    _createClass(AboutPage, [{
+        key: 'render',
+        value: function render() {
+            return createVNode(16, _page.Page, null, null, {
+                'name': 'about',
+                children: [createVNode(16, _page.Header, null, null, {
+                    children: [createVNode(16, _page.Title, null, null, {
+                        children: this.props.title
+                    }), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
+                }), createVNode(16, _content.Content, null, null, {
+                    children: [createVNode(16, _about.Image, null, null, {
+                        'src': this.props.image
+                    }), createVNode(16, _about.Details, null, null, {
+                        children: this.props.details.map(function (props) {
+                            return createVNode(16, _about.Detail, null, null, _extends({}, props));
+                        })
+                    }), createVNode(16, _about.Description, null, null, {
+                        children: this.props.description
+                    })]
+                })]
+            });
+        }
+    }]);
 
-	return AboutPage;
+    return AboutPage;
 }(_infernoComponent2.default);
 
 exports.default = AboutPage;
@@ -2957,7 +2268,7 @@ exports.default = AboutPage;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -3003,333 +2314,333 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var fields = {
-	firstname: 'firstname',
-	lastname: 'lastname',
-	email: 'email',
-	message: 'message'
+    firstname: 'firstname',
+    lastname: 'lastname',
+    email: 'email',
+    message: 'message'
 };
 
 var errors = {
-	firstnameEmpty: 'Please enter a first name.',
-	lastnameEmpty: 'Please enter a last name.',
-	emailEmpty: 'Please enter an email address.',
-	emailInvalid: 'Please enter a valid email address.',
-	messageEmpty: 'Please enter a message.',
-	generic: 'Uh oh! There was a problem sending your message. Please try again!'
+    firstnameEmpty: 'Please enter a first name.',
+    lastnameEmpty: 'Please enter a last name.',
+    emailEmpty: 'Please enter an email address.',
+    emailInvalid: 'Please enter a valid email address.',
+    messageEmpty: 'Please enter a message.',
+    generic: 'Uh oh! There was a problem sending your message. Please try again!'
 };
 
 var createVNode = _inferno2.default.createVNode;
 
 var ContactPage = function (_Component) {
-	_inherits(ContactPage, _Component);
+    _inherits(ContactPage, _Component);
 
-	function ContactPage(props) {
-		_classCallCheck(this, ContactPage);
+    function ContactPage(props) {
+        _classCallCheck(this, ContactPage);
 
-		var _this = _possibleConstructorReturn(this, (ContactPage.__proto__ || Object.getPrototypeOf(ContactPage)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (ContactPage.__proto__ || Object.getPrototypeOf(ContactPage)).call(this, props));
 
-		_this.checkFirstname = _this.checkFirstname.bind(_this);
-		_this.checkLastname = _this.checkLastname.bind(_this);
-		_this.checkEmail = _this.checkEmail.bind(_this);
-		_this.checkMessage = _this.checkMessage.bind(_this);
-		_this.updateFirstname = _this.updateFirstname.bind(_this);
-		_this.updateLastname = _this.updateLastname.bind(_this);
-		_this.updateEmail = _this.updateEmail.bind(_this);
-		_this.updateMessage = _this.updateMessage.bind(_this);
-		_this.sendForm = _this.sendForm.bind(_this);
+        _this.checkFirstname = _this.checkFirstname.bind(_this);
+        _this.checkLastname = _this.checkLastname.bind(_this);
+        _this.checkEmail = _this.checkEmail.bind(_this);
+        _this.checkMessage = _this.checkMessage.bind(_this);
+        _this.updateFirstname = _this.updateFirstname.bind(_this);
+        _this.updateLastname = _this.updateLastname.bind(_this);
+        _this.updateEmail = _this.updateEmail.bind(_this);
+        _this.updateMessage = _this.updateMessage.bind(_this);
+        _this.sendForm = _this.sendForm.bind(_this);
 
-		_this.state = {
-			loading: false,
-			errorTarget: null,
-			errorMessage: '',
-			firstname: '',
-			lastname: '',
-			email: '',
-			message: '',
-			lastRes: null
-		};
-		return _this;
-	}
+        _this.state = {
+            loading: false,
+            errorTarget: null,
+            errorMessage: '',
+            firstname: '',
+            lastname: '',
+            email: '',
+            message: '',
+            lastRes: null
+        };
+        return _this;
+    }
 
-	_createClass(ContactPage, [{
-		key: 'checkFirstname',
-		value: function checkFirstname(val) {
-			if (this.state.errorTarget === fields.firstname && !String.isNullOrEmpty(val)) {
+    _createClass(ContactPage, [{
+        key: 'checkFirstname',
+        value: function checkFirstname(val) {
+            if (this.state.errorTarget === fields.firstname && !String.isNullOrEmpty(val)) {
 
-				return this.setState({
-					errorTarget: fields.none,
-					errorMessage: '',
-					firstname: val,
-					lastRes: null
-				});
-			}
-		}
-	}, {
-		key: 'checkLastname',
-		value: function checkLastname(val) {
-			if (this.state.errorTarget === fields.lastname && !String.isNullOrEmpty(val)) {
+                return this.setState({
+                    errorTarget: fields.none,
+                    errorMessage: '',
+                    firstname: val,
+                    lastRes: null
+                });
+            }
+        }
+    }, {
+        key: 'checkLastname',
+        value: function checkLastname(val) {
+            if (this.state.errorTarget === fields.lastname && !String.isNullOrEmpty(val)) {
 
-				return this.setState({
-					errorTarget: fields.none,
-					errorMessage: '',
-					lastname: val,
-					lastRes: null
-				});
-			}
-		}
-	}, {
-		key: 'checkEmail',
-		value: function checkEmail(val) {
-			if (this.state.errorTarget !== fields.email) {
-				return;
-			}
+                return this.setState({
+                    errorTarget: fields.none,
+                    errorMessage: '',
+                    lastname: val,
+                    lastRes: null
+                });
+            }
+        }
+    }, {
+        key: 'checkEmail',
+        value: function checkEmail(val) {
+            if (this.state.errorTarget !== fields.email) {
+                return;
+            }
 
-			if (String.isNullOrEmpty(val)) {
-				if (this.errorMessage !== errors.emailEmpty) {
-					return this.setState({
-						errorMessage: errors.emailEmpty,
-						email: val,
-						lastRes: null
-					});
-				}
+            if (String.isNullOrEmpty(val)) {
+                if (this.errorMessage !== errors.emailEmpty) {
+                    return this.setState({
+                        errorMessage: errors.emailEmpty,
+                        email: val,
+                        lastRes: null
+                    });
+                }
 
-				return;
-			}
+                return;
+            }
 
-			if (!String.isValidEmailAddress(val)) {
-				if (this.errorMessage !== errors.emailInvalid) {
-					return this.setState({
-						errorMessage: errors.emailInvalid,
-						email: val,
-						lastRes: null
-					});
-				}
+            if (!String.isValidEmailAddress(val)) {
+                if (this.errorMessage !== errors.emailInvalid) {
+                    return this.setState({
+                        errorMessage: errors.emailInvalid,
+                        email: val,
+                        lastRes: null
+                    });
+                }
 
-				return;
-			}
+                return;
+            }
 
-			return this.setState({
-				errorTarget: fields.none,
-				errorMessage: '',
-				email: val,
-				lastRes: null
-			});
-		}
-	}, {
-		key: 'checkMessage',
-		value: function checkMessage(val) {
-			if (this.state.errorTarget === fields.message && !String.isNullOrEmpty(val)) {
+            return this.setState({
+                errorTarget: fields.none,
+                errorMessage: '',
+                email: val,
+                lastRes: null
+            });
+        }
+    }, {
+        key: 'checkMessage',
+        value: function checkMessage(val) {
+            if (this.state.errorTarget === fields.message && !String.isNullOrEmpty(val)) {
 
-				return this.setState({
-					errorTarget: fields.none,
-					errorMessage: '',
-					message: val,
-					lastRes: null
-				});
-			}
-		}
-	}, {
-		key: 'updateFirstname',
-		value: function updateFirstname(val) {
-			this.setState({ firstname: val });
-		}
-	}, {
-		key: 'updateLastname',
-		value: function updateLastname(val) {
-			this.setState({ lastname: val });
-		}
-	}, {
-		key: 'updateEmail',
-		value: function updateEmail(val) {
-			this.setState({ email: val });
-		}
-	}, {
-		key: 'updateMessage',
-		value: function updateMessage(val) {
-			this.setState({ message: val });
-		}
-	}, {
-		key: 'sendForm',
-		value: function sendForm() {
-			var _this2 = this;
+                return this.setState({
+                    errorTarget: fields.none,
+                    errorMessage: '',
+                    message: val,
+                    lastRes: null
+                });
+            }
+        }
+    }, {
+        key: 'updateFirstname',
+        value: function updateFirstname(val) {
+            this.setState({ firstname: val });
+        }
+    }, {
+        key: 'updateLastname',
+        value: function updateLastname(val) {
+            this.setState({ lastname: val });
+        }
+    }, {
+        key: 'updateEmail',
+        value: function updateEmail(val) {
+            this.setState({ email: val });
+        }
+    }, {
+        key: 'updateMessage',
+        value: function updateMessage(val) {
+            this.setState({ message: val });
+        }
+    }, {
+        key: 'sendForm',
+        value: function sendForm() {
+            var _this2 = this;
 
-			if (this.state.loading) {
-				return;
-			}
+            if (this.state.loading) {
+                return;
+            }
 
-			if (String.isNullOrEmpty(this.state.firstname)) {
-				return this.setState({
-					errorTarget: fields.firstname,
-					errorMessage: errors.firstnameEmpty,
-					lastRes: null
-				});
-			}
+            if (String.isNullOrEmpty(this.state.firstname)) {
+                return this.setState({
+                    errorTarget: fields.firstname,
+                    errorMessage: errors.firstnameEmpty,
+                    lastRes: null
+                });
+            }
 
-			if (String.isNullOrEmpty(this.state.lastname)) {
-				return this.setState({
-					errorTarget: fields.lastname,
-					errorMessage: errors.lastnameEmpty,
-					lastRes: null
-				});
-			}
+            if (String.isNullOrEmpty(this.state.lastname)) {
+                return this.setState({
+                    errorTarget: fields.lastname,
+                    errorMessage: errors.lastnameEmpty,
+                    lastRes: null
+                });
+            }
 
-			if (String.isNullOrEmpty(this.state.email)) {
-				return this.setState({
-					errorTarget: fields.email,
-					errorMessage: errors.emailEmpty,
-					lastRes: null
-				});
-			}
+            if (String.isNullOrEmpty(this.state.email)) {
+                return this.setState({
+                    errorTarget: fields.email,
+                    errorMessage: errors.emailEmpty,
+                    lastRes: null
+                });
+            }
 
-			if (!String.isValidEmailAddress(this.state.email)) {
-				return this.setState({
-					errorTarget: fields.email,
-					errorMessage: errors.emailInvalid,
-					lastRes: null
-				});
-			}
+            if (!String.isValidEmailAddress(this.state.email)) {
+                return this.setState({
+                    errorTarget: fields.email,
+                    errorMessage: errors.emailInvalid,
+                    lastRes: null
+                });
+            }
 
-			if (String.isNullOrEmpty(this.state.message)) {
-				return this.setState({
-					errorTarget: fields.message,
-					errorMessage: errors.messageEmpty,
-					lastRes: null
-				});
-			}
+            if (String.isNullOrEmpty(this.state.message)) {
+                return this.setState({
+                    errorTarget: fields.message,
+                    errorMessage: errors.messageEmpty,
+                    lastRes: null
+                });
+            }
 
-			this.setState({
-				errorTarget: fields.none,
-				errorMessage: '',
-				loading: true,
-				lastRes: null
-			});
+            this.setState({
+                errorTarget: fields.none,
+                errorMessage: '',
+                loading: true,
+                lastRes: null
+            });
 
-			var data = {
+            var data = {
 
-				firstname: this.state.firstname,
-				lastname: this.state.lastname,
-				email: this.state.email,
-				message: this.state.message
-			};
+                firstname: this.state.firstname,
+                lastname: this.state.lastname,
+                email: this.state.email,
+                message: this.state.message
+            };
 
-			_http2.default.post(this.props.urls.sendMessage, data).done(function (response) {
+            _http2.default.post(this.props.urls.sendMessage, data).done(function (response) {
 
-				_this2.setState({
-					loading: false,
-					lastRes: _enums2.default.level.success,
-					errorMessage: '',
-					firstname: '',
-					lastname: '',
-					email: '',
-					message: ''
-				});
-			}).fail(function () {
-				_this2.setState({
-					errorTarget: fields.none,
-					errorMessage: errors.generic,
-					loading: false,
-					lastRes: _enums2.default.level.error
-				});
-			});
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			return createVNode(16, _page.Page, null, null, {
-				'name': 'contact',
-				children: [createVNode(16, _page.Header, null, null, {
-					children: [createVNode(16, _page.Title, null, null, {
-						children: this.props.title
-					}), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
-				}), createVNode(16, _content.Content, null, null, {
-					children: [createVNode(16, _form.Row, null, null, {
-						children: [createVNode(16, _form.Col, null, null, {
-							children: [createVNode(16, _form2.Input, null, null, {
-								'placeholder': 'First Name',
-								'hasError': this.state.errorTarget === fields.firstname,
-								'maxlength': 100,
-								'value': this.state.firstname,
-								'onChange': this.updateFirstname,
-								'onKeyPress': this.checkFirstname,
-								'onEnter': this.sendForm
-							}), createVNode(16, _form.Popover, null, null, {
-								'display': this.state.errorTarget === fields.firstname,
-								'message': this.state.errorMessage,
-								'arrow': true
-							})]
-						}), createVNode(16, _form.Col, null, null, {
-							children: [createVNode(16, _form2.Input, null, null, {
-								'placeholder': 'Last Name',
-								'hasError': this.state.errorTarget === fields.lastname,
-								'maxlength': 100,
-								'value': this.state.lastname,
-								'onChange': this.updateLastname,
-								'onKeyPress': this.checkLastname,
-								'onEnter': this.sendForm
-							}), createVNode(16, _form.Popover, null, null, {
-								'display': this.state.errorTarget === fields.lastname,
-								'message': this.state.errorMessage,
-								'arrow': true
-							})]
-						})]
-					}), createVNode(16, _form.Row, null, null, {
-						children: createVNode(16, _form.Col, null, null, {
-							children: [createVNode(16, _form2.Input, null, null, {
-								'placeholder': 'Email Address',
-								'hasError': this.state.errorTarget === fields.email,
-								'maxlength': 100,
-								'value': this.state.email,
-								'onChange': this.updateEmail,
-								'onKeyPress': this.checkEmail,
-								'onEnter': this.sendForm
-							}), createVNode(16, _form.Popover, null, null, {
-								'display': this.state.errorTarget === fields.email,
-								'message': this.state.errorMessage,
-								'arrow': true
-							})]
-						})
-					}), createVNode(16, _form.Row, null, null, {
-						children: createVNode(16, _form.Col, null, null, {
-							children: [createVNode(16, _form2.Textarea, null, null, {
-								'placeholder': 'Type Your Message Here...',
-								'hasError': this.state.errorTarget === fields.message,
-								'maxlength': 5000,
-								'value': this.state.message,
-								'onChange': this.updateMessage,
-								'onKeyPress': this.checkMessage
-							}), createVNode(16, _form.Popover, null, null, {
-								'display': this.state.errorTarget === fields.message,
-								'message': this.state.errorMessage,
-								'arrow': true
-							})]
-						})
-					}), createVNode(16, _form.Row, null, null, {
-						children: [createVNode(16, _form.Button, null, null, {
-							'anim': true,
-							'text': 'Send',
-							'icon': 'paper-plane-o',
-							'loading': this.state.loading,
-							'cover': this.state.lastRes,
-							'onClick': this.sendForm
-						}), createVNode(16, _form.Popover, null, null, {
-							'display': this.state.errorTarget === fields.none,
-							'message': this.state.errorMessage
-						}), createVNode(16, _form.Loader, null, null, {
-							'active': this.state.loading
-						})]
-					})]
-				}), createVNode(16, _content.Content, null, null, {
-					children: createVNode(16, _social.SocialList, null, null, {
-						children: this.props.sociallinks.map(function (props) {
-							return createVNode(16, _social.SocialLink, null, null, _extends({}, props));
-						})
-					})
-				})]
-			});
-		}
-	}]);
+                _this2.setState({
+                    loading: false,
+                    lastRes: _enums2.default.level.success,
+                    errorMessage: '',
+                    firstname: '',
+                    lastname: '',
+                    email: '',
+                    message: ''
+                });
+            }).fail(function () {
+                _this2.setState({
+                    errorTarget: fields.none,
+                    errorMessage: errors.generic,
+                    loading: false,
+                    lastRes: _enums2.default.level.error
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return createVNode(16, _page.Page, null, null, {
+                'name': 'contact',
+                children: [createVNode(16, _page.Header, null, null, {
+                    children: [createVNode(16, _page.Title, null, null, {
+                        children: this.props.title
+                    }), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
+                }), createVNode(16, _content.Content, null, null, {
+                    children: [createVNode(16, _form.Row, null, null, {
+                        children: [createVNode(16, _form.Col, null, null, {
+                            children: [createVNode(16, _form2.Input, null, null, {
+                                'placeholder': 'First Name',
+                                'hasError': this.state.errorTarget === fields.firstname,
+                                'maxlength': 100,
+                                'value': this.state.firstname,
+                                'onChange': this.updateFirstname,
+                                'onKeyPress': this.checkFirstname,
+                                'onEnter': this.sendForm
+                            }), createVNode(16, _form.Popover, null, null, {
+                                'display': this.state.errorTarget === fields.firstname,
+                                'message': this.state.errorMessage,
+                                'arrow': true
+                            })]
+                        }), createVNode(16, _form.Col, null, null, {
+                            children: [createVNode(16, _form2.Input, null, null, {
+                                'placeholder': 'Last Name',
+                                'hasError': this.state.errorTarget === fields.lastname,
+                                'maxlength': 100,
+                                'value': this.state.lastname,
+                                'onChange': this.updateLastname,
+                                'onKeyPress': this.checkLastname,
+                                'onEnter': this.sendForm
+                            }), createVNode(16, _form.Popover, null, null, {
+                                'display': this.state.errorTarget === fields.lastname,
+                                'message': this.state.errorMessage,
+                                'arrow': true
+                            })]
+                        })]
+                    }), createVNode(16, _form.Row, null, null, {
+                        children: createVNode(16, _form.Col, null, null, {
+                            children: [createVNode(16, _form2.Input, null, null, {
+                                'placeholder': 'Email Address',
+                                'hasError': this.state.errorTarget === fields.email,
+                                'maxlength': 100,
+                                'value': this.state.email,
+                                'onChange': this.updateEmail,
+                                'onKeyPress': this.checkEmail,
+                                'onEnter': this.sendForm
+                            }), createVNode(16, _form.Popover, null, null, {
+                                'display': this.state.errorTarget === fields.email,
+                                'message': this.state.errorMessage,
+                                'arrow': true
+                            })]
+                        })
+                    }), createVNode(16, _form.Row, null, null, {
+                        children: createVNode(16, _form.Col, null, null, {
+                            children: [createVNode(16, _form2.Textarea, null, null, {
+                                'placeholder': 'Type Your Message Here...',
+                                'hasError': this.state.errorTarget === fields.message,
+                                'maxlength': 5000,
+                                'value': this.state.message,
+                                'onChange': this.updateMessage,
+                                'onKeyPress': this.checkMessage
+                            }), createVNode(16, _form.Popover, null, null, {
+                                'display': this.state.errorTarget === fields.message,
+                                'message': this.state.errorMessage,
+                                'arrow': true
+                            })]
+                        })
+                    }), createVNode(16, _form.Row, null, null, {
+                        children: [createVNode(16, _form.Button, null, null, {
+                            'anim': true,
+                            'text': 'Send',
+                            'icon': 'paper-plane-o',
+                            'loading': this.state.loading,
+                            'cover': this.state.lastRes,
+                            'onClick': this.sendForm
+                        }), createVNode(16, _form.Popover, null, null, {
+                            'display': this.state.errorTarget === fields.none,
+                            'message': this.state.errorMessage
+                        }), createVNode(16, _form.Loader, null, null, {
+                            'active': this.state.loading
+                        })]
+                    })]
+                }), createVNode(16, _content.Content, null, null, {
+                    children: createVNode(16, _social.SocialList, null, null, {
+                        children: this.props.sociallinks.map(function (props) {
+                            return createVNode(16, _social.SocialLink, null, null, _extends({}, props));
+                        })
+                    })
+                })]
+            });
+        }
+    }]);
 
-	return ContactPage;
+    return ContactPage;
 }(_infernoComponent2.default);
 
 exports.default = ContactPage;
@@ -3342,7 +2653,7 @@ exports.default = ContactPage;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -3374,41 +2685,41 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var ExperiencesPage = function (_Component) {
-	_inherits(ExperiencesPage, _Component);
+    _inherits(ExperiencesPage, _Component);
 
-	function ExperiencesPage(props) {
-		_classCallCheck(this, ExperiencesPage);
+    function ExperiencesPage(props) {
+        _classCallCheck(this, ExperiencesPage);
 
-		return _possibleConstructorReturn(this, (ExperiencesPage.__proto__ || Object.getPrototypeOf(ExperiencesPage)).call(this, props));
-	}
+        return _possibleConstructorReturn(this, (ExperiencesPage.__proto__ || Object.getPrototypeOf(ExperiencesPage)).call(this, props));
+    }
 
-	_createClass(ExperiencesPage, [{
-		key: 'render',
-		value: function render() {
-			return createVNode(16, _page.Page, null, null, {
-				'name': 'experiences',
-				children: [createVNode(16, _page.Header, null, null, {
-					children: [createVNode(16, _page.Title, null, null, {
-						children: this.props.title
-					}), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
-				}), this.props.sections.map(function (section) {
-					return createVNode(16, _content.Content, null, null, {
-						children: [createVNode(16, _content.Header, null, null, {
-							children: createVNode(16, _page.Title, null, null, {
-								children: section.title
-							})
-						}), createVNode(16, _experiences.List, null, null, {
-							children: section.items.map(function (props) {
-								return createVNode(16, _experiences.Item, null, null, _extends({}, props));
-							})
-						})]
-					});
-				})]
-			});
-		}
-	}]);
+    _createClass(ExperiencesPage, [{
+        key: 'render',
+        value: function render() {
+            return createVNode(16, _page.Page, null, null, {
+                'name': 'experiences',
+                children: [createVNode(16, _page.Header, null, null, {
+                    children: [createVNode(16, _page.Title, null, null, {
+                        children: this.props.title
+                    }), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
+                }), this.props.sections.map(function (section) {
+                    return createVNode(16, _content.Content, null, null, {
+                        children: [createVNode(16, _content.Header, null, null, {
+                            children: createVNode(16, _page.Title, null, null, {
+                                children: section.title
+                            })
+                        }), createVNode(16, _experiences.List, null, null, {
+                            children: section.items.map(function (props) {
+                                return createVNode(16, _experiences.Item, null, null, _extends({}, props));
+                            })
+                        })]
+                    });
+                })]
+            });
+        }
+    }]);
 
-	return ExperiencesPage;
+    return ExperiencesPage;
 }(_infernoComponent2.default);
 
 exports.default = ExperiencesPage;
@@ -3421,7 +2732,7 @@ exports.default = ExperiencesPage;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -3447,29 +2758,29 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var HomePage = function (_Component) {
-	_inherits(HomePage, _Component);
+    _inherits(HomePage, _Component);
 
-	function HomePage(props) {
-		_classCallCheck(this, HomePage);
+    function HomePage(props) {
+        _classCallCheck(this, HomePage);
 
-		return _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
-	}
+        return _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
+    }
 
-	_createClass(HomePage, [{
-		key: 'render',
-		value: function render() {
-			return createVNode(16, _page.Page, null, null, {
-				'name': 'home',
-				children: [createVNode(16, _page.Title, null, null, {
-					children: this.props.title
-				}), createVNode(16, _page.SubTitle, null, null, {
-					children: this.props.subtitle
-				})]
-			});
-		}
-	}]);
+    _createClass(HomePage, [{
+        key: 'render',
+        value: function render() {
+            return createVNode(16, _page.Page, null, null, {
+                'name': 'home',
+                children: [createVNode(16, _page.Title, null, null, {
+                    children: this.props.title
+                }), createVNode(16, _page.SubTitle, null, null, {
+                    children: this.props.subtitle
+                })]
+            });
+        }
+    }]);
 
-	return HomePage;
+    return HomePage;
 }(_infernoComponent2.default);
 
 exports.default = HomePage;
@@ -3482,7 +2793,7 @@ exports.default = HomePage;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -3522,63 +2833,63 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var PortfolioPage = function (_Component) {
-	_inherits(PortfolioPage, _Component);
+    _inherits(PortfolioPage, _Component);
 
-	function PortfolioPage(props) {
-		_classCallCheck(this, PortfolioPage);
+    function PortfolioPage(props) {
+        _classCallCheck(this, PortfolioPage);
 
-		var _this = _possibleConstructorReturn(this, (PortfolioPage.__proto__ || Object.getPrototypeOf(PortfolioPage)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (PortfolioPage.__proto__ || Object.getPrototypeOf(PortfolioPage)).call(this, props));
 
-		_this.showPreview = _this.showPreview.bind(_this);
-		_this.closePreview = _this.closePreview.bind(_this);
+        _this.showPreview = _this.showPreview.bind(_this);
+        _this.closePreview = _this.closePreview.bind(_this);
 
-		_this.state = {
-			previewIsShowing: null,
-			previewImages: []
-		};
-		return _this;
-	}
+        _this.state = {
+            previewIsShowing: null,
+            previewImages: []
+        };
+        return _this;
+    }
 
-	_createClass(PortfolioPage, [{
-		key: 'closePreview',
-		value: function closePreview() {
-			this.setState({ previewIsShowing: false, previewImages: [] });
-		}
-	}, {
-		key: 'showPreview',
-		value: function showPreview(item) {
-			this.setState({ previewIsShowing: true, previewImages: item.images });
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			var _this2 = this;
+    _createClass(PortfolioPage, [{
+        key: 'closePreview',
+        value: function closePreview() {
+            this.setState({ previewIsShowing: false, previewImages: [] });
+        }
+    }, {
+        key: 'showPreview',
+        value: function showPreview(item) {
+            this.setState({ previewIsShowing: true, previewImages: item.images });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
 
-			return createVNode(16, _page.Page, null, null, {
-				'name': 'portfolio',
-				children: [createVNode(16, _page.Header, null, null, {
-					children: [createVNode(16, _page.Title, null, null, {
-						children: this.props.title
-					}), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
-				}), createVNode(16, _content.Content, null, null, {
-					children: createVNode(16, _portfolio.List, null, null, {
-						children: this.props.items.map(function (props) {
-							return createVNode(16, _portfolio.Item, null, null, _extends({
-								'onPreview': function onPreview() {
-									return _this2.showPreview(props);
-								}
-							}, props));
-						})
-					})
-				}), this.state.previewIsShowing ? createVNode(16, _previewer2.default, null, null, {
-					'onClose': this.closePreview,
-					'imageSets': this.state.previewImages
-				}) : null]
-			});
-		}
-	}]);
+            return createVNode(16, _page.Page, null, null, {
+                'name': 'portfolio',
+                children: [createVNode(16, _page.Header, null, null, {
+                    children: [createVNode(16, _page.Title, null, null, {
+                        children: this.props.title
+                    }), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
+                }), createVNode(16, _content.Content, null, null, {
+                    children: createVNode(16, _portfolio.List, null, null, {
+                        children: this.props.items.map(function (props) {
+                            return createVNode(16, _portfolio.Item, null, null, _extends({
+                                'onPreview': function onPreview() {
+                                    return _this2.showPreview(props);
+                                }
+                            }, props));
+                        })
+                    })
+                }), this.state.previewIsShowing ? createVNode(16, _previewer2.default, null, null, {
+                    'onClose': this.closePreview,
+                    'imageSets': this.state.previewImages
+                }) : null]
+            });
+        }
+    }]);
 
-	return PortfolioPage;
+    return PortfolioPage;
 }(_infernoComponent2.default);
 
 exports.default = PortfolioPage;
@@ -3591,7 +2902,7 @@ exports.default = PortfolioPage;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -3623,41 +2934,41 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var createVNode = _inferno2.default.createVNode;
 
 var SkillsPage = function (_Component) {
-	_inherits(SkillsPage, _Component);
+    _inherits(SkillsPage, _Component);
 
-	function SkillsPage(props) {
-		_classCallCheck(this, SkillsPage);
+    function SkillsPage(props) {
+        _classCallCheck(this, SkillsPage);
 
-		return _possibleConstructorReturn(this, (SkillsPage.__proto__ || Object.getPrototypeOf(SkillsPage)).call(this, props));
-	}
+        return _possibleConstructorReturn(this, (SkillsPage.__proto__ || Object.getPrototypeOf(SkillsPage)).call(this, props));
+    }
 
-	_createClass(SkillsPage, [{
-		key: 'render',
-		value: function render() {
-			return createVNode(16, _page.Page, null, null, {
-				'name': 'skills',
-				children: [createVNode(16, _page.Header, null, null, {
-					children: [createVNode(16, _page.Title, null, null, {
-						children: this.props.title
-					}), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
-				}), this.props.sections.map(function (section) {
-					return createVNode(16, _content.Content, null, null, {
-						children: [createVNode(16, _content.Header, null, null, {
-							children: createVNode(16, _page.Title, null, null, {
-								children: section.title
-							})
-						}), createVNode(16, _skills.List, null, null, {
-							children: section.items.map(function (props) {
-								return createVNode(16, _skills.Item, null, null, _extends({}, props));
-							})
-						})]
-					});
-				})]
-			});
-		}
-	}]);
+    _createClass(SkillsPage, [{
+        key: 'render',
+        value: function render() {
+            return createVNode(16, _page.Page, null, null, {
+                'name': 'skills',
+                children: [createVNode(16, _page.Header, null, null, {
+                    children: [createVNode(16, _page.Title, null, null, {
+                        children: this.props.title
+                    }), createVNode(16, _page.Quote, null, null, _extends({}, this.props.quote))]
+                }), this.props.sections.map(function (section) {
+                    return createVNode(16, _content.Content, null, null, {
+                        children: [createVNode(16, _content.Header, null, null, {
+                            children: createVNode(16, _page.Title, null, null, {
+                                children: section.title
+                            })
+                        }), createVNode(16, _skills.List, null, null, {
+                            children: section.items.map(function (props) {
+                                return createVNode(16, _skills.Item, null, null, _extends({}, props));
+                            })
+                        })]
+                    });
+                })]
+            });
+        }
+    }]);
 
-	return SkillsPage;
+    return SkillsPage;
 }(_infernoComponent2.default);
 
 exports.default = SkillsPage;
@@ -3676,18 +2987,16 @@ var inferno = __webpack_require__(0);
 /**
  * @module Inferno-Shared
  */ /** TypeDoc Comment */
-/**
- * @module Inferno-Shared
- */ /** TypeDoc Comment */ var NO_OP = '$NO_OP';
-var ERROR_MSG = 'a runtime error occured! Use Inferno in development environment to find the error.';
+var NO_OP = "$NO_OP";
+var ERROR_MSG = "a runtime error occured! Use Inferno in development environment to find the error.";
 // This should be boolean and not reference to window.document
-var isBrowser = !!(typeof window !== 'undefined' && window.document);
+var isBrowser = !!(typeof window !== "undefined" && window.document);
 // this is MUCH faster than .constructor === Array and instanceof Array
 // in Node 7 and the later versions of V8, slower in older versions though
 var isArray = Array.isArray;
 function isStringOrNumber(o) {
     var type = typeof o;
-    return type === 'string' || type === 'number';
+    return type === "string" || type === "number";
 }
 function isNullOrUndef(o) {
     return isUndefined(o) || isNull(o);
@@ -3696,7 +3005,7 @@ function isInvalid(o) {
     return isNull(o) || o === false || isTrue(o) || isUndefined(o);
 }
 function isFunction(o) {
-    return typeof o === 'function';
+    return typeof o === "function";
 }
 function isNull(o) {
     return o === null;
@@ -3734,7 +3043,8 @@ function combineFrom(first, second) {
 // Make sure u use EMPTY_OBJ from 'inferno', otherwise it'll be a different reference
 var noOp = ERROR_MSG;
 if (false) {
-    noOp = 'Inferno Error: Can only update a mounted or mounting component. This usually means you called setState() or forceUpdate() on an unmounted component. This is a no-op.';
+    noOp =
+        "Inferno Error: Can only update a mounted or mounting component. This usually means you called setState() or forceUpdate() on an unmounted component. This is a no-op.";
 }
 var componentCallbackQueue = new Map();
 // when a components root VNode is also a component, we can run into issues
@@ -3835,13 +3145,14 @@ function applyState(component, force, callback) {
         }
         else if (isArray(nextInput)) {
             if (false) {
-                throwError('a valid Inferno VNode (or null) must be returned from a component render. You may have returned an array or an invalid object.');
+                throwError("a valid Inferno VNode (or null) must be returned from a component render. You may have returned an array or an invalid object.");
             }
             throwError();
         }
         var lastInput = component._lastInput;
         var vNode = component._vNode;
-        var parentDom = (lastInput.dom && lastInput.dom.parentNode) || (lastInput.dom = vNode.dom);
+        var parentDom = (lastInput.dom && lastInput.dom.parentNode) ||
+            (lastInput.dom = vNode.dom);
         component._lastInput = nextInput;
         if (didUpdate) {
             var childContext;
@@ -3864,7 +3175,7 @@ function applyState(component, force, callback) {
                 inferno.options.afterUpdate(vNode);
             }
         }
-        var dom = vNode.dom = nextInput.dom;
+        var dom = (vNode.dom = nextInput.dom);
         if (inferno.options.findDOMNodeEnabled) {
             inferno.internal_DOMNodeMap.set(component, nextInput.dom);
         }
@@ -3912,7 +3223,7 @@ Component.prototype.setState = function setState (newState, callback) {
     }
     else {
         if (false) {
-            throwError('cannot update state via setState() in componentWillUpdate() or constructor.');
+            throwError("cannot update state via setState() in componentWillUpdate() or constructor.");
         }
         throwError();
     }
@@ -3922,7 +3233,7 @@ Component.prototype.setStateSync = function setStateSync (newState) {
         if (!alreadyWarned) {
             alreadyWarned = true;
             // tslint:disable-next-line:no-console
-            console.warn('Inferno WARNING: setStateSync has been deprecated and will be removed in next release. Use setState instead.');
+            console.warn("Inferno WARNING: setStateSync has been deprecated and will be removed in next release. Use setState instead.");
         }
     }
     this.setState(newState);
@@ -3934,7 +3245,10 @@ Component.prototype._updateComponent = function _updateComponent (prevState, nex
         }
         throwError();
     }
-    if ((prevProps !== nextProps || nextProps === inferno.EMPTY_OBJ) || prevState !== nextState || force) {
+    if (prevProps !== nextProps ||
+        nextProps === inferno.EMPTY_OBJ ||
+        prevState !== nextState ||
+        force) {
         if (prevProps !== nextProps || nextProps === inferno.EMPTY_OBJ) {
             if (!isNullOrUndef(this.componentWillReceiveProps) && !fromSetState) {
                 // keep a copy of state before componentWillReceiveProps
@@ -3958,7 +3272,10 @@ Component.prototype._updateComponent = function _updateComponent (prevState, nex
             }
         }
         /* Update if scu is not defined, or it returns truthy value or force */
-        if (isNullOrUndef(this.shouldComponentUpdate) || (this.shouldComponentUpdate && this.shouldComponentUpdate(nextProps, nextState, context)) || force) {
+        if (force ||
+            isNullOrUndef(this.shouldComponentUpdate) ||
+            (this.shouldComponentUpdate &&
+                this.shouldComponentUpdate(nextProps, nextState, context))) {
             if (!isNullOrUndef(this.componentWillUpdate)) {
                 this._blockSetState = true;
                 this.componentWillUpdate(nextProps, nextState, context);
@@ -4002,12 +3319,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
 /**
  * @module Inferno-Shared
  */ /** TypeDoc Comment */
-/**
- * @module Inferno-Shared
- */ /** TypeDoc Comment */ var NO_OP = '$NO_OP';
-var ERROR_MSG = 'a runtime error occured! Use Inferno in development environment to find the error.';
+var NO_OP = "$NO_OP";
+var ERROR_MSG = "a runtime error occured! Use Inferno in development environment to find the error.";
 // This should be boolean and not reference to window.document
-var isBrowser = !!(typeof window !== 'undefined' && window.document);
+var isBrowser = !!(typeof window !== "undefined" && window.document);
 // this is MUCH faster than .constructor === Array and instanceof Array
 // in Node 7 and the later versions of V8, slower in older versions though
 var isArray = Array.isArray;
@@ -4016,7 +3331,7 @@ function isStatefulComponent(o) {
 }
 function isStringOrNumber(o) {
     var type = typeof o;
-    return type === 'string' || type === 'number';
+    return type === "string" || type === "number";
 }
 function isNullOrUndef(o) {
     return isUndefined(o) || isNull(o);
@@ -4025,13 +3340,13 @@ function isInvalid(o) {
     return isNull(o) || o === false || isTrue(o) || isUndefined(o);
 }
 function isFunction(o) {
-    return typeof o === 'function';
+    return typeof o === "function";
 }
 function isString(o) {
-    return typeof o === 'string';
+    return typeof o === "string";
 }
 function isNumber(o) {
-    return typeof o === 'number';
+    return typeof o === "number";
 }
 function isNull(o) {
     return o === null;
@@ -4043,7 +3358,7 @@ function isUndefined(o) {
     return o === void 0;
 }
 function isObject(o) {
-    return typeof o === 'object';
+    return typeof o === "object";
 }
 function throwError(message) {
     if (!message) {
@@ -4079,7 +3394,7 @@ Lifecycle.prototype.trigger = function trigger() {
     var listeners = this.listeners;
     var listener;
     // We need to remove current listener from array when calling it, because more listeners might be added
-    while (listener = listeners.shift()) {
+    while ((listener = listeners.shift())) {
         listener();
     }
 };
@@ -4102,9 +3417,7 @@ var options = {
 /**
  * @module Inferno
  */ /** TypeDoc Comment */
-/**
- * @module Inferno
- */ /** TypeDoc Comment */ var xlinkNS = "http://www.w3.org/1999/xlink";
+var xlinkNS = "http://www.w3.org/1999/xlink";
 var xmlNS = "http://www.w3.org/XML/1998/namespace";
 var svgNS = "http://www.w3.org/2000/svg";
 var strictProps = new Set();
@@ -4130,6 +3443,7 @@ booleanProps.add("novalidate");
 booleanProps.add("hidden");
 booleanProps.add("autoFocus");
 booleanProps.add("selected");
+booleanProps.add("indeterminate");
 var namespaces = new Map();
 namespaces.set("xlink:href", xlinkNS);
 namespaces.set("xlink:arcrole", xlinkNS);
@@ -4198,7 +3512,9 @@ delegatedEvents.add("onKeyPress");
 /**
  * @module Inferno
  */ /** TypeDoc Comment */
-var isiOS = isBrowser && !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+var isiOS = isBrowser &&
+    !!navigator.platform &&
+    /iPad|iPhone|iPod/.test(navigator.platform);
 var delegatedEvents$1 = new Map();
 function handleEvent(name, lastEvent, nextEvent, dom) {
     var delegatedRoots = delegatedEvents$1.get(name);
@@ -4209,7 +3525,7 @@ function handleEvent(name, lastEvent, nextEvent, dom) {
             delegatedEvents$1.set(name, delegatedRoots);
         }
         if (!lastEvent) {
-            if (isiOS && name === 'onClick') {
+            if (isiOS && name === "onClick") {
                 trapClickOnNonInteractiveElement(dom);
             }
         }
@@ -4226,31 +3542,31 @@ function handleEvent(name, lastEvent, nextEvent, dom) {
         }
     }
 }
-function dispatchEvent(event, target, items, count, isClick, eventData) {
-    var eventsToTrigger = items.get(target);
-    if (eventsToTrigger) {
-        count--;
-        // linkEvent object
-        eventData.dom = target;
-        if (eventsToTrigger.event) {
-            eventsToTrigger.event(eventsToTrigger.data, event);
+function dispatchEvents(event, target, items, count, isClick, eventData) {
+    var dom = target;
+    while (count > 0) {
+        var eventsToTrigger = items.get(dom);
+        if (eventsToTrigger) {
+            count--;
+            // linkEvent object
+            eventData.dom = dom;
+            if (eventsToTrigger.event) {
+                eventsToTrigger.event(eventsToTrigger.data, event);
+            }
+            else {
+                eventsToTrigger(event);
+            }
+            if (event.cancelBubble) {
+                return;
+            }
         }
-        else {
-            eventsToTrigger(event);
-        }
-        if (event.cancelBubble) {
-            return;
-        }
-    }
-    if (count > 0) {
-        var parentDom = target.parentNode;
+        dom = dom.parentNode;
         // Html Nodes can be nested fe: span inside button in that scenario browser does not handle disabled attribute on parent,
         // because the event listener is on document.body
         // Don't process clicks on disabled elements
-        if (parentDom === null || (isClick && parentDom.nodeType === 1 && parentDom.disabled)) {
+        if (dom === null || (isClick && dom.disabled)) {
             return;
         }
-        dispatchEvent(event, parentDom, items, count, isClick, eventData);
     }
 }
 function normalizeEventName(name) {
@@ -4270,15 +3586,17 @@ function attachEventToDocument(name, delegatedRoots) {
                 dom: document
             };
             try {
-                Object.defineProperty(event, 'currentTarget', {
+                Object.defineProperty(event, "currentTarget", {
                     configurable: true,
                     get: function get() {
                         return eventData.dom;
                     }
                 });
             }
-            catch (e) { }
-            dispatchEvent(event, event.target, delegatedRoots.items, count, event.type === 'click', eventData);
+            catch (e) {
+                /* safari7 and phantomJS will crash */
+            }
+            dispatchEvents(event, event.target, delegatedRoots.items, count, event.type === "click", eventData);
         }
     };
     document.addEventListener(normalizeEventName(name), docEvent);
@@ -4303,7 +3621,7 @@ function trapClickOnNonInteractiveElement(dom) {
  * @module Inferno
  */ /** TypeDoc Comment */
 function isCheckedType(type) {
-    return type === 'checkbox' || type === 'radio';
+    return type === "checkbox" || type === "radio";
 }
 function onTextInputChange(e) {
     var vNode = this.vNode;
@@ -4394,13 +3712,13 @@ function applyValue(nextPropsOrEmpty, dom) {
     var defaultValue = nextPropsOrEmpty.defaultValue;
     var hasValue = !isNullOrUndef(value);
     if (type && type !== dom.type) {
-        dom.setAttribute('type', type);
+        dom.setAttribute("type", type);
     }
     if (multiple && multiple !== dom.multiple) {
         dom.multiple = multiple;
     }
     if (!isNullOrUndef(defaultValue) && !hasValue) {
-        dom.defaultValue = defaultValue + '';
+        dom.defaultValue = defaultValue + "";
     }
     if (isCheckedType(type)) {
         if (hasValue) {
@@ -4426,7 +3744,7 @@ function applyValue(nextPropsOrEmpty, dom) {
  */ /** TypeDoc Comment */
 function updateChildOptionGroup(vNode, value) {
     var type = vNode.type;
-    if (type === 'optgroup') {
+    if (type === "optgroup") {
         var children = vNode.children;
         if (isArray(children)) {
             for (var i = 0, len = children.length; i < len; i++) {
@@ -4446,7 +3764,8 @@ function updateChildOption(vNode, value) {
     var dom = vNode.dom;
     // we do this as multiple may have changed
     dom.value = props.value;
-    if ((isArray(value) && value.indexOf(props.value) !== -1) || props.value === value) {
+    if ((isArray(value) && value.indexOf(props.value) !== -1) ||
+        props.value === value) {
         dom.selected = true;
     }
     else if (!isNullOrUndef(value) || !isNullOrUndef(props.selected)) {
@@ -4576,9 +3895,9 @@ function applyValue$2(nextPropsOrEmpty, dom, mounting) {
                     dom.value = defaultValue;
                 }
             }
-            else if (domValue !== '') {
-                dom.defaultValue = '';
-                dom.value = '';
+            else if (domValue !== "") {
+                dom.defaultValue = "";
+                dom.value = "";
             }
         }
     }
@@ -4611,7 +3930,9 @@ function processElement(flags, vNode, dom, nextPropsOrEmpty, mounting, isControl
     }
 }
 function isControlledFormElement(nextPropsOrEmpty) {
-    return (nextPropsOrEmpty.type && isCheckedType(nextPropsOrEmpty.type)) ? !isNullOrUndef(nextPropsOrEmpty.checked) : !isNullOrUndef(nextPropsOrEmpty.value);
+    return nextPropsOrEmpty.type && isCheckedType(nextPropsOrEmpty.type)
+        ? !isNullOrUndef(nextPropsOrEmpty.checked)
+        : !isNullOrUndef(nextPropsOrEmpty.value);
 }
 
 /**
@@ -4640,7 +3961,6 @@ function normalizeChildNodes(parentDom) {
 function hydrateComponent(vNode, dom, lifecycle, context, isSVG, isClass) {
     var type = vNode.type;
     var ref = vNode.ref;
-    vNode.dom = dom;
     var props = vNode.props || EMPTY_OBJ;
     if (isClass) {
         var _isSVG = dom.namespaceURI === svgNS;
@@ -4648,6 +3968,7 @@ function hydrateComponent(vNode, dom, lifecycle, context, isSVG, isClass) {
         var input = instance._lastInput;
         instance._vNode = vNode;
         hydrate(input, dom, lifecycle, instance._childContext, _isSVG);
+        vNode.dom = input.dom;
         mountClassComponentCallbacks(vNode, ref, instance, lifecycle);
         instance._updating = false; // Mount finished allow going sync
         if (options.findDOMNodeEnabled) {
@@ -4659,7 +3980,7 @@ function hydrateComponent(vNode, dom, lifecycle, context, isSVG, isClass) {
         hydrate(input$1, dom, lifecycle, context, isSVG);
         vNode.children = input$1;
         vNode.dom = input$1.dom;
-        mountFunctionalComponentCallbacks(ref, dom, lifecycle);
+        mountFunctionalComponentCallbacks(props, ref, dom, lifecycle);
     }
     return dom;
 }
@@ -4680,7 +4001,7 @@ function hydrateElement(vNode, dom, lifecycle, context, isSVG) {
         return newDom;
     }
     vNode.dom = dom;
-    if (children) {
+    if (!isInvalid(children)) {
         hydrateChildren(children, dom, lifecycle, context, isSVG);
     }
     else if (dom.firstChild !== null) {
@@ -4727,7 +4048,10 @@ function hydrateChildren(children, parentDom, lifecycle, context, isSVG) {
                 dom.nodeValue = children;
             }
         }
-        else if (children) {
+        else if (children === "") {
+            parentDom.appendChild(document.createTextNode(""));
+        }
+        else {
             parentDom.textContent = children;
         }
         if (!isNull(dom)) {
@@ -4942,6 +4266,7 @@ function unmountComponent(vNode, parentDom, lifecycle, canRecycle, isRecycling) 
     var instance = vNode.children;
     var flags = vNode.flags;
     var isStatefulComponent$$1 = flags & 4;
+    var props = vNode.props || EMPTY_OBJ;
     var ref = vNode.ref;
     var dom = vNode.dom;
     if (!isRecycling) {
@@ -4966,17 +4291,13 @@ function unmountComponent(vNode, parentDom, lifecycle, canRecycle, isRecycling) 
         else {
             if (!isNullOrUndef(ref)) {
                 if (!isNullOrUndef(ref.onComponentWillUnmount)) {
-                    ref.onComponentWillUnmount(dom);
+                    ref.onComponentWillUnmount(dom, props);
                 }
             }
             unmount(instance, null, lifecycle, false, isRecycling);
         }
     }
     if (parentDom) {
-        var lastInput = instance._lastInput;
-        if (isNullOrUndef(lastInput)) {
-            lastInput = instance;
-        }
         removeChild(parentDom, dom);
     }
     if (options.recyclingEnabled &&
@@ -5768,7 +5089,7 @@ function patchKeyedChildren(a, b, dom, lifecycle, context, isSVG, isRecycling) {
                         }
                         nextPos = pos + 1;
                         nextNode = nextPos < b.length ? b[nextPos].dom : null;
-                        insertOrAppend(dom, mount(node, dom, lifecycle, context, isSVG), nextNode);
+                        insertOrAppend(dom, mount(node, null, lifecycle, context, isSVG), nextNode);
                     }
                     else {
                         if (j < 0 || i !== seq[j]) {
@@ -5934,25 +5255,34 @@ function patchEvent(name, lastValue, nextValue, dom) {
 // -nextAttrValue cannot be null or undefined
 function patchStyle(lastAttrValue, nextAttrValue, dom) {
     var domStyle = dom.style;
+    var style;
+    var value;
     if (isString(nextAttrValue)) {
         domStyle.cssText = nextAttrValue;
         return;
     }
-    for (var style in nextAttrValue) {
-        // do not add a hasOwnProperty check here, it affects performance
-        var value = nextAttrValue[style];
-        if (!isNumber(value) || isUnitlessNumber.has(style)) {
-            domStyle[style] = value;
+    if (!isNullOrUndef(lastAttrValue) && !isString(lastAttrValue)) {
+        for (style in nextAttrValue) {
+            // do not add a hasOwnProperty check here, it affects performance
+            value = nextAttrValue[style];
+            if (value !== lastAttrValue[style]) {
+                domStyle[style] =
+                    !isNumber(value) || isUnitlessNumber.has(style)
+                        ? value
+                        : value + "px";
+            }
         }
-        else {
-            domStyle[style] = value + "px";
+        for (style in lastAttrValue) {
+            if (isNullOrUndef(nextAttrValue[style])) {
+                domStyle[style] = "";
+            }
         }
     }
-    if (!isNullOrUndef(lastAttrValue)) {
-        for (var style$1 in lastAttrValue) {
-            if (isNullOrUndef(nextAttrValue[style$1])) {
-                domStyle[style$1] = "";
-            }
+    else {
+        for (style in nextAttrValue) {
+            value = nextAttrValue[style];
+            domStyle[style] =
+                !isNumber(value) || isUnitlessNumber.has(style) ? value : value + "px";
         }
     }
 }
@@ -6019,18 +5349,19 @@ function mountVoid(vNode, parentDom) {
     return dom;
 }
 function mountElement(vNode, parentDom, lifecycle, context, isSVG) {
+    var dom;
     if (options.recyclingEnabled) {
-        var dom$1 = recycleElement(vNode, lifecycle, context, isSVG);
-        if (!isNull(dom$1)) {
+        dom = recycleElement(vNode, lifecycle, context, isSVG);
+        if (!isNull(dom)) {
             if (!isNull(parentDom)) {
-                appendChild(parentDom, dom$1);
+                appendChild(parentDom, dom);
             }
-            return dom$1;
+            return dom;
         }
     }
     var flags = vNode.flags;
     isSVG = isSVG || (flags & 128 /* SvgElement */) > 0;
-    var dom = documentCreateElement(vNode.type, isSVG);
+    dom = documentCreateElement(vNode.type, isSVG);
     var children = vNode.children;
     var props = vNode.props;
     var className = vNode.className;
@@ -6093,19 +5424,19 @@ function mountArrayChildren(children, dom, lifecycle, context, isSVG) {
     }
 }
 function mountComponent(vNode, parentDom, lifecycle, context, isSVG, isClass) {
+    var dom;
     if (options.recyclingEnabled) {
-        var dom$1 = recycleComponent(vNode, lifecycle, context, isSVG);
-        if (!isNull(dom$1)) {
+        dom = recycleComponent(vNode, lifecycle, context, isSVG);
+        if (!isNull(dom)) {
             if (!isNull(parentDom)) {
-                appendChild(parentDom, dom$1);
+                appendChild(parentDom, dom);
             }
-            return dom$1;
+            return dom;
         }
     }
     var type = vNode.type;
     var props = vNode.props || EMPTY_OBJ;
     var ref = vNode.ref;
-    var dom;
     if (isClass) {
         var instance = createClassComponentInstance(vNode, type, props, context, isSVG, lifecycle);
         var input = instance._lastInput;
@@ -6124,7 +5455,7 @@ function mountComponent(vNode, parentDom, lifecycle, context, isSVG, isClass) {
         var input$1 = createFunctionalComponentInput(vNode, type, props, context);
         vNode.dom = dom = mount(input$1, null, lifecycle, context, isSVG);
         vNode.children = input$1;
-        mountFunctionalComponentCallbacks(ref, dom, lifecycle);
+        mountFunctionalComponentCallbacks(props, ref, dom, lifecycle);
         if (!isNull(parentDom)) {
             appendChild(parentDom, dom);
         }
@@ -6166,13 +5497,13 @@ function mountClassComponentCallbacks(vNode, ref, instance, lifecycle) {
         }));
     }
 }
-function mountFunctionalComponentCallbacks(ref, dom, lifecycle) {
+function mountFunctionalComponentCallbacks(props, ref, dom, lifecycle) {
     if (ref) {
         if (!isNullOrUndef(ref.onComponentWillMount)) {
-            ref.onComponentWillMount();
+            ref.onComponentWillMount(props);
         }
         if (!isNullOrUndef(ref.onComponentDidMount)) {
-            lifecycle.addListener((function () { return ref.onComponentDidMount(dom); }));
+            lifecycle.addListener((function () { return ref.onComponentDidMount(dom, props); }));
         }
     }
 }
@@ -6561,12 +5892,13 @@ function cloneVNode(vNodeToClone, props) {
             newVNode.children = null;
         }
         else if (flags & 3970 /* Element */) {
-            children = props && !isUndefined(props.children)
-                ? props.children
-                : vNodeToClone.children;
+            children =
+                props && !isUndefined(props.children)
+                    ? props.children
+                    : vNodeToClone.children;
             newVNode = createVNode(flags, vNodeToClone.type, className, children, !vNodeToClone.props && !props
                 ? EMPTY_OBJ
-                : combineFrom(vNodeToClone.props, props), key, ref, !children);
+                : combineFrom(vNodeToClone.props, props), key, ref, false);
         }
         else if (flags & 1 /* Text */) {
             newVNode = createTextVNode(vNodeToClone.children, key);
@@ -6680,19 +6012,19 @@ function normalizeChildren(children) {
 }
 function normalizeProps(vNode, props, children) {
     if (vNode.flags & 3970 /* Element */) {
-        if (isNullOrUndef(children) && !isNullOrUndef(props.children)) {
+        if (isNullOrUndef(children) && props.hasOwnProperty("children")) {
             vNode.children = props.children;
         }
-        if (!isNullOrUndef(props.className)) {
-            vNode.className = props.className;
+        if (props.hasOwnProperty("className")) {
+            vNode.className = props.className || null;
             delete props.className;
         }
     }
-    if (props.ref) {
+    if (props.hasOwnProperty("ref")) {
         vNode.ref = props.ref;
         delete props.ref;
     }
-    if (!isNullOrUndef(props.key)) {
+    if (props.hasOwnProperty("key")) {
         vNode.key = props.key;
         delete props.key;
     }
@@ -6806,7 +6138,7 @@ if (false) {
             "See http://infernojs.org for more details.");
     }
 }
-var version = "3.5.2";
+var version = "3.7.1";
 // we duplicate it so it plays nicely with different module loading systems
 var index = {
     EMPTY_OBJ: EMPTY_OBJ,
