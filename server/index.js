@@ -11,10 +11,10 @@ const
     html      = require('./html'),
     webpack   = require('./webpack'),
     utils     = require('./utils'),
-    settings  = require('./settings');
+    settings  = require('./settings'),
+    data      = require('../src/data');
 
 const args = parser.getCmdArgs();
-const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 utils.createFolder(settings.outputFolder);
 sass.compile({ minified: true, unminified: true });

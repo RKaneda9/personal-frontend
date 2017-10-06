@@ -3,7 +3,7 @@ import Component                               from 'inferno-component';
 import { Page, Header, Title, Quote          } from '../components/page';
 import { Content                             } from '../components/content';
 import { Image, Details, Detail, Description } from '../components/about';
-import constants                                from '../helpers/constants';
+import constants                               from '../helpers/constants';
 
 export default class AboutPage extends Component {
 

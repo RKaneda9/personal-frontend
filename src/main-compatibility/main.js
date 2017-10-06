@@ -1,5 +1,5 @@
             require('./support/polyfill');
-var data  = require('data');
+var data  = require('../data');
 var Pages = {
     Contact  : require('./pages/contact'),
     Portfolio: require('./pages/portfolio')
@@ -26,7 +26,7 @@ var Pages = {
 
     // application start
     var pages = {
-        contact  : new Pages.Contact  (data.contact), 
+        contact  : new Pages.Contact  (data.contact),
         portfolio: new Pages.Portfolio(data.portfolio)
     };
 }));

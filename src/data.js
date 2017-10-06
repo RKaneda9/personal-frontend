@@ -1,4 +1,4 @@
-{
+module.exports = {
    "about":{
       "image":"images/me/image1-512-512.jpg",
       "title":"About Me",
@@ -14,7 +14,7 @@
          },
          {
             "label":"Age",
-            "value":"26"
+            "value":~~((new Date() - new Date(1991, 3, 25)) / 3.1536e10)
          },
          {
             "label":"Location",

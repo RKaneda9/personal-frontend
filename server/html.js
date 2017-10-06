@@ -4,9 +4,8 @@ const
     pug      = require('pug'),
     fs       = require('fs'),
     settings = require('./settings'),
+    data     = require('../src/data'),
     {log}    = console;
-
-let data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 module.exports = {
     build: function () {

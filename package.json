@@ -40,6 +40,7 @@
     "yargs": "^7.1.0"
   },
   "scripts": {
-    "start": "node server watch"
+    "start": "node server watch",
+    "build": "node server"
   }
 }

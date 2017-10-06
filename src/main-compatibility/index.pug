@@ -8,10 +8,10 @@ mixin page-header(params)
         div(class="title")= params.title
 
         if params.subtitle
-            div(class="subtitle")= params.subtitle
+            div(class="sub-title")= params.subtitle
 
         else if params.quote
-            div(class="subtitle")
+            div(class="sub-title")
                 +quote(params.quote)
 
 mixin content-header(params)
@@ -39,7 +39,7 @@ html
                 //- home section
                 div(class="page home")
                     div(class="title")= home.title
-                    div(class="sutitle")= home.subtitle
+                    div(class="sub-title")= home.subtitle
 
                 //- about section
                 div(class="page about")
@@ -183,6 +183,3 @@ html
                             each link in contact.sociallinks
                                 a(class=`social-link ${link.type}` target="social" href=link.href)
                                     span(class=`fa fa-${link.icon}`)
-
-
-

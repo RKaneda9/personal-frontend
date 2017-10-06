@@ -3,9 +3,9 @@ import Inferno     from 'inferno';
 import Component   from 'inferno-component';
 import Container   from './components/app';
 import Home        from './pages/home';
-import About        from './pages/about';
+import About       from './pages/about';
 import Experiences from './pages/experiences';
-import Skills        from './pages/skills';
+import Skills      from './pages/skills';
 import Portfolio   from './pages/portfolio';
 import Contact     from './pages/contact';
 
