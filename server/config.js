@@ -1,13 +1,15 @@
-let path                    = require('path');
-let chalk                   = require('chalk');
-let webpack                 = require('webpack');
-let ExtractTextPlugin       = require("extract-text-webpack-plugin");
-let UnminifiedWebpackPlugin = require('unminified-webpack-plugin');
-let CopyWebpackPlugin       = require('copy-webpack-plugin');
-let settings                = require('./settings');
+'use strict';
+
+const path                    = require('path');
+const chalk                   = require('chalk');
+const webpack                 = require('webpack');
+const ExtractTextPlugin       = require("extract-text-webpack-plugin");
+const UnminifiedWebpackPlugin = require('unminified-webpack-plugin');
+const CopyWebpackPlugin       = require('copy-webpack-plugin');
+const settings                = require('./settings');
 
 module.exports = {
-    entry: { 
+    entry: {
         "main": './src/main/main.js',
         "main-browser-check": "./src/main/browser-check.js",
         "main-compatibility": './src/main-compatibility/main.js',
@@ -44,7 +46,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx'],
-        alias: { 
+        alias: {
             data: path.resolve(__dirname, '../data.json')
         }
     },
@@ -67,8 +69,8 @@ module.exports = {
             { "from": "lib/images", "to": "../images" }
         ]),
         new webpack.DefinePlugin({
-            "process.env": { 
-                NODE_ENV: JSON.stringify("production") 
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
             }
         })
     ]

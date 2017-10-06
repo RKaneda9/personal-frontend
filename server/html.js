@@ -1,9 +1,12 @@
-let pug      = require('pug'),
-    fs       = require('fs'),
-    settings = require('./settings');
+'use strict';
 
-const data  = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-const {log} = console;
+const
+    pug      = require('pug'),
+    fs       = require('fs'),
+    settings = require('./settings'),
+    {log}    = console;
+
+let data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 module.exports = {
     build: function () {
@@ -11,21 +14,21 @@ module.exports = {
 
         data.minified = true;
 
-        let template1 = pug.compileFile('src/main-compatibility/index.pug');
-        let template2 = pug.compileFile('src/main/index.pug');
-        let html1     = template1(data);
-        let html2     = template2(data);
+        const template1 = pug.compileFile('src/main-compatibility/index.pug');
+        const template2 = pug.compileFile('src/main/index.pug');
+        const html1Min  = template1(data);
+        const html2Min  = template2(data);
 
-        fs.writeFileSync(`${settings.outputFolder}/index-old.html`, html1);
-        fs.writeFileSync(`${settings.outputFolder}/index.html`,     html2);
+        fs.writeFileSync(`${settings.outputFolder}/index-old.html`, html1Min);
+        fs.writeFileSync(`${settings.outputFolder}/index.html`,     html2Min);
 
         data.minified = false;
 
-        html1 = template1(data);
-        html2 = template2(data);
+        const html1Unmin = template1(data);
+        const html2Unmin = template2(data);
 
-        fs.writeFileSync(`${settings.outputFolder}/index-old-unminified.html`, html1);
-        fs.writeFileSync(`${settings.outputFolder}/index-unminified.html`,     html2);
+        fs.writeFileSync(`${settings.outputFolder}/index-old-unminified.html`, html1Unmin);
+        fs.writeFileSync(`${settings.outputFolder}/index-unminified.html`,     html2Unmin);
 
         log('Built html successfully.');
     }

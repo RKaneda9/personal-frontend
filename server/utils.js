@@ -1,5 +1,8 @@
-let fs    = require('fs');
-let utils = {
+'use strict';
+
+const fs = require('fs');
+
+const utils = module.exports = {
 
     appendVersion: (fileName, version) => {
         return fileName + '?v=' + version;
@@ -22,14 +25,13 @@ let utils = {
                 location += location ? `/${piece}` : piece;
 
                 if (!fs.existsSync(location)) {
-                    fs.mkdirSync(location); 
+                    fs.mkdirSync(location);
                 }
             });
         }
     },
 
     removeFolder: (path) => {
-
         if (fs.existsSync(path)) {
 
             console.log('Removing folder: ', path);
@@ -39,7 +41,7 @@ let utils = {
 
                 if (fs.lstatSync(curPath).isDirectory()) { // recurse
                     utils.removeFolder(curPath);
-                } 
+                }
                 else { // delete file
                     fs.unlinkSync(curPath);
                 }
@@ -57,9 +59,9 @@ let utils = {
 
         if (typeof array != 'object') { return; }
 
-        var keys = Object.keys(array);
+        const keys = Object.keys(array);
 
-        for (var i = 0; i < keys.length; i++) {
+        for (let i = 0; i < keys.length; i++) {
             if (callback(array[keys[i]], i, keys[i]) === false) {
                 return i;
             }
@@ -70,9 +72,9 @@ let utils = {
 
         if (typeof array != 'object') { return defVal; }
 
-        var keys = Object.keys(array);
+        const keys = Object.keys(array);
 
-        for (var i = 0; i < keys.length; i++) {
+        for (let i = 0; i < keys.length; i++) {
             if (func(array[keys[i]], i)) {
                 return array[keys[i]];
             }
@@ -85,13 +87,11 @@ let utils = {
 
         if (typeof array != 'object') { return []; }
 
-        var mapped, keys, val;
+        const keys = Object.keys(array);
+        let mapped = [], val, i;
 
-        mapped = [];
-        keys   = Object.keys(array);
-
-        for (var i = 0; i < keys.length; i++) {
-            var val = func(array[keys[i]], i, keys[i]);
+        for (i = 0; i < keys.length; i++) {
+            val = func(array[keys[i]], i, keys[i]);
             if (val) { mapped.push(val); }
         }
 
@@ -100,13 +100,13 @@ let utils = {
 
     mapObject: (obj, func) => {
 
-        var mapped = {};
+        let mapped = {}, i;
 
         if (typeof array != 'object') { return mapped; }
 
-        var keys = Object.keys(obj);
+        const keys = Object.keys(obj);
 
-        for (var i = 0; i < keys.length; i++) {
+        for (i = 0; i < keys.length; i++) {
             if (func(mapped, obj[keys[i]], keys[i], i) === false) {
                 break;
             }
@@ -115,5 +115,3 @@ let utils = {
         return mapped;
     }
 };
-
-module.exports = utils;

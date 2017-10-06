@@ -1,4 +1,7 @@
-let pug       = require('pug'),
+'use strict';
+
+const
+    pug       = require('pug'),
     fs        = require('fs'),
     argv      = require('process').argv,
     parser    = require('./args-parser'),
@@ -10,21 +13,16 @@ let pug       = require('pug'),
     utils     = require('./utils'),
     settings  = require('./settings');
 
-let args = parser.getCmdArgs();
-
-// TODO:
+const args = parser.getCmdArgs();
 const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 utils.createFolder(settings.outputFolder);
 sass.compile({ minified: true, unminified: true });
 html.build();
 webpack.build({
-    appName : 'Main', 
-    config  : config, 
-    watch   : args.watch,
-    callback: () => {
-
-    }       
+    appName : 'Main',
+    config  : config,
+    watch   : args.watch
 });
 
 if (args.watch) { webServer.start(args.port); }

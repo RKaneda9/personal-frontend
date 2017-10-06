@@ -1,4 +1,7 @@
-let sass     = require('node-sass'),
+'use strict';
+
+const
+    sass     = require('node-sass'),
     fs       = require('fs'),
     settings = require('./settings'),
     utils    = require('./utils');
@@ -6,18 +9,17 @@ let sass     = require('node-sass'),
 module.exports = {
     compile: ({ minified, unminified, watch }) => {
 
-        let stylesInputFiles  = ["main.scss", "main-compatibility.scss"];
-        let stylesInputPath   = "lib/styles/";
-        let stylesOutputPath  = `${settings.outputFolder}/css/`; //styles.css";
-        let stylesIncludePath = "lib/styles/";
-        let result            = null;
+        const stylesInputFiles  = ["main.scss", "main-compatibility.scss"];
+        const stylesInputPath   = "lib/styles/";
+        const stylesOutputPath  = `${settings.outputFolder}/css/`; //styles.css";
+        const stylesIncludePath = "lib/styles/";
 
         utils.createFolder(stylesOutputPath);
 
         stylesInputFiles.forEach(file => {
+            let result;
 
             if (unminified) {
-
                 result = sass.renderSync({
                     file:        stylesInputPath + file,
                     outFile:     stylesOutputPath,
@@ -29,7 +31,6 @@ module.exports = {
             }
 
             if (minified || !unminified) {
-
                 result = sass.renderSync({
                     file:        stylesInputPath + file,
                     outFile:     stylesOutputPath,

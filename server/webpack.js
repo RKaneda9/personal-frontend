@@ -1,11 +1,12 @@
-let webpack = require('webpack');
+'use strict';
+
+const webpack = require('webpack');
 
 module.exports = {
-
     build: ({ appName, config, watch, callback }) => {
 
-        compiler = webpack(config);
-        resFunc  = (err, stats) => {
+        const compiler = webpack(config);
+        const resFunc  = (err, stats) => {
 
             console.log(stats.toString({ colors: true }) + "\n");
 
@@ -16,11 +17,8 @@ module.exports = {
             }
         };
 
-        if (watch) {
-            return compiler.watch({ aggregateTimeout: 300 }, resFunc);
-        }
-        else {
-            return compiler.run(resFunc);
-        }
+        return watch
+          ? compiler.watch({ aggregateTimeout: 300 }, resFunc)
+          : compiler.run(resFunc);
     }
 };

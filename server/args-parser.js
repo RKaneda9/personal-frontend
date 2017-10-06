@@ -1,10 +1,11 @@
-var argv = require('process').argv;
+'use strict';
 
-var parser = {
+const argv = require('process').argv;
+
+const parser = module.exports = {
     getCmdArgs: function () {
 
-        var args = {
-
+        let args = {
             unminified: false,
             minified  : false,
             watch     : false,
@@ -14,8 +15,7 @@ var parser = {
             port      : 5200
         };
 
-        argv.forEach(function (val, index) { console.log(val);
-
+        argv.forEach(function (val, index) {
             val = val.trim();
 
             switch (val) {
@@ -37,7 +37,7 @@ var parser = {
 
     parseCmdArg: function (val, searchArray, args) {
 
-        var search, i, arg;
+        let search, i, arg;
 
         if (typeof searchArray === 'string') { searchArray = [searchArray]; }
 
@@ -56,5 +56,3 @@ var parser = {
         return false;
     }
 };
-
-module.exports = parser;
