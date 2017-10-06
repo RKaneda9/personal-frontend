@@ -273,7 +273,7 @@ module.exports = {
             "title": "Full-time - Software Developer (Remote)",
             "description": "",
             "location": {
-               "address": "Logan, Utah"
+               "address": "Logan, UT"
             },
             "site": {
                "domain": "www.ifit.com",
