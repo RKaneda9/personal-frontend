@@ -903,7 +903,8 @@ textarea.input {
 
 @media only screen and (max-width: 600px) {
   .portfolio-item {
-    flex: 1 1 100%; } }
+    flex: 1 1 100%;
+    max-width: 100%; } }
 
 @media only screen and (max-width: 550px) {
   .page.home .title {

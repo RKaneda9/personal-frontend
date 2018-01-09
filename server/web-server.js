@@ -21,6 +21,8 @@ module.exports = {
                 port = config.port;
 
             ws(config).listen(port);
+
+            console.log(`Server started on port ${port}.`);
         }
         catch (ex) {
             console.log('Could not start web server: ', ex.message);
